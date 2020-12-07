@@ -32,7 +32,7 @@ $(document).click( function(e){
 $('.center--slider').slick({
     infinite: true,
     dots: true,
-    arrow: false,
+    arrow: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
