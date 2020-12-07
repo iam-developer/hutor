@@ -36,7 +36,7 @@ $('.center--slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
-    // autoplay:true,
+    autoplay:true,
     autoplaySpeed:1800,
     responsive: [
       {
@@ -88,8 +88,8 @@ $('.fermers--slider').slick({
     infinite: true,
     dots: false,
     arrow: false,
-    prevArrow:"<img class='left--arrow fermer--left' src='/hutor/img/left-btn.png'>",
-    nextArrow:"<img class='right--arrow fermer--right' src='/hutor/img/right-btn.png'>",
+    prevArrow: "<img class='left--arrow fermer--left' src='/hutor/img/left-btn.png'>",
+    nextArrow: "<img class='right--arrow fermer--right' src='/hutor/img/right-btn.png'>",
     slidesToShow: 7,
     slidesToScroll: 1,
     responsive: [
