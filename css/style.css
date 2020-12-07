@@ -136,6 +136,7 @@ body {
         z-index: 22;
         cursor: pointer;
         transform: translate(0%, -50%);
+        background-image: url(../img/right__arrow.png);
     }
     .left__arrow {
         position: absolute;
@@ -145,6 +146,7 @@ body {
         z-index: 22;
         cursor: pointer;
         transform: translate(0%, -50%);
+        background-image: url(../img/left__arrow.png);
     }
     .mobile--catalog {
         display: flex;
