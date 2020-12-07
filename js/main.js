@@ -56,8 +56,8 @@ $('.product--slider--container').slick({
     infinite: true,
     dots: false,
     arrow: false,
-    prevArrow:"<img class='left--arrow' src='./hutor/img/left-btn.png'>",
-    nextArrow:"<img class='right--arrow' src='./hutor/img/right-btn.png'>",
+    prevArrow:"<img class='left--arrow' src='/hutor/img/left-btn.png'>",
+    nextArrow:"<img class='right--arrow' src='/hutor/img/right-btn.png'>",
     slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
