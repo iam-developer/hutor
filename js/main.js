@@ -42,8 +42,8 @@ $('.center--slider').slick({
       {
         breakpoint: 767,
         settings: {
-          prevArrow:"<div><img class='left__arrow' src='../img/left__arrow.png'></div>",
-          nextArrow:"<div><img class='right__arrow' src='../img/right__arrow.png'></div>",
+          prevArrow:"<div><img class='left__arrow' src='./hutor/img/left__arrow.png'></div>",
+          nextArrow:"<div><img class='right__arrow' src='./hutor/img/right__arrow.png'></div>",
           dots: false
         }
       }
@@ -56,8 +56,8 @@ $('.product--slider--container').slick({
     infinite: true,
     dots: false,
     arrow: false,
-    prevArrow:"<img class='left--arrow' src='../img/left-btn.png'>",
-    nextArrow:"<img class='right--arrow' src='../img/right-btn.png'>",
+    prevArrow:"<img class='left--arrow' src='./hutor/img/left-btn.png'>",
+    nextArrow:"<img class='right--arrow' src='./hutor/img/right-btn.png'>",
     slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
@@ -88,8 +88,8 @@ $('.fermers--slider').slick({
     infinite: true,
     dots: false,
     arrow: false,
-    prevArrow:"<img class='left--arrow fermer--left' src='../img/left-btn.png'>",
-    nextArrow:"<img class='right--arrow fermer--right' src='../img/right-btn.png'>",
+    prevArrow:"<img class='left--arrow fermer--left' src='./hutor/img/left-btn.png'>",
+    nextArrow:"<img class='right--arrow fermer--right' src='./hutor/img/right-btn.png'>",
     slidesToShow: 7,
     slidesToScroll: 1,
     responsive: [
