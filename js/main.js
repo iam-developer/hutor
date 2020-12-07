@@ -42,8 +42,8 @@ $('.center--slider').slick({
       {
         breakpoint: 767,
         settings: {
-          prevArrow:"<img class='left__arrow' src='../img/left__arrow.png'>",
-          nextArrow:"<img class='right__arrow' src='../img/right__arrow.png'>",
+          prevArrow:"<div><img class='left__arrow' src='../img/left__arrow.png'></div>",
+          nextArrow:"<div><img class='right__arrow' src='../img/right__arrow.png'></div>",
           dots: false
         }
       }
