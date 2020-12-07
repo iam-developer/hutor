@@ -32,7 +32,7 @@ $(document).click( function(e){
 $('.center--slider').slick({
     infinite: true,
     dots: true,
-    arrow: true,
+    arrow: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
@@ -42,8 +42,8 @@ $('.center--slider').slick({
       {
         breakpoint: 767,
         settings: {
-          prevArrow: $('.left__arrow'),
-          nextArrow: $('.right__arrow'),
+          prevArrow: "<img class='left__arrow' src='/hutor/img/left__arrow.png'>",
+          nextArrow: "<img class='right__arrow' src='/hutor/img/right__arrow.png'>",
           dots: false
         }
       }
@@ -88,8 +88,8 @@ $('.fermers--slider').slick({
     infinite: true,
     dots: false,
     arrow: false,
-    prevArrow:"<img class='left--arrow fermer--left' src='./hutor/img/left-btn.png'>",
-    nextArrow:"<img class='right--arrow fermer--right' src='./hutor/img/right-btn.png'>",
+    prevArrow:"<img class='left--arrow fermer--left' src='/hutor/img/left-btn.png'>",
+    nextArrow:"<img class='right--arrow fermer--right' src='/hutor/img/right-btn.png'>",
     slidesToShow: 7,
     slidesToScroll: 1,
     responsive: [

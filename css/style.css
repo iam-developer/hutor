@@ -130,19 +130,21 @@ body {
     }
     .right__arrow {
         position: absolute;
-        top: 35%;
+        top: 50%;
         right: 22px;
         width: 4%;
         z-index: 22;
         cursor: pointer;
+        transform: translate(0%, -50%);
     }
     .left__arrow {
         position: absolute;
-        top: 35%;
+        top: 50%;
         left: 22px;
         width: 4%;
         z-index: 22;
         cursor: pointer;
+        transform: translate(0%, -50%);
     }
     .mobile--catalog {
         display: flex;
