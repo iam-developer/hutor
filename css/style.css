@@ -66,8 +66,10 @@ ul li {
     list-style: none;
 }
 body {
+    left: 0;
+    position: relative;
     margin: 0;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 /* ========= Стили для мобильной версии ========== */
     #mobile--header {
@@ -127,6 +129,7 @@ body {
     }
     .mob--icons {
         margin: 0 0 0 20px;
+        cursor: pointer;
     }
     .right__arrow {
         position: absolute;
@@ -156,6 +159,7 @@ body {
     }
     .mob--catalog {
         margin-left: 7px;
+        cursor: pointer;
     }
     .mob--catalog--text {
         font-family: 'MyriadPro-Bold';
@@ -327,17 +331,25 @@ body {
     }
     .menu--catalog--mob {
         width: 100px;
-        height: 100vh;
+        height: 100%;
         padding: 8px 0;
         position: fixed;
-        left: -100%;
+        left: -100px;
         background-color: #fff;
         z-index: 9999;
         border-right: 1px solid #61351d;
         transition: .4s;
     }
     .catalog--active {
-        left: 0%;
+        left: 0px;
+    }
+    .page {
+        position: relative;
+        transition: .4s;
+    }
+    .page--active {
+        left: 100px;
+        transition: .4s;
     }
     
 /* ========= end ========== */
@@ -345,6 +357,10 @@ body {
 /* ========= Главная страница ========= */
 #header {
     position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 1920px;
+    margin: 0 auto;
     width: 100%;
     background-color: #fff;
     z-index: 9999;
@@ -436,7 +452,7 @@ body {
 }
 .catalog--menu {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 .one {
@@ -445,7 +461,7 @@ body {
 }
 .two {
     width: 140px;
-    height: 58px;
+    height: 62px;
 }
 .menu--item img {
     width: 100%;
@@ -612,6 +628,7 @@ body {
 
 /* ===================  Main slider ============== */
 #main--slider {
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     padding: 290px 20px 20px;
@@ -741,7 +758,9 @@ body {
 
 /* ============  Второй слайдер  ============== */
 .products--sliders {
-    margin: 0 30px;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 .products--sliders--title {
     font-family: 'MyriadPro-SemiboldCond';
@@ -752,7 +771,7 @@ body {
 .product--slider {
     position: relative;
 }
-.product--slider:focus {
+.product--slider a:focus {
     outline: none;
 }
 .product--slider--img img {
@@ -783,14 +802,14 @@ body {
 .product--slider--cost span {
     font-size: 12px;
 }
-#no--cost {
+.product--slider--cost .no--cost {
     font-family: 'MyriadPro-Bold';
     font-size: 20px;
     color: #ad846b;
     margin: 0 7px;
     position: relative;
 }
-#no--cost::before {
+.product--slider--cost .no--cost::before {
     content: '';
     position: absolute;
     top: 8px;
@@ -819,11 +838,13 @@ body {
     color: #fff;
     background-color: green;
     border-radius: 50%;
-    padding: 5px 4px 2px 4px;
+    padding: 5px;
     margin-right: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 25px;
+    height: 25px;
 }
 .product--slider--date .not--active {
     background-color: #d1d3d4;
@@ -836,6 +857,7 @@ body {
     border-radius: 2px;
     outline: none;
     color: #000;
+    display: flex;
 }
 #select option {
     font-family: 'MyriadPro-Regular';
@@ -869,6 +891,7 @@ body {
 /* =============    Video section   ============*/
 
 #video--section {
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     padding: 20px 0;
@@ -912,6 +935,7 @@ body {
     padding: 20px 20px 0 20px;
 }
 #books--section {
+    max-width: 1920px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -974,6 +998,7 @@ body {
 
 /* ============ Our fermers ============ */
 #our--fermers {
+    max-width: 1920px;
     width: 100%;
     margin: 30px auto 10px;
     background-image: url(../img/fermer--back.png);
@@ -1053,6 +1078,7 @@ body {
 
 /* ================== About setion ================== */
 #quations {
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     padding: 20px;
@@ -1079,6 +1105,7 @@ body {
 
 /* ==============   Catalog section  =========== */
 #catalog--section {
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     padding: 20px 20px 0;
@@ -1098,18 +1125,26 @@ body {
 .padding--bot {
     padding: 10px 0;
 }
-.catalog--title {
+.catalog--title a{
     font-family: 'MyriadPro-Bold';
     font-size: 15px;
     color: #6d3214;
     line-height: 15px;
 }
+.catalog--title a:hover {
+    text-decoration: underline;
+}
 .catalog--text {
+    padding: 5px 0 0 27px;
+}
+.catalog--text a {
     font-family: 'MyriadPro-Regular';
     font-size: 14px;
     color: #6d3214;
-    padding: 5px 0 0 27px;
     line-height: 14px;
+}
+.catalog--text a:hover {
+    text-decoration: underline;
 }
 .catalog--link  {
     font-family: 'MyriadPro-Regular';
@@ -1121,6 +1156,7 @@ body {
     text-decoration: underline;
 }
 #invite--friend {
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
@@ -1152,6 +1188,7 @@ body {
 
 /* =================    Footer section    =================== */
 #footer {
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     padding: 20px 20px 0;

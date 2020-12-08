@@ -13,19 +13,35 @@ close_menu.onclick = function() {
 
 // Клик на каталог меню:
 
-$(document).click( function(e){
-  if ($(e.target).closest('.mob--catalog').length) {
-      // клик внутри элемента
-      $('.menu--catalog--mob').addClass('catalog--active'); 
-      return;
-  }
-  // клик снаружи элемента 
-  else if($(e.target).closest('.menu--catalog--mob').length){
-      $('.menu--catalog--mob').addClass('catalog--active'); 
-      return;
-  }    
-      $('.menu--catalog--mob').removeClass('catalog--active');
+// $(document).click( function(e){
+//   if ($(e.target).closest('.mob--catalog').length) {
+//       // клик внутри элемента
+//       $('.menu--catalog--mob').animate({left: '0'});
+//       $('.page').animate({left: '100px'});
+//       return;
+//   }
+//   // клик снаружи элемента 
+//   else if($(e.target).closest('.menu--catalog--mob').length){
+//       return;
+//   }    
+//       $('.menu--catalog--mob').animate({left: '-100px'});
+//       $('.page').animate({left: '0'});
+// });
+
+$('.mob--catalog').on('click', function() {
+  
+    if($('.page').hasClass('page--extra')) {
+      $('.page').animate({left: '100px'});
+      $('.menu--catalog--mob').animate({left: '0'});
+      $('.page').removeClass('page--extra');
+    }
+    else {
+      $('.page').animate({left: '0'});
+      $('.menu--catalog--mob').animate({left: '-100px'});
+      $('.page').addClass('page--extra');
+    }
 });
+
 
 // Главный большой слайдер:
 
@@ -83,7 +99,6 @@ $('.product--slider--container').slick({
 });
 
 // Слайдер "Наши фермеры":
-
 $('.fermers--slider').slick({
     infinite: true,
     dots: false,
