@@ -330,6 +330,7 @@ body {
         width: 100%;
     }
     .menu--catalog--mob {
+        display: none;
         width: 100px;
         height: 100%;
         padding: 8px 0;
@@ -345,10 +346,6 @@ body {
     }
     .page {
         position: relative;
-        transition: .4s;
-    }
-    .page--active {
-        left: 100px;
         transition: .4s;
     }
     
