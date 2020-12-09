@@ -846,7 +846,7 @@ body {
 .product--slider--date .not--active {
     background-color: #d1d3d4;
 }
-#select {
+.select {
     font-family: 'MyriadPro-Regular';
     font-size: 14px;
     padding: 4px 10px 2px;
@@ -856,7 +856,7 @@ body {
     color: #000;
     display: flex;
 }
-#select option {
+.select option {
     font-family: 'MyriadPro-Regular';
     font-size: 14px;
     color: #000;
@@ -912,10 +912,19 @@ body {
 .play--video {
     position: absolute;
     top: 50%;
+    width: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
     text-align: center;
+}
+#my--video {
+    position: absolute;
+    height: 222px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 .video--img {
     height: 350px;

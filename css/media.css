@@ -137,7 +137,7 @@
     .right--block {
         height: 200px;
     }
-    #select {
+    .select {
         padding: 4px 0 2px;
     }
     .right--menu {
@@ -303,8 +303,8 @@
         width: 18px;
         height: 17px;
     }
-    #select,
-    #select option
+    .select,
+    .select option
      {
         font-size: 9px;
         border: 1px solid #c1c5c8;
@@ -369,11 +369,11 @@
         margin-right: 2px;
         padding: 3px;
     }
-    #select {
+    .select {
         font-size: 8px;
         padding: 2px 0 0;
     }
-    #select option {
+    .select option {
         font-size: 8px;
     }
     .icons span {
@@ -443,7 +443,7 @@
     .mobile--catalog {
         padding: 14px 15px 14px 8px;
     }
-    #select {
+    .select {
         display: flex;
         align-items: center;
     }

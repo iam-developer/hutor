@@ -11,22 +11,19 @@ close_menu.onclick = function() {
   menu.classList.toggle("show--menu");
 }
 
-// Клик на каталог меню:
+// Видео:
+// const playVideo = document.querySelector('.play--video');
+// const video = document.querySelector('#my--video');
 
-// $(document).click( function(e){
-//   if ($(e.target).closest('.mob--catalog').length) {
-//       // клик внутри элемента
-//       $('.menu--catalog--mob').animate({left: '0'});
-//       $('.page').animate({left: '100px'});
-//       return;
-//   }
-//   // клик снаружи элемента 
-//   else if($(e.target).closest('.menu--catalog--mob').length){
-//       return;
-//   }    
-//       $('.menu--catalog--mob').animate({left: '-100px'});
-//       $('.page').animate({left: '0'});
+// playVideo.addEventListener('click',function(){
+//   video.play();
 // });
+
+// btnStop.addEventListener('click',function(){
+//   videoideo.pause();
+// });
+
+// Клик на каталог меню:
 
 $('.mob--catalog').on('click', function() {
   
