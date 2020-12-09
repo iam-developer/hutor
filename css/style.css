@@ -771,6 +771,9 @@ body {
 .product--slider a:focus {
     outline: none;
 }
+.product--slider:focus {
+    outline: none;
+}
 .product--slider--img img {
     max-width: 82%;
     margin: 12px 0 0 8px;
@@ -912,7 +915,6 @@ body {
 .play--video {
     position: absolute;
     top: 50%;
-    width: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
