@@ -1282,7 +1282,7 @@ body {
 .catalog--products {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 280px 20px 320px;
+    padding: 280px 20px 90px;
 }
 .catalog--prod--title {
     font-family: 'MyriadPro-Bold';
