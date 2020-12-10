@@ -518,7 +518,6 @@ body {
     justify-content: center;
     align-items: flex-start;
     padding-bottom: 5px;
-    flex-wrap: wrap;
 }
 .product--detail {
     text-align: center;

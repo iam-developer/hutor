@@ -11,18 +11,6 @@ close_menu.onclick = function() {
   menu.classList.toggle("show--menu");
 }
 
-// Видео:
-// const playVideo = document.querySelector('.play--video');
-// const video = document.querySelector('#my--video');
-
-// playVideo.addEventListener('click',function(){
-//   video.play();
-// });
-
-// btnStop.addEventListener('click',function(){
-//   videoideo.pause();
-// });
-
 // Клик на каталог меню:
 
 $('.mob--catalog').on('click', function() {
@@ -39,6 +27,17 @@ $('.mob--catalog').on('click', function() {
     }
 });
 
+// Скрывать картинки каталога товаров при скроле экран:
+
+$(document).ready(function() {
+  $(window).on('scroll', function() {
+    console.log('Scrolled!');
+      $('.product--image').addClass('no--img');
+      if ($(this).scrollTop() == 0) {
+          $('.product--image').removeClass('no--img');
+      }
+  });
+});
 
 // Главный большой слайдер:
 
@@ -126,13 +125,14 @@ $('.fermers--slider').slick({
     ]
 });
 
-// Скрывать картинки каталога товаров при скроле экран:
+// Видео:
+// const playVideo = document.querySelector('.play--video');
+// const video = document.querySelector('#my--video');
 
-$(document).ready(function() {
-    $(window).on('scroll', function() {
-        $('.product--image').addClass('no--img');
-        if ($(this).scrollTop() == 0) {
-            $('.product--image').removeClass('no--img');
-        }
-    });
-});
+// playVideo.addEventListener('click',function(){
+//   video.play();
+// });
+
+// btnStop.addEventListener('click',function(){
+//   videoideo.pause();
+// });
