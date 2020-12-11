@@ -39,7 +39,6 @@
         padding: 0 10px;
     }
     .product--detail div {
-        width: 60px;
         height: 60px;
     }
     .product--detail .pod--menu {
@@ -111,6 +110,23 @@
     .center--block {
         height: 230px;
     }
+    .check--block--right {
+        justify-content: center;
+    }
+    .check--block--item {
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .check--block--right {
+        justify-content: center;
+    }
+    .check--block--left {
+        width: 25%;
+    }
+    .check--block--right {
+        width: 75%;
+    }
 }
 @media screen and (max-width: 996px) {
     .search--input {
@@ -164,7 +180,6 @@
 }
 @media screen and (max-width: 862px) {
     .product--detail div {
-        width: 48px;
         height: 50px;
     }
     .center--slider,
@@ -186,6 +201,9 @@
     }
     #main--slider {
         padding-top: 220px;
+    }
+    .menu--fixed div {
+        width: 60px;
     }
 }
 @media screen and (max-width: 830px) {
@@ -211,6 +229,9 @@
     .fermer p {
         bottom: 26px;
     }
+    .menu--fixed div {
+        width: 51px;
+    }
 }
 @media screen and (max-width: 767px) {
     .menu--catalog--mob {
@@ -221,7 +242,7 @@
         line-height: 7px;
     }
     .product--image--mob img {
-        width: 50%;
+        width: 40%;
     }
     .hehe img {
         width: 27%;
@@ -289,10 +310,41 @@
     .catalog--products {
         padding: 30px 20px 70px;
     }
+    .catalog--product--moloko {
+        flex-direction: column;
+    }
+    .check--block--right,
+    .check--block--left {
+        width: 100%;
+    }
+    .check--block--left {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .check--border--block {
+        padding: 7px;
+        width: 166px;
+        margin-top: 20px;
+    }
+    #ferma {
+        padding: 4px 10px 4px 4px;
+    }
+    .block--check {
+        padding-left: 0;
+    }
 }
 @media screen and (max-width: 590px) {
     .bloock {
         left: 24px;
+    }
+    .check--block--item {
+        width: 240px;
+        height: 300px;
+        padding: 25px 30px 0 26px;;
+    }
+    .check--block--right {
+        justify-content: space-around;
     }
 }
 @media screen and (max-width: 576px) {
@@ -330,6 +382,9 @@
     }
 }
 @media screen and (max-width: 540px) {
+    .block--check {
+        padding-right: 5px;
+    }
     .catalog--product--content {
         width: 130px;
     }
@@ -348,6 +403,9 @@
     }
     .catalog--products {
         padding: 30px 10px 70px;
+    }
+    .catalog--moloko {
+        padding-bottom: 20px;
     }
 }
 @media screen and (max-width: 520px) {
@@ -405,6 +463,27 @@
     .play--video img {
         width: 60%;
     }
+    .check--block--item {
+        width: 180px;
+        height: 210px;
+    }
+    .check--block--right {
+        justify-content: space-around;
+    }
+    .check--item--extra {
+        line-height: 10px;
+        font-size: 10px;
+    }
+    .product--slider--num,
+    .check--flex {
+        align-items: flex-start;
+    }
+    .check--item--korzina img {
+        max-width: 74%;
+    }
+    .check--block--item {
+        padding: 17px 30px 0 26px;
+    }
 }
 @media screen and (max-width: 450px) {
     .product--slider--title {
@@ -440,6 +519,9 @@
         width: 13px;
         height: 12px;
         font-size: 7px;
+    }
+    .check--block--right {
+        justify-content: space-between;
     }
 }
 @media screen and (max-width: 430px) {
@@ -485,6 +567,15 @@
     }
     .product--image--mob img {
         width: 37%;
+    }
+    .check--block--item {
+        width: 135px;
+        height: 170px;
+        padding: 14px 18px 0 20px;
+    }
+    .check--item--extra {
+        font-size: 8px;
+        line-height: 8px;
     }
 }
 @media screen and (max-width: 390px) {
@@ -539,6 +630,9 @@
     }
     .catalog--prod--title {
         font-size: 27px;
+    }
+    .product--image--mob img {
+        width: 33%;
     }
 }
 @media screen and (max-width: 360px) {
