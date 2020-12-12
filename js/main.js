@@ -125,6 +125,20 @@ $('.fermers--slider').slick({
     ]
 });
 
+// Слайдер для страницы "Карточка товара":
+
+
+$('.kartochka--slider--container').slick({
+  infinite: true,
+  dots: true,
+  arrow: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  autoplay:true,
+  autoplaySpeed:1800
+});
+
 // Видео:
 // const playVideo = document.querySelector('.play--video');
 // const video = document.querySelector('#my--video');

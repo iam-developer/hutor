@@ -1441,3 +1441,211 @@ body {
 .check--item--korzina img {
     cursor: pointer;
 }
+
+/* =================== Страница "Карточка товара"   =============== */
+.kartochka--tovara {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 260px 20px 20px;
+}
+.kartochka--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.kartochka--left,
+.kartochka--right {
+    width: 50%;
+}
+.kartochka--slide {
+    padding: 0 20px;
+    outline: none;
+}
+.kartochka--slide img {
+    max-width: 100%;
+}
+.kartochka--slider {
+    position: relative;
+}
+.top--left {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    z-index: 1;
+}
+.bottom--right {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    z-index: 1;
+}
+.date--slide {
+    position: absolute;
+    bottom: 45px;
+    left: -10px;
+    z-index: 1;
+}
+.span-date {
+    background-image: url(../img/day--back.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'MyriadPro-Bold';
+    font-size: 28px;
+    width: 180px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 7px 10px;
+}
+.kartochka--slider--container .slick-dots {
+    right: 110px;
+    bottom: -20px;
+}
+.kartochka--right--links {
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.kartochka--right--block {
+    padding: 20px 0 0 20px
+}
+.kartochka--right--links a {
+    font-family: 'MyriadPro-Regular';
+    font-size: 16px;
+    color: #6d3214;
+    transition: .3s;
+}
+.kartochka--right--links a:hover {
+    color: #c5551d;
+}
+.kartochka--right--title {
+    font-family: 'MyriadPro-Bold';
+    font-size: 30px;
+    line-height: 30px;
+    color: #6d3214;
+    margin: 5px 0 0;
+}
+.kartochka--text {
+    font-family: 'MyriadPro-Regular';
+    font-size: 16px;
+    color: #6d3214;
+    padding-top: 30px;
+}
+.kartochka--cost {
+    font-family: 'MyriadPro-Bold';
+    font-size: 60px;
+    padding: 20px 0 10px;
+    color: #6d3214;
+}
+.kartochka--cost span {
+    font-size: 32px;
+    font-family: 'MyriadPro-Regular';
+}
+.kartochka--order {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.kartochka--order--title {
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+}
+#buy--select {
+    border: 1px solid #c1c5c8;
+    padding: 4px;
+    margin: 0 6px;
+    outline: none;
+}
+.add--korzina {
+    font-family: 'MyriadPro-Bold';
+    font-size: 14px;
+    color: #fff;
+    background: linear-gradient(to bottom, #dcddb5, #afb08e);
+    padding: 5px 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.add--korzina:hover {
+    background: linear-gradient(to bottom, #afb08e, #dcddb5);
+}
+.kartochka--order--links span {
+    cursor: pointer;
+    margin-right: 4px;
+}
+.kartochka--order--links span:first-child img {
+    max-width: 32%;
+}
+.kartochka--order--links span:last-child img {
+    max-width: 40%;
+}
+.kartochka--buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+.kartochka--buttons a {
+    font-family: 'MyriadPro-Regular';
+    font-size: 16px;
+    color: #6d3214;
+    border: 1px solid #6d3214;
+    margin: 0 3px;
+    padding: 5px 0 2px;
+    width: 180px;
+    text-align: center;
+    transition: .3s;
+}
+.kartochka--buttons a:hover {
+    color: #c5551d;
+    border: 1px solid #c5551d;
+}
+.kartochka--video--block {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 20px 0 20px 20px;
+}
+.kartochka--video video:focus {
+    outline: none;
+}
+.kartochka--video--right {
+    border-bottom: 1px solid #6d3214;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+.kartochka--video--title {
+    font-family: 'MyriadPro-Bold';
+    font-size: 16px;
+    color: #6d3214;
+    margin-top: 4px;
+}
+.kartochka--video--text {
+    font-family: 'MyriadPro-Regular';
+    font-size: 16px;
+    color: #6d3214;
+    margin: 2px 0 7px
+}
+.kartochka--video,
+.kart--right {
+    width: 50%;
+}
+.kartochka--video {
+    margin-top: 6px;
+    margin-right: 20px;
+}
+.video--links a {
+    font-family: 'MyriadPro-Regular';
+    font-size: 16px;
+    color: #6d3214;
+    transition: .3s;
+    margin: 2px 0;
+}
+.video--links a:hover {
+    color: #c5551d;
+}
+.video--links {
+    margin-left: 38px;
+}

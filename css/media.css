@@ -104,6 +104,12 @@
     .book--text2 {
         padding: 14px 40px 0 14px;
     }
+    .kartochka--tovara {
+        padding: 240px 20px 20px;
+    }
+    .kartochka--right--block {
+        padding: 8px 0 0 20px;
+    }
 }
 @media screen and (max-width: 1040px) {
     .center--slider,
@@ -146,6 +152,28 @@
     .video--img,
     .video--block {
         height: 222px;
+    }
+    .kartochka--cost {
+        font-size: 40px;
+    }
+    .kartochka--cost span {
+        font-size: 24px;
+    }
+    .kartochka--buttons a {
+        font-size: 14px;
+    }
+    .kartochka--right--title {
+        font-size: 27px;
+        line-height: 27px;
+    }
+    .span-date {
+        font-size: 18px;
+        width: 150px;
+        padding: 5px 10px;
+    }
+    .date--slide {
+        bottom: 20px;
+        left: 0;
     }
 }
 @media screen and (max-width: 970px) {
@@ -231,6 +259,9 @@
     }
     .menu--fixed div {
         width: 51px;
+    }
+    .kartochka--tovara {
+        padding: 210px 20px 20px;
     }
 }
 @media screen and (max-width: 767px) {
@@ -331,6 +362,27 @@
         padding: 4px 10px 4px 4px;
     }
     .block--check {
+        padding-left: 0;
+    }
+    .kartochka--tovara {
+        padding: 40px 20px 20px;
+    }
+    .kartochka--container {
+        flex-direction: column;
+    }
+    .kartochka--left,
+    .kartochka--right,
+    .kart--right {
+        width: 100%;
+    }
+    .kartochka--video {
+        width: 100%;
+        padding-right: 20px;
+    }
+    .video--links {
+        margin-left: 10px;
+    }
+    .kartochka--right--block {
         padding-left: 0;
     }
 }
@@ -508,6 +560,22 @@
     .product--slider--icons {
         margin-left: 0;
     }
+    .bottom--right,
+    .top--left {
+        width: 22%;
+    }
+    .bottom--right {
+        right: 0;
+        bottom: -10px;
+    }
+    .span-date {
+        font-size: 12px;
+        width: 112px;
+        margin-bottom: 5px;
+    }
+    .kartochka--slider--container .slick-dots {
+        bottom: -27px;
+    }
 }
 @media screen and (max-width: 440px) {
     .bloock {
@@ -550,6 +618,17 @@
     .extra .product--slider--title {
         line-height: 10px;
         padding-right: 10px;
+    }
+}
+@media screen and (max-width: 410px) {
+    .kartochka--tovara {
+        padding: 40px 10px 20px;
+    }
+    .kartochka--order {
+        flex-wrap: wrap;
+    }
+    .kartochka--order {
+        height: 75px;
     }
 }
 @media screen and (max-width: 400px) {
