@@ -1530,7 +1530,7 @@ body {
     font-family: 'MyriadPro-Regular';
     font-size: 16px;
     color: #6d3214;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 .kartochka--cost {
     font-family: 'MyriadPro-Bold';
@@ -1588,18 +1588,19 @@ body {
     align-items: center;
     margin-top: 20px;
 }
-.kartochka--buttons a {
+.kartochka--buttons span {
     font-family: 'MyriadPro-Regular';
     font-size: 16px;
     color: #6d3214;
     border: 1px solid #6d3214;
+    cursor: pointer;
     margin: 0 3px;
     padding: 5px 0 2px;
     width: 180px;
     text-align: center;
     transition: .3s;
 }
-.kartochka--buttons a:hover {
+.kartochka--buttons span:hover {
     color: #c5551d;
     border: 1px solid #c5551d;
 }
@@ -1627,6 +1628,28 @@ body {
     font-size: 16px;
     color: #6d3214;
     margin: 2px 0 7px
+}
+.plus--minus {
+    padding: 3px 5px;
+    border: 1px solid #c1c5c8;
+    border-radius: 3px;
+    margin: 0 4px;
+}
+.plus--minus span {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 5px;
+}
+.kartochka--img {
+    position: relative;
+}
+.kartochka--name {
+    position: absolute;
+    bottom: 22px;
+    left: 14px;
+    font-family: 'MyriadPro-Bold';
+    font-size: 14px;
+    color: #6d3214;
 }
 .kartochka--video,
 .kart--right {
