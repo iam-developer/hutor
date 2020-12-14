@@ -205,6 +205,23 @@
     .center--block {
         height: 200px;
     }
+    .zakazy--container {
+        flex-direction: column;
+        padding: 0;
+    }
+    .zakazy--block {
+        width: 100%;
+    }
+    .zakaz--title {
+        border-top: 1px solid #c1c5c8;
+        padding: 7px 10px 7px;
+    }
+    .zakaz--txt {
+        padding: 2px 10px 5px;
+    }
+    .profile--container {
+        padding-right: 0;
+    }
 }
 @media screen and (max-width: 862px) {
     .product--detail div {
@@ -262,6 +279,9 @@
     }
     .kartochka--tovara {
         padding: 210px 20px 20px;
+    }
+    .profile--block {
+        margin-right: 15px;
     }
 }
 @media screen and (max-width: 767px) {
@@ -385,6 +405,15 @@
     .kartochka--right--block {
         padding-left: 0;
     }
+    .own--room {
+        padding: 30px 20px 20px;
+    }
+    .profile--container {
+        flex-direction: column;
+    }
+    .profile--block {
+        width: 70%;
+    }
 }
 @media screen and (max-width: 590px) {
     .bloock {
@@ -432,6 +461,18 @@
     .fermer {
         margin: 0 5px;
     }
+    .profile--block {
+        width: 100%;
+    }
+    .own--room {
+        padding: 30px 10px 20px;
+    }
+    .profile--block {
+        margin-right: 0;
+    }
+    .my--balane {
+        padding-left: 28px;
+    }
 }
 @media screen and (max-width: 540px) {
     .block--check {
@@ -458,6 +499,9 @@
     }
     .catalog--moloko {
         padding-bottom: 20px;
+    }
+    .my--balance--icon span {
+        font-size: 21px;
     }
 }
 @media screen and (max-width: 520px) {
@@ -540,6 +584,9 @@
     .check--block--item {
         padding: 22px 30px 0 26px;
     }
+    .form--block {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 450px) {
     .product--slider--title {
@@ -575,6 +622,18 @@
     }
     .kartochka--slider--container .slick-dots {
         bottom: -27px;
+    }
+    .input--focus input, .input--focus {
+        width: auto;
+    }
+    #tel--width {
+        width: 181px;
+    }
+    .input--focus textarea {
+        width: 181px;
+    }
+    .input--focus3 {
+        width: 181px;
     }
 }
 @media screen and (max-width: 440px) {
@@ -718,6 +777,14 @@
         width: 33%;
     }
 }
+@media screen and (max-width: 363px) {
+    #tel--width {
+        width: 100%;
+    }
+    .selectator_element.single {
+        margin-left: 8px;
+    }
+}
 @media screen and (max-width: 360px) {
     .catalog--product--block {
         width: 145px;
@@ -728,6 +795,12 @@
     }
     .catalog--product--title {
         padding-top: 0;
+    }
+    .profile--container {
+        padding-left: 0;
+    }
+    .zakazy--container {
+        margin-left: 0;
     }
 }
 @media screen and (max-width: 358px) {

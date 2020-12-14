@@ -31,13 +31,13 @@ $('.mob--catalog').on('click', function() {
 
 $(document).ready(function() {
   $(window).on('scroll', function() {
-    console.log('Scrolled!');
       $('.product--image').addClass('no--img');
       if ($(this).scrollTop() == 0) {
           $('.product--image').removeClass('no--img');
       }
   });
 });
+
 
 // Главный большой слайдер:
 
@@ -127,7 +127,6 @@ $('.fermers--slider').slick({
 
 // Слайдер для страницы "Карточка товара":
 
-
 $('.kartochka--slider--container').slick({
   infinite: true,
   dots: true,
@@ -139,14 +138,53 @@ $('.kartochka--slider--container').slick({
   autoplaySpeed:1800
 });
 
-// Видео:
-// const playVideo = document.querySelector('.play--video');
-// const video = document.querySelector('#my--video');
+// Страница "Личный кабинет" слайдер
+$('.accordion--slider').slick({
+  infinite: true,
+  dots: false,
+  arrow: false,
+  prevArrow:"<img class='left--arrow' src='/hutor/img/left-btn.png'>",
+  nextArrow:"<img class='right--arrow accordionArrow' src='/hutor/img/right-btn.png'>",
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  responsive: [
+      {
+        breakpoint: 1320,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 1094,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+          }
+        }
+    ]
+});
 
-// playVideo.addEventListener('click',function(){
-//   video.play();
-// });
 
-// btnStop.addEventListener('click',function(){
-//   videoideo.pause();
-// });
+// Страница "Личный кабинет". Функция для аккордион:
+
+$('.accordeon--item').click(function() {
+  $(this).next().slideToggle();
+  $(this).find('.icon--left').toggleClass('active--icon');
+});
+
+$('.sliderBtn').on('click', function() {
+  $(this).next().slideToggle();
+  $(this).find('.icon--left').toggleClass('active--icon');
+  if($(this).hasClass('ha')) {
+    $('.accordionArrow').click();
+  }
+  $(this).removeClass('ha');
+});
+
+
+
