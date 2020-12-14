@@ -186,5 +186,27 @@ $('.sliderBtn').on('click', function() {
   $(this).removeClass('ha');
 });
 
+// Содержимое:
+
+$('.show--sod1').click(function() {
+  $('.show--sod').removeClass('act');
+  $(this).addClass('act');
+  $('.kartochka--video--right').removeClass('soderjimoe--active');
+  $('.soderjimoe1').addClass('soderjimoe--active');
+});
+
+$('.show--sod2').click(function() {
+  $('.show--sod').removeClass('act');
+  $(this).addClass('act');
+  $('.kartochka--video--right').removeClass('soderjimoe--active');
+  $('.soderjimoe2').addClass('soderjimoe--active');
+});
+
+$('.show--sod3').click(function() {
+  $('.show--sod').removeClass('act');
+  $(this).addClass('act');
+  $('.kartochka--video--right').removeClass('soderjimoe--active');
+  $('.soderjimoe3').addClass('soderjimoe--active');
+});
 
 

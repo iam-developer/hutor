@@ -1508,7 +1508,7 @@ body {
     text-decoration: underline;
 }
 .kartochka--right--block {
-    padding: 20px 0 0 20px
+    padding: 0 0 0 20px
 }
 .kartochka--right--links a,
 .kartochka--right--links span {
@@ -1536,7 +1536,7 @@ body {
 .kartochka--cost {
     font-family: 'MyriadPro-Bold';
     font-size: 60px;
-    padding: 20px 0 10px;
+    padding: 5px 0 5px;
     color: #6d3214;
 }
 .kartochka--cost span {
@@ -1605,6 +1605,10 @@ body {
     color: #c5551d;
     border: 1px solid #c5551d;
 }
+.show--sod.act {
+    color: #c5551d;
+    border: 1px solid #c5551d;
+}
 .kartochka--video--block {
     max-width: 1920px;
     margin: 0 auto;
@@ -1617,6 +1621,10 @@ body {
     border-bottom: 1px solid #6d3214;
     padding-right: 20px;
     margin-bottom: 10px;
+    display: none;
+}
+.soderjimoe--active {
+    display: block;
 }
 .kartochka--video--title {
     font-family: 'MyriadPro-Bold';
@@ -1646,11 +1654,14 @@ body {
 }
 .kartochka--name {
     position: absolute;
-    bottom: 22px;
-    left: 14px;
+    bottom: 16px;
+    left: 8px;
     font-family: 'MyriadPro-Bold';
-    font-size: 14px;
+    font-size: 10px;
     color: #6d3214;
+}
+.author {
+    width: 21%;
 }
 .kartochka--video,
 .kart--right {

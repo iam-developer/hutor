@@ -288,6 +288,14 @@
     .menu--catalog--mob {
         display: block;
     }
+    .author {
+        width: auto;
+    }
+    .kartochka--name {
+        font-size: 13px;
+        left: 16px;
+        bottom: 22px;
+    }
     .product--detail p {
         font-size: 8px;
         line-height: 7px;
@@ -398,6 +406,7 @@
     .kartochka--video {
         width: 100%;
         padding-right: 20px;
+        order: 1;
     }
     .video--links {
         margin-left: 10px;
