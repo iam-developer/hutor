@@ -415,6 +415,9 @@
     .own--room {
         padding: 30px 20px 20px;
     }
+    .zakazy--container {
+        margin: 0;
+    }
     .profile--container {
         flex-direction: column;
         padding: 0;
