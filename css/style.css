@@ -1716,9 +1716,9 @@ body {
     color: #c5551d;
 }
 .active--icon {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     position: relative;
-    top: -4px;
+    top: -2px;
 }
 .add--btn {
     cursor: pointer;
@@ -1824,6 +1824,7 @@ body {
     border: 1px solid #c1c5c8;
     width: 100%;
     margin: 10px 0;
+    background: transparent;
 }
 #quation--item:focus {
     outline: none;
