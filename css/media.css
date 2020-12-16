@@ -404,9 +404,7 @@
         width: 100%;
     }
     .kartochka--video {
-        width: 100%;
-        padding-right: 20px;
-        order: 1;
+        display: none;
     }
     .video--links {
         margin-left: 10px;
@@ -419,6 +417,7 @@
     }
     .profile--container {
         flex-direction: column;
+        padding: 0;
     }
     .profile--block {
         width: 70%;
