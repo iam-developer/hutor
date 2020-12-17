@@ -5,10 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Личный кабинет</title>
+    <title>Карточка товара</title>
     <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/slick-theme.css">
-    <link rel="stylesheet" href="../css/selectator.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/media.css">
 </head>
@@ -859,522 +858,172 @@
             </div>
         </header>
         
-        <section class="own--room">
-            <div class="kartochka--right--links">
+        <main id="oformlenie--zakaza">
+            <div class="kartochka--right--links oform--links">
                 <a href="../">Главная / </a>
-                <span>Личный кабинет /</span>
+                <a href="../">Личный кабинет / </a>
+                <span>Оформление заказа /</span>
             </div>
-            <div class="own--room--container">
-
-                <div class="own--room--item moiprofileBtn">
-                    <div class="accordeon--item">
-                        <div class="accordeon--arrow icon--left">&#9658;</div>
-                        <div class="accordeon--arrow pad__left">Мой профиль</div>
-                    </div>
-                    <div class="pofile hidden--block">
-                        <div class="profile--container">
-                            <div class="profile--block">
-                                <div class="profile--item">
-                                    <span class="accordeon--txt">Логин (мин. 3 символа):*</span>
-                                    <input type="text">
+            <div class="oformlenie--container">
+                <div class="oformlenie--left">
+                    <div class="oform--title">Оформление заказа</div>
+                    <div class="oform--border">
+                    <div class="oform--text">Персональные данные</div>
+                    <div class="form--block" id="oform--block">
+                        <form action="" id="form--quations">
+                            <div class="input--field">
+                                <div class="input--txt oform--form--txt">
+                                    Ф.И.О:*
                                 </div>
-                                <div class="profile--item">
-                                    <span class="accordeon--txt">Имя:</span>
-                                    <input type="text">
-                                </div>
-                                <div class="profile--item">
-                                    <span class="accordeon--txt">Фамилия:</span>
-                                    <input type="text">
-                                </div>
-                                <div class="profile--item">
-                                    <span class="accordeon--txt">Отечество:</span>
+                                <div class="input--focus">
                                     <input type="text">
                                 </div>
                             </div>
-                            <div class="profile--block">
-                                <div class="profile--item">
-                                    <span class="accordeon--txt">Основной E-mail:*</span>
+                            <div class="input--field">
+                                <div class="input--txt oform--form--txt">
+                                    E-Mail:*
+                                </div>
+                                <div class="input--focus">
                                     <input type="email">
                                 </div>
-                                <div class="profile--item">
-                                    <span class="accordeon--txt">Новый пароль:</span>
-                                    <input type="password">
-                                </div>
-                                <div class="profile--item">
-                                    <span class="accordeon--txt">Подтверждение нового пароля:</span>
-                                    <input type="password">
-                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="own--room--item">
-                    <div class="accordeon--item">
-                        <div class="accordeon--arrow icon--left">&#9658;</div>
-                        <div class="accordeon--arrow pad__left">Мои адреса и телефоны</div>
-                    </div>
-                    <div class="hidden--block">
-                        <div class="profile--container">
-                            <div class="profile--block">
-                                <div class="profile--item">
-                                    <span class="accordeon--txt">Адрес доставки 1:</span>
-                                    <input type="text">
+                            <div class="input--field">
+                                <div class="input--txt oform--form--txt">
+                                    Телефон:*
                                 </div>
-                                <div class="profile--item">
-                                    <span class="accordeon--txt">Адрес доставки 2:</span>
-                                    <input type="text">
-                                </div>
-                                <div class="profile--item">
-                                    <span class="accordeon--txt add--btn">Добавить адрес</span>
-                                </div>
-                            </div>
-                            <div class="profile--block">
-                                <div class="profile--item">
-                                    <span class="accordeon--txt">Телефон 1:</span>
+                                <div class="input--focus">
                                     <input type="tel">
                                 </div>
-                                <div class="profile--item">
-                                    <span class="accordeon--txt">Телефон 2:</span>
-                                    <input type="tel">
+                            </div>
+                            <div class="input--field textarea--center">
+                                <div class="input--txt oform--form--txt">
+                                    Комментарий к доставке:
                                 </div>
-                                <div class="profile--item">
-                                    <span class="accordeon--txt add--btn">Добавить телефон</span>
+                                <div class="input--focus">
+                                    <textarea name="" id="comments" cols="20" rows="7"></textarea>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
-                </div>
+                    <div class="oform--checkbox--txt">
+                        <label for="oform--checkbox1">Подписаться на рассылку</label>
+                        <input type="checkbox" name="" id="oform--checkbox1" >
+                    </div>
+                    <div class="oform--checkbox--txt">
+                        <label for="oform--checkbox2">Проверить, что сумма заказа больше 4000 рублей:</label>
+                        <input type="checkbox" name="" id="oform--checkbox2" >
+                    </div>
+                    <div class="oform--checkbox--txt">
+                        <label for="oform--checkbox3">Выслать СМС с окончательной суммой заказа в день доставки:</label>
+                        <input type="checkbox" name="" id="oform--checkbox3" >
+                    </div>
+                    <div class="oform--checkbox--txt">
+                        <label for="oform--checkbox4">Подтвердить заказ по СМС, не звонить</label>
+                        <input type="checkbox" name="" id="oform--checkbox4" >
+                    </div>
 
-                <div class="own--room--item moizakazy__btn">
-                    <div class="accordeon--item">
-                        <div class="accordeon--arrow icon--left">&#9658;</div>
-                        <div class="accordeon--arrow pad__left">Мои заказы</div>
-                    </div>
-                    <div class="hidden--block">
-                        <div class="zakazy--container">
-                            <div class="zakazy--block">
-                                <div class="detail--zakaza">
-                                    <div class="accordeon--txt zakaz--title">Номер заказа</div>
-                                    <div class="zakaz--txt">
-                                        <span class="accordeon--txt">2511554122</span><br>
-                                        <span class="accordeon--txt">5563211447</span><br>
-                                    </div>
-                                </div>
-                                <div class="detail--zakaza">
-                                    <div class="accordeon--txt zakaz--title">Дата заказа</div>
-                                    <div class="zakaz--txt">
-                                        <span class="accordeon--txt">13.11.2020</span><br>
-                                        <span class="accordeon--txt">27.10.2020</span><br>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="zakazy--block">
-                                <div class="detail--zakaza">
-                                    <div class="accordeon--txt zakaz--title">Дата поставки:</div>
-                                    <div class="zakaz--txt">
-                                        <span class="accordeon--txt">13.11.2020</span><br>
-                                        <span class="accordeon--txt">27.10.2020</span><br>
-                                    </div>
-                                </div>
-                                <div class="detail--zakaza">
-                                    <div class="accordeon--txt zakaz--title">Адрес доставки</div>
-                                    <div class="zakaz--txt">
-                                        <span class="accordeon--txt">Дворцовая пл. 1 </span><br>
-                                        <span class="accordeon--txt">Московский пр. 1, кв.15</span><br>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="zakazy--block">
-                                <div class="detail--zakaza">
-                                    <div class="accordeon--txt zakaz--title">Номер телефона</div>
-                                    <div class="zakaz--txt">
-                                        <span class="accordeon--txt">+79215556884</span><br>
-                                        <span class="accordeon--txt">+79113658475</span><br>
-                                    </div>
-                                </div>
-                                <div class="detail--zakaza">
-                                    <div class="accordeon--txt zakaz--title">Промокод</div>
-                                    <div class="zakaz--txt">
-                                        <span class="accordeon--txt">-</span><br>
-                                        <span class="accordeon--txt">ИНСТАХУТОР</span><br>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="zakazy--block">
-                                <div class="detail--zakaza">
-                                    <div class="accordeon--txt zakaz--title">Статус</div>
-                                    <div class="zakaz--txt">
-                                        <span class="accordeon--txt">Подтвержен</span><br>
-                                        <span class="accordeon--txt">Доставлен</span><br>
-                                    </div>
-                                </div>
-                                <div class="detail--zakaza">
-                                    <div class="accordeon--txt zakaz--title">Состав заказа</div>
-                                    <div class="zakaz--txt">
-                                        <span class="accordeon--txt add--btn">Подробнее</span><br>
-                                        <span class="accordeon--txt add--btn">Подробнее</span><br>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="own--room--item slider--accordeon">
-                    <div class="sliderBtn ha">
-                        <div class="accordeon--arrow icon--left">&#9658;</div>
-                        <div class="accordeon--arrow pad__left">Интересные мне продукты</div>
-                    </div>
-                    <div class="hidden--block">
-                        <div class="products--sliders">
-                            <div class="accordion--slider">
-                                <div class="product--slider">
-                                    <img class="back--fon" src="../img/back-book.png" alt="">
-                                    <div class="bloock">
-                                        <a href="#">
-                                            <div class="product--slider--title">Форель радужная</div>
-                                            <div class="product--slider--img">
-                                                <img src="../img/slider1.png" alt="">
-                                            </div>
-                                            <div class="product--slider--cost">959р.<span>/1кг.</span></div>
-                                        </a>
-                                        <div class="product--slider--icons">
-                                            <div class="product--slider--date">
-                                                <span>ВТ</span>
-                                                <span class="not--active">ПТ</span>
-                                            </div>
-                                            <div class="product--slider--num">
-                                                <select name="select" class="select">
-                                                    <option value="value1" selected>0.20</option>
-                                                    <option value="value2">0.30</option>
-                                                    <option value="value3">0.40</option>
-                                                </select>
-                                            </div>
-                                            <div class="icons">
-                                                <span><img src="../img/slide--korzina.png" alt=""></span>
-                                                <span><img src="../img/slider-book.png" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product--slider">
-                                    <img class="back--fon" src="../img/back-book.png" alt="">
-                                    <div class="bloock">
-                                        <a href="#">
-                                            <div class="product--slider--title">Сырники домашние</div>
-                                            <div class="product--slider--img">
-                                                <img src="../img/slider2.png" alt="">
-                                            </div>
-                                            <div class="product--slider--cost">620р.<span>/1кг.</span></div>
-                                        </a>
-                                        <div class="product--slider--icons">
-                                            <div class="product--slider--date">
-                                                <span>ВТ</span>
-                                                <span>ПТ</span>
-                                            </div>
-                                            <div class="product--slider--num">
-                                                <select name="select" class="select">
-                                                    <option value="value1" selected>0.20</option>
-                                                    <option value="value2">0.30</option>
-                                                    <option value="value3">0.40</option>
-                                                </select>
-                                            </div>
-                                            <div class="icons">
-                                                <span><img src="../img/slide--korzina.png" alt=""></span>
-                                                <span><img src="../img/slider-book.png" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product--slider">
-                                    <img class="back--fon" src="../img/back-book.png" alt="">
-                                    <div class="bloock">
-                                        <a href="#">
-                                            <div class="product--slider--title">Сырники домашние</div>
-                                            <div class="product--slider--img">
-                                                <img src="../img/slider2.png" alt="">
-                                            </div>
-                                            <div class="product--slider--cost">620р.<span>/1кг.</span></div>
-                                        </a>
-                                        <div class="product--slider--icons">
-                                            <div class="product--slider--date">
-                                                <span>ВТ</span>
-                                                <span>ПТ</span>
-                                            </div>
-                                            <div class="product--slider--num">
-                                                <select name="select" class="select">
-                                                    <option value="value1" selected>0.20</option>
-                                                    <option value="value2">0.30</option>
-                                                    <option value="value3">0.40</option>
-                                                </select>
-                                            </div>
-                                            <div class="icons">
-                                                <span><img src="../img/slide--korzina.png" alt=""></span>
-                                                <span><img src="../img/slider-book.png" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product--slider">
-                                    <img class="back--fon" src="../img/back-book.png" alt="">
-                                    <div class="bloock">
-                                        <a href="#">
-                                            <div class="product--slider--title">Сырники домашние</div>
-                                            <div class="product--slider--img">
-                                                <img src="../img/slider2.png" alt="">
-                                            </div>
-                                            <div class="product--slider--cost">620р.<span>/1кг.</span></div>
-                                        </a>
-                                        <div class="product--slider--icons">
-                                            <div class="product--slider--date">
-                                                <span>ВТ</span>
-                                                <span>ПТ</span>
-                                            </div>
-                                            <div class="product--slider--num">
-                                                <select name="select" class="select">
-                                                    <option value="value1" selected>0.20</option>
-                                                    <option value="value2">0.30</option>
-                                                    <option value="value3">0.40</option>
-                                                </select>
-                                            </div>
-                                            <div class="icons">
-                                                <span><img src="../img/slide--korzina.png" alt=""></span>
-                                                <span><img src="../img/slider-book.png" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product--slider">
-                                    <img class="back--fon" src="../img/back-book.png" alt="">
-                                    <div class="bloock">
-                                        <a href="#">
-                                            <div class="product--slider--title">Сырники домашние</div>
-                                            <div class="product--slider--img">
-                                                <img src="../img/slider2.png" alt="">
-                                            </div>
-                                            <div class="product--slider--cost">620р.<span>/1кг.</span></div>
-                                        </a>
-                                        <div class="product--slider--icons">
-                                            <div class="product--slider--date">
-                                                <span>ВТ</span>
-                                                <span>ПТ</span>
-                                            </div>
-                                            <div class="product--slider--num">
-                                                <select name="select" class="select">
-                                                    <option value="value1" selected>0.20</option>
-                                                    <option value="value2">0.30</option>
-                                                    <option value="value3">0.40</option>
-                                                </select>
-                                            </div>
-                                            <div class="icons">
-                                                <span><img src="../img/slide--korzina.png" alt=""></span>
-                                                <span><img src="../img/slider-book.png" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product--slider">
-                                    <img class="back--fon" src="../img/back-book.png" alt="">
-                                    <div class="bloock">
-                                        <a href="#">
-                                            <div class="product--slider--title">Сырники домашние</div>
-                                            <div class="product--slider--img">
-                                                <img src="../img/slider2.png" alt="">
-                                            </div>
-                                            <div class="product--slider--cost">620р.<span>/1кг.</span></div>
-                                        </a>
-                                        <div class="product--slider--icons">
-                                            <div class="product--slider--date">
-                                                <span>ВТ</span>
-                                                <span>ПТ</span>
-                                            </div>
-                                            <div class="product--slider--num">
-                                                <select name="select" class="select">
-                                                    <option value="value1" selected>0.20</option>
-                                                    <option value="value2">0.30</option>
-                                                    <option value="value3">0.40</option>
-                                                </select>
-                                            </div>
-                                            <div class="icons">
-                                                <span><img src="../img/slide--korzina.png" alt=""></span>
-                                                <span><img src="../img/slider-book.png" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product--slider">
-                                    <img class="back--fon" src="../img/back-book.png" alt="">
-                                    <div class="bloock">
-                                        <a href="#">
-                                            <div class="product--slider--title">Сырники домашние</div>
-                                            <div class="product--slider--img">
-                                                <img src="../img/slider2.png" alt="">
-                                            </div>
-                                            <div class="product--slider--cost">620р.<span>/1кг.</span></div>
-                                        </a>
-                                        <div class="product--slider--icons">
-                                            <div class="product--slider--date">
-                                                <span>ВТ</span>
-                                                <span>ПТ</span>
-                                            </div>
-                                            <div class="product--slider--num">
-                                                <select name="select" class="select">
-                                                    <option value="value1" selected>0.20</option>
-                                                    <option value="value2">0.30</option>
-                                                    <option value="value3">0.40</option>
-                                                </select>
-                                            </div>
-                                            <div class="icons">
-                                                <span><img src="../img/slide--korzina.png" alt=""></span>
-                                                <span><img src="../img/slider-book.png" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-
-                <div class="own--room--item">
-                    <div class="accordeon--item">
-                        <div class="accordeon--arrow icon--left">&#9658;</div>
-                        <div class="accordeon--arrow pad__left">Мой баланс</div>
-                    </div>
-                    <div class="hidden--block">
-                        <div class="my--balane">
-                            <div class="my--balance--icon">
-                                <span><img src="../img/rubl.png" alt=""></span>
-                                <span>36200р.</span>
-                            </div>
-                            <div class="my--balance--icon">
-                                <span><img src="../img/hutor-icon.png" alt=""></span>
-                                <span>750 грабелек</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="own--room--item">
-                    <div class="accordeon--item">
-                        <div class="accordeon--arrow icon--left">&#9658;</div>
-                        <div class="accordeon--arrow pad__left">У меня вопрос</div>
-                    </div>
-                    <div class="hidden--block">
-                        <div class="form--block">
-                            <p class="form--txt">Пожалуйста, указывайте номер заказа для более оперативной обратки заказ</p>
-                            <form action="" id="form--quations">
-                                <select name="quation" id="quation--item">
-                                    <option value="">У меня вопрос по взаиморасчетам</option>
-                                    <option value="">У меня вопрос по взаиморасчетам</option>
-                                    <option value="">У меня вопрос по взаиморасчетам</option>
+                    <div class="oform--payment">
+                        <div class="oform--payment--block">
+                            <p class="oform--text oform--top">Дата доставки</p>
+                            <div class="oform--form--txt select--title">Укажите желаемую дату доставки:*</div>
+                            <select name="" id="choose--date" class="oform--inputs">
+                                <option value="1">20 ноября 2020(пятница)</option>
+                                <option value="2">12 ноября 2020(пятница)</option>
+                                <option value="3">10 ноября 2020(пятница)</option>
+                            </select>
+                            <div class="oform--form--txt select--title">Укажите желаемое время доставки:*</div>
+                            <div class="mini--selects">
+                                <span class="oform--form--txt">с</span>
+                                <select name="" id="time" class="oform--inputs oform--mini--inputs">
+                                    <option value="1">15:00</option>
+                                    <option value="1">14:00</option>
+                                    <option value="1">13:00</option>
                                 </select>
-                                <div class="input--field">
-                                    <div class="input--txt">
-                                        Номер заказа<span>*</span>
-                                    </div>
-                                    <div class="input--focus">
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="input--field">
-                                    <div class="input--txt">
-                                        Ваше имя<span>*</span>
-                                    </div>
-                                    <div class="input--focus">
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="input--field">
-                                    <div class="input--txt">
-                                        Эл. адрес<span>*</span>
-                                    </div>
-                                    <div class="input--focus">
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="input--field">
-                                    <div class="input--txt">
-                                        Телефон<span>*</span>
-                                    </div>
-                                    <div class="input--focus">
-                                        <select name="" id="singlebox">
-                                            <option value="1" data-left="../img/rus-flag.png" selected>+7</option>
-                                            <option value="2" data-left="../img/rus-flag.png">+8</option>
-                                            <option value="3" data-left="../img/rus-flag.png">+9</option>
-                                        </select>
-                                        <input id="tel--width" type="tel">
-                                    </div>
-                                </div>
-                                <div class="input--field textarea--center">
-                                    <div class="input--txt">
-                                        Комментарий<span>*</span>
-                                    </div>
-                                    <div class="input--focus">
-                                        <textarea name="" id="comments" cols="20" rows="7"></textarea>
-                                    </div>
-                                </div>
-                                <input type="button" class="send--quation" value="Отправить вопрос"></input>
-                            </form>
+                                <span class="oform--form--txt" class="oform--inputs">до</span>
+                                <select name="" id="" class="oform--inputs oform--mini--inputs">
+                                    <option value="1">18:00</option>
+                                    <option value="1">17:00</option>
+                                    <option value="1">18:30</option>
+                                </select>
+                            </div>
                         </div>
+                        <div class="oform--payment--block">
+                            <p class="oform--text oform--top">Оплата</p>
+                            <div class="oform--clas">
+                                <div class="oform--form--txt select--title">Укажите желаемую дату доставки:*</div>
+                                <select name="" id="choose--date" class="oform--inputs">
+                                    <option value="1">20 ноября 2020(пятница)</option>
+                                    <option value="2">12 ноября 2020(пятница)</option>
+                                    <option value="3">10 ноября 2020(пятница)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oform--text oform--top">Адрес доставки</div>
+                    <div class="input--field oform--extra--class">
+                        <div class="input--txt oform--form--txt oform--extra--class2">
+                            Адрес доставки:*
+                        </div>
+                        <div class="input--focus oform--input--wid">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="input--field oform--extra--class">
+                        <div class="input--txt oform--form--txt oform--extra--class2">
+                            Город:*
+                        </div>
+                        <div class="input--focus oform--input--wid">
+                            <input type="text">
+                        </div>
+                    </div>
                     </div>
                 </div>
-
-                <div class="own--room--item">
-                    <div class="accordeon--item">
-                        <div class="accordeon--arrow icon--left">&#9658;</div>
-                        <div class="accordeon--arrow pad__left">Мои напоминания</div>
-                    </div>
-                    <div class="hidden--block">
-                        <div class="form--block form--block2">
-                            <p class="form--txt">Добавить напоминание</p>
-                            <form action="" id="form--quations">
-                                <div class="input--field">
-                                    <div class="input--txt">Куда отправить</div>
-                                    <div class="input--focus input--focus3">
-                                        <select name="quation" id="quation--item">
-                                            <option value="">По почте aaa@mmm.com</option>
-                                            <option value="">По почте aaa@mmm.com</option>
-                                            <option value="">По почте aaa@mmm.com</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="input--field">
-                                    <div class="input--txt">В какой день</div>
-                                    <div class="input--focus input--focus3">
-                                        <select name="quation" id="quation--item">
-                                            <option value="">Понедельник</option>
-                                            <option value="">Вторник</option>
-                                            <option value="">Среда</option>
-                                            <option value="">Четверг</option>
-                                            <option value="">Пятница</option>
-                                            <option value="">Суббота</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="input--field">
-                                    <div class="input--txt">Время оповещения</div>
-                                    <div class="input--focus input--focus3">
-                                        <select name="quation" id="quation--item">
-                                            <option value="">9</option>
-                                            <option value="">8</option>
-                                            <option value="">7</option>
-                                        </select>
-                                        <select name="quation" id="quation--item" class="left--input--margin">
-                                            <option value="">30</option>
-                                            <option value="">20</option>
-                                            <option value="">10</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <input type="button" class="send--quation" value="Сохранить"></input>
-                            </form>
+              
+                <div class="oformlenie--right ">
+                    <div class="oform--title"></div>
+                    <div class="oform--text"></div>
+                    <div class="sostav--zakaza">
+                        <div class="sostav--zakaza--title">Состав заказа</div>
+                        <div class="sostav--zakaza--text">
+                            <span>Молоко коровье пастеризованное,<br>Сыроварня Вяртемяги</span>
+                            <span>3л</span>
+                            <span><strong>318р</strong></span>
+                        </div>
+                        <div class="sostav--zakaza--text">
+                            <span>Свинина, мякоть</span>
+                            <span>3.5кг</span>
+                            <span><strong>3115р</strong></span>
+                        </div>
+                        <div class="sostav--zakaza--text">
+                            <span>Свекла ORGANIC, Агронова</span>
+                            <span>0.5л</span>
+                            <span><strong>55р</strong></span>
+                        </div>
+                        <div class="sostav--zakaza--text">
+                            <span>Йогурт с вишней, ферма Татьяны Кузьмич</span>
+                            <span>4шт</span>
+                            <span><strong>340р</strong></span>
+                        </div>
+                        <div class="sostav--zakaza--text">
+                            <span>Лапша яичная домашняя, ручная работа</span>
+                            <span>2шт</span>
+                            <span><strong>496р</strong></span>
                         </div>
                     </div>
+                    <div class="sostav--zakaza--sum">
+                        <div class="sostav--zakaza--left">
+                            Предварительная<br>стоимость заказа*
+                        </div>
+                        <div class="sostav--zakaza--right">4 324р</div>
+                    </div>
+                    <div class="oform--comment">*Сумма предварительная, она может измениться после взвешивания.<br>
+                        Ведь у нас продукты некалиброванные, они настоящие
+                    </div>
+                    <button class="accept--order">Подтвердить заказ</button>
                 </div>
             </div>
-        </section>
-        
+        </main>
+
         <section id="invite--friend">
             <div class="invite--container">
                 <div class="invite--txt left--invite--txt">Приведи друга</div>
@@ -1428,10 +1077,6 @@
     <!-- Подключение скрипты -->
     <script src="../js/jquery.js"></script>
     <script src="../js/slick.min.js"></script>
-    <script src="../js/selectator.js"></script>
-    <script>
-        $('#singlebox').selectator();
-    </script>
     <script src="../js/main.js"></script>
 </body>
 

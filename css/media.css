@@ -110,6 +110,9 @@
     .kartochka--right--block {
         padding: 8px 0 0 20px;
     }
+    .sostav--zakaza--text {
+        padding-right: 0;
+    }
 }
 @media screen and (max-width: 1040px) {
     .center--slider,
@@ -222,6 +225,12 @@
     .profile--container {
         padding-right: 0;
     }
+    .oform--checkbox--txt {
+        width: 360px;
+    }
+    .input--focus {
+        width: 230px;
+    }
 }
 @media screen and (max-width: 862px) {
     .product--detail div {
@@ -283,8 +292,17 @@
     .profile--block {
         margin-right: 15px;
     }
+    .oform--checkbox--txt {
+        width: 333px;
+    }
 }
 @media screen and (max-width: 767px) {
+    .oform--border {
+        border-right: none;
+    }
+    .oformlenie--container {
+        padding-bottom: 16px;
+    }
     .menu--catalog--mob {
         display: block;
     }
@@ -424,6 +442,21 @@
     }
     .profile--block {
         width: 70%;
+    }
+    #oformlenie--zakaza {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 730px) {
+    .oformlenie--container {
+        flex-direction: column;
+    }
+    .oformlenie--left,
+    .oformlenie--right {
+        width: 100%;
+    }
+    .oform--checkbox--txt {
+        width: 450px;
     }
 }
 @media screen and (max-width: 590px) {
@@ -598,6 +631,9 @@
     .form--block {
         width: 100%;
     }
+    .oform--checkbox--txt {
+        width: auto;
+    }
 }
 @media screen and (max-width: 450px) {
     .product--slider--title {
@@ -693,6 +729,33 @@
     .check--block--right {
         justify-content: space-between;
     }
+    #oformlenie--zakaza {
+        padding: 20px 10px;
+    }
+    .oform--title {
+        font-size: 28px;
+        height: 52px;
+    }
+    #oform--block {
+        padding: 20px 0;
+    }
+    .oform--payment {
+        flex-direction: column;
+    }
+    .oform--payment--block {
+        width: 100%;
+    }
+    .oform--inputs option, .oform--inputs {
+        margin: 4px 0;
+        padding: 6px 8px;
+    }
+    .sostav--zakaza--right {
+        font-size: 28px;
+        padding-right: 0;
+    }
+    .oform--checkbox--txt {
+        align-items: flex-start;
+    }
 }
 @media screen and (max-width: 430px) {
     .product--slider--date span {
@@ -716,6 +779,12 @@
     .extra .product--slider--title {
         line-height: 10px;
         padding-right: 10px;
+    }
+    .sostav--zakaza--text span:first-child {
+        width: 200px;
+    }
+    .sostav--zakaza--text {
+        margin: 26px 0;
     }
 }
 @media screen and (max-width: 410px) {
@@ -815,6 +884,9 @@
     .product--image--mob img {
         width: 33%;
     }
+    .sostav--zakaza--text span:first-child {
+        width: 156px;
+    }
 }
 @media screen and (max-width: 360px) {
     .catalog--product--block {
@@ -887,5 +959,11 @@
         bottom: 12px;
         line-height: 9px;
         font-size: 10px;
+    }
+    .oform--form--txt {
+        padding-right: 6px;
+    }
+    .oform--checkbox--txt label {
+        padding-right: 10px;
     }
 }

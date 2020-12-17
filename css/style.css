@@ -1856,6 +1856,7 @@ body {
     border: 1px solid #c1c5c8;
     outline: none;
     width: 320px;
+    box-shadow: inset 1px 1px 1px #c1c5c8;
 }
 .textarea--center {
     align-items: flex-start;
@@ -1928,4 +1929,193 @@ body {
 }
 .hidden--block {
     display: none;
+}
+
+/* ====================    Страниа "ОФОРМЛЕНИЕ ЗАКАЗА     ===================== */
+
+#oformlenie--zakaza {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 260px 20px 20px;
+}
+.oformlenie--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 16px;
+    border-bottom: 3px solid #6d3214;
+}
+.oformlenie--left,
+.oformlenie--right {
+    width: 50%;
+}
+.oform--clas {
+    margin-left: 10px;
+}
+.oform--border {
+    border-right: 1px solid #bcbec0;
+    padding-bottom: 1px;
+}
+.oform--links {
+    text-decoration: none;
+}
+.oform--links span:last-child {
+    font-weight: bold;
+}
+.oform--title {
+    font-family: 'MyriadPro-Bold';
+    font-size: 32px;
+    color: #6d3214;
+    padding: 10px;
+    height: 58px;
+    background: linear-gradient(to top , #cfdab6, #fafbf7);
+}
+.oform--text {
+    font-family: 'MyriadPro-Bold';
+    font-size: 16px;
+    color: #636466;
+    background-color: #d7e0c3;
+    padding: 10px;
+    height: 38px;
+}
+#oform--block {
+    width: 100%;
+    padding: 20px 20px 20px 10px;
+}
+.oform--form--txt,
+.oform--checkbox--txt label {
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    color: #636466;
+    line-height: 14px;
+}
+.oform--checkbox--txt label {
+    cursor: pointer;
+    transition: .3s;
+}
+.oform--checkbox--txt label:hover {
+    color: #8f9092;
+}
+.oform--checkbox--txt {
+    width: 328px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0;
+}
+.oform--payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.oform--payment--block {
+    width: 50%;
+}
+#choose--date:focus {
+    outline: none;
+}
+.oform--inputs option,
+.oform--inputs {
+    padding: 10px 8px;
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    color: #636466;
+    border: 1px solid #c1c5c8;
+    width: 90%;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 1px #c1c5c8 ;
+}
+.oform--mini--inputs {
+    width: auto;
+}
+.select--title {
+    padding: 4px 0;
+}
+.oform--top {
+    margin: 14px 0;
+}
+.oform--extra--class {
+    justify-content: flex-start;
+}
+.oform--extra--class2 {
+    width: 170px;
+}
+.sostav--zakaza {
+    padding: 14px;
+    background: linear-gradient(to top , #cfdab6, #fafbf7);
+    border-bottom: 5px solid #6d3214;
+}
+.sostav--zakaza--title {
+    font-family: 'MyriadPro-Bold';
+    font-size: 16px;
+    color: #6d3214;
+    margin-left: 40px;
+    padding-bottom: 4px;
+}
+.sostav--zakaza--text span {
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    color: #6d3214;
+    line-height: 13px;
+}
+.sostav--zakaza--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 14px 0;
+    padding-right: 100px;
+}
+.sostav--zakaza--text span:first-child {
+    width: 260px;
+}
+.sostav--zakaza--sum {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 10px 4px 14px ;
+    background: linear-gradient(to top , #cfdab6, #fafbf7);
+}
+.sostav--zakaza--left {
+    font-family: 'MyriadPro-Bold';
+    font-size: 16px;
+    color: #6d3214;
+    line-height: 16px;
+}
+.sostav--zakaza--right {
+    font-family: 'MyriadPro-Bold';
+    font-size: 32px;
+    color: #6d3214;
+    padding-right: 70px;
+}
+.oform--comment {
+    font-family: 'Myriad-Regular';
+    font-size: 16px;
+    color: #939598;
+    line-height: 16px;
+    padding: 10px;
+}
+.accept--order {
+    font-family: 'MyriadPro-Bold';
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(to top, #b3b493, #d9d2bc);
+    text-shadow: 1px 1px 1px #000;
+    outline: none;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 7px;
+    margin: 40px 0 0 60px;
+}
+.accept--order:hover {
+    background: linear-gradient(to top, #d9d2bc, #b3b493);
+}
+.accept--order:focus {
+    outline: none;
+}
+.oform--input--wid input {
+    width: auto;
 }
