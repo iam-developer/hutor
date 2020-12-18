@@ -62,6 +62,22 @@
     #main--slider {
         padding-top: 260px;
     }
+    .moi--zakaz--txt2 span {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 34px;
+    }
+}
+@media screen and (max-width: 1176px) {
+    .korzina--container {
+        flex-direction: column;
+    }
+    .korzina--left {
+        width: 100%;
+    }
+    .korzina--right {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 1100px) {
     .footer {
@@ -231,6 +247,10 @@
     .input--focus {
         width: 230px;
     }
+    .oformlenie--zakaza,
+    #oformlenie--zakaza {
+        padding: 220px 20px 20px;
+    }
 }
 @media screen and (max-width: 862px) {
     .product--detail div {
@@ -294,6 +314,9 @@
     }
     .oform--checkbox--txt {
         width: 333px;
+    }
+    #oformlenie--zakaza, .oformlenie--zakaza {
+        padding: 200px 20px 20px;
     }
 }
 @media screen and (max-width: 767px) {
@@ -446,6 +469,9 @@
     #oformlenie--zakaza {
         padding: 20px;
     }
+    .oformlenie--zakaza {
+        padding: 20px;
+    }
 }
 @media screen and (max-width: 730px) {
     .oformlenie--container {
@@ -457,6 +483,12 @@
     }
     .oform--checkbox--txt {
         width: 450px;
+    }
+    .korzina--product {
+        flex-wrap: wrap;
+    }
+    .korzina--calculator {
+        padding: 0 57px 0 0;
     }
 }
 @media screen and (max-width: 590px) {
@@ -547,6 +579,9 @@
     .my--balance--icon span {
         font-size: 21px;
     }
+    .korzina--left {
+        border-right: none;
+    }
 }
 @media screen and (max-width: 520px) {
     .product--slider {
@@ -634,6 +669,9 @@
     .oform--checkbox--txt {
         width: auto;
     }
+    .korzina--buttons button:last-child {
+        margin: 0 10px;
+    }
 }
 @media screen and (max-width: 450px) {
     .product--slider--title {
@@ -710,8 +748,26 @@
     .selectator_options .selectator_option .selectator_option_title {
         margin-left: 3px;
     }
+    .oformlenie--zakaza {
+        padding: 20px 10px;
+    }
+    .korzina--cost {
+        font-size: 20px;
+        padding: 3px 0;
+    }
+    .korzina--cena {
+        font-size: 20px;
+        margin: 0 8px;
+    }
+    .korzina--date {
+        font-size: 11px;
+    }
 }
 @media screen and (max-width: 440px) {
+    .korzina--buttons button {
+        font-size: 14px;
+        padding: 5px 20px;
+    }
     .bloock {
         left: 19px;
     }
@@ -755,6 +811,12 @@
     }
     .oform--checkbox--txt {
         align-items: flex-start;
+    }
+    .korzina--comment2 {
+        height: 30px;
+    }
+    #moi--zakaz--select, #moi--zakaz--select option {
+        padding: 6px;
     }
 }
 @media screen and (max-width: 430px) {
@@ -838,6 +900,14 @@
     }
     .hutor--right--title {
         font-size: 20px;
+    }
+    .moi--zakaz--right {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .moi--zakaz--left {
+        width: 50%;
     }
     #mobile--header {
         padding: 7px;
@@ -928,6 +998,10 @@
         font-family: 'MyriadPro-Regular';
         font-size: 7px;
         line-height: 6px;
+    }
+    .korzina--buttons button {
+        font-size: 12px;
+        padding: 8px 20px;
     }
 }
 @media screen and (max-width: 340px) {

@@ -1933,7 +1933,8 @@ body {
 
 /* ====================    Страниа "ОФОРМЛЕНИЕ ЗАКАЗА     ===================== */
 
-#oformlenie--zakaza {
+#oformlenie--zakaza,
+.oformlenie--zakaza {
     max-width: 1920px;
     margin: 0 auto;
     padding: 260px 20px 20px;
@@ -2119,3 +2120,301 @@ body {
 .oform--input--wid input {
     width: auto;
 }
+.oform--payment--block select {
+    background: transparent;
+}
+
+/* ===============      Страница "Моя корзина"      =================== */
+
+.korzina--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 14px;
+}
+.korzina--left {
+    width: 60%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c1c5c8;
+    border-right: 1px solid #c1c5c8;
+}
+.korzina--right {
+    width: 40%;
+}
+.kor--product {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.kor--product--left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.kor--product--img {
+    padding-right: 7px;
+}
+.korzina--txt {
+    font-family: 'MyriadPro-Bold';
+    font-size: 14px;
+    line-height: 14px;
+    color: #6d3214;
+}
+.korzina--cost {
+    font-family: 'MyriadPro-Bold';
+    font-size: 24px;
+    line-height: 24px;
+    color: #6d3214;
+    padding: 5px 0;
+}
+.korzina--product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+}
+.korzina--date--container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.korzina--date {
+    font-size: 12px;
+    color: #fff;
+    background-color: green;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
+.korzina--line {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+.korzina--calculator {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+.kor--product--right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.korzina--btn {
+    font-family: 'MyriadPro-Bold';
+    font-size: 16px;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to top, #b3b492, #d0cab2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.korzina--btn:hover {
+    background: linear-gradient(to top,#d0cab2, #b3b492);
+}
+.korzina--litr {
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    color: #6d3214;
+    margin: 2px 16px 0;
+}
+.korzina--cena {
+    font-family: 'MyriadPro-Bold';
+    font-size: 24px;
+    color: #6d3214;
+    margin: 0 44px;
+    width: 61px;
+}
+.korzina--cena--extra {
+    margin: 0 0 0 4px;
+    width: auto;
+}
+.kor--product--right span:last-child {
+    margin: 20px;
+}
+.korzina--btn,
+.korzina--delete,
+.korzina--add {
+    cursor: pointer;
+}
+.kor--border--right {
+    border-right: 1px solid #6d3214;
+}
+.kor--border--left {
+    border-left: 1px solid #6d3214;
+}
+.korzina--comment {
+    padding: 7px;
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    color: #636466;
+    border: 1px solid #c1c5c8;
+    width: 99%;
+    height: 34px;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 1px #c1c5c8;
+    margin-bottom: 20px;
+    background: transparent;
+}
+.korzina--comment:focus {
+    outline: none;
+}
+.korzina--comment2 {
+    padding: 6px;
+    margin-bottom: 0;
+    height: 33px;
+    background: #fff;
+}
+.korzina--buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+}
+.korzina--buttons button {
+    font-family: 'MyriadPro-Bold';
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to bottom, #d6d0ba, #afb08e);
+    outline: none;
+    border: none;
+    border-radius: 18px;
+    padding: 6px 30px;
+    transition: .2s;
+    cursor: pointer;
+    text-shadow: 2px 1px 2px #000;
+}
+.korzina--buttons button:hover {
+    background: linear-gradient(to bottom, #afb08e, #d6d0ba);
+}
+.korzina--buttons button:last-child {
+    margin: 0 20px 0 30px;
+}
+.moi--zakaz {
+    padding: 12px;
+    background: linear-gradient(to top , #cfdab6, #fafbf7);
+    border-bottom: 3px solid #6d3214;
+}
+.moi--zakaz--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 7px 0 28px;
+}
+.moi--zakaz--left {
+    width: 60%;
+}
+.moi--zakaz--right {
+    width: 40%;
+}
+.moi--zakaz--txt {
+    font-family: 'MyriadPro-Regular';
+    font-size: 16px;
+    color: #6d3214;
+    line-height: 16px;
+}
+.moi--zakaz--txt2 {
+    font-family: 'MyriadPro-Bold';
+    font-size: 24px;
+    color: #6d3214;
+    line-height: 24px;
+}
+.moi--zakaz--txt span {
+    font-family: 'MyriadPro-Bold';
+}
+#moi--zakaz--select,
+#moi--zakaz--select option {
+    padding: 9px;
+    border-radius: 3px;
+    width: 100%;
+    border: 1px solid #c1c5c8;
+    outline: none;
+    box-shadow: inset 1px 1px 1px #c1c5c8;
+    font-size: 14px;
+    color: #636466;
+    line-height: 14px;
+}
+.moi--zakaz--txt2 span {
+    font-family: 'MyriadPro-Bold';
+    font-size: 48px;
+    color: #6d3214;
+}
+.moi--zakaz--container:last-child {
+    margin-bottom: 0;
+}
+.oformit--zakaz {
+    padding: 10px 14px;
+    border-bottom: 3px solid #6d3214;
+    background: linear-gradient(to top, #f8f9f4, #fff);
+}
+.moi--zakaz--txt3 {
+    font-family: 'MyriadPro-Regular';
+    font-size: 16px;
+    color: #d10101;
+}
+.moi--zakaz--txt4 {
+    font-family: 'MyriadPro-Regular';
+    font-size: 16px;
+    color: #939598;
+    padding: 4px 0;
+}
+.moi--zakaz--txt .bold--txt {
+    font-family: 'MyriadPro-Bold';
+}
+.korzina--btn--oform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 5px;
+}
+.zakaz--rad {
+    background: linear-gradient(to top, #d6dfc1, #f6f8f1);
+    padding: 20px;
+}
+.radio-item {
+    position: relative;
+    padding: 0 6px;
+    margin: 14px 0 0;
+  }
+  .radio-item input[type='radio'] {
+    display: none;
+  }
+  .radio-item label:before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin: 0 5px 0 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 11px;
+    border: 2px solid #808285;
+    background-color: transparent;
+  }
+  .radio-item input[type=radio]:checked + label:after {
+    border-radius: 11px;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    content: " ";
+    display: block;
+    background: #808285;
+  }
+  .line--korzina {
+      width: 100%;
+      padding-top: 75px;
+      background-color: #d6dfc1;
+  }

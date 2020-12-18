@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Карточка товара</title>
+    <title>Моя корзина</title>
     <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/slick-theme.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -126,7 +126,7 @@
                             <img src="../img/mob-book.png" alt="">
                         </div>
                         <div class="mob--icons mob__korzina">
-                            <a href="../korzina/"><img src="../img/mob-korzina.png" alt=""></a>
+                            <a href="./"><img src="../img/mob-korzina.png" alt=""></a>
                             <span>23</span>
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                             <img class="pointer" src="../img/bloknot.png" alt="Bloknot">
                         </div>
                         <div class="kor--img">
-                            <a href="../korzina"><img class="pointer" src="../img/korzina.png" alt="Korzina"></a>
+                            <a href="#"><img class="pointer" src="../img/korzina.png" alt="Korzina"></a>
                         </div>
                         <div id="pusto">
                             Ваша<br>корзина<br>пуста
@@ -858,171 +858,486 @@
             </div>
         </header>
         
-        <main id="oformlenie--zakaza">
+        <main class="oformlenie--zakaza">
             <div class="kartochka--right--links oform--links">
                 <a href="../">Главная / </a>
                 <a href="../">Личный кабинет / </a>
-                <span>Оформление заказа /</span>
+                <span>Моя корзина /</span>
             </div>
-            <div class="oformlenie--container">
-                <div class="oformlenie--left">
-                    <div class="oform--title">Оформление заказа</div>
-                    <div class="oform--border">
-                    <div class="oform--text">Персональные данные</div>
-                    <div class="form--block" id="oform--block">
-                        <form action="" id="form--quations">
-                            <div class="input--field">
-                                <div class="input--txt oform--form--txt">
-                                    Ф.И.О:*
-                                </div>
-                                <div class="input--focus">
-                                    <input type="text">
+            <div class="korzina--container">
+                <div class="korzina--left">
+                    <div class="oform--title">Моя корзина</div>
+                    <div class="korzina--product">
+                        <div class="kor--product--left">
+                            <div class="kor--product--img">
+                                <img src="../img/korzina-img1.png" alt="">
+                            </div>
+                            <div class="kor--product--detail">
+                                <p class="korzina--txt">Молоко коровье пастеризованное,<br>Сыроварня Вяртемяги</p>
+                                <h3 class="korzina--cost">106р./1л.</h3>
+                                <div class="korzina--date--container">
+                                    <span class="korzina--date">ВТ</span>
+                                    <span class="korzina--date">ПТ</span>
                                 </div>
                             </div>
-                            <div class="input--field">
-                                <div class="input--txt oform--form--txt">
-                                    E-Mail:*
-                                </div>
-                                <div class="input--focus">
-                                    <input type="email">
-                                </div>
+                        </div>
+                        <div class="kor--product--right">
+                            <div class="korzina--calculator">
+                                <span class="korzina--btn kor--border--right">-</span>
+                                <span class="korzina--litr">3</span>
+                                <span class="korzina--btn kor--border--left">+</span>
+                                <span class="korzina--cena korzina--cena--extra">л.</span>
+                                <span class="korzina--cena">318р.</span>
+                                <span class="korzina--delete">
+                                    <img src="../img/korzina-delete.png" alt="">
+                                </span>
+                                <span class="korzina--add">
+                                    <img src="../img/korzina-add.png" alt="">
+                                </span>
                             </div>
-                            <div class="input--field">
-                                <div class="input--txt oform--form--txt">
-                                    Телефон:*
-                                </div>
-                                <div class="input--focus">
-                                    <input type="tel">
-                                </div>
-                            </div>
-                            <div class="input--field textarea--center">
-                                <div class="input--txt oform--form--txt">
-                                    Комментарий к доставке:
-                                </div>
-                                <div class="input--focus">
-                                    <textarea name="" id="comments" cols="20" rows="7"></textarea>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
-                    <div class="oform--checkbox--txt">
-                        <label for="oform--checkbox1">Подписаться на рассылку</label>
-                        <input type="checkbox" name="" id="oform--checkbox1" >
-                    </div>
-                    <div class="oform--checkbox--txt">
-                        <label for="oform--checkbox2">Проверить, что сумма заказа больше 4000 рублей:</label>
-                        <input type="checkbox" name="" id="oform--checkbox2" >
-                    </div>
-                    <div class="oform--checkbox--txt">
-                        <label for="oform--checkbox3">Выслать СМС с окончательной суммой заказа в день доставки:</label>
-                        <input type="checkbox" name="" id="oform--checkbox3" >
-                    </div>
-                    <div class="oform--checkbox--txt">
-                        <label for="oform--checkbox4">Подтвердить заказ по СМС, не звонить</label>
-                        <input type="checkbox" name="" id="oform--checkbox4" >
-                    </div>
+                    <textarea name="comment" class="korzina--comment" cols="" rows="">Комментарий</textarea>
 
-                    <div class="oform--payment">
-                        <div class="oform--payment--block">
-                            <p class="oform--text oform--top">Дата доставки</p>
-                            <div class="oform--form--txt select--title">Укажите желаемую дату доставки:*</div>
-                            <select name="" id="choose--date" class="oform--inputs">
-                                <option value="1">20 ноября 2020(пятница)</option>
-                                <option value="2">12 ноября 2020(пятница)</option>
-                                <option value="3">10 ноября 2020(пятница)</option>
-                            </select>
-                            <div class="oform--form--txt select--title">Укажите желаемое время доставки:*</div>
-                            <div class="mini--selects">
-                                <span class="oform--form--txt">с</span>
-                                <select name="" id="time" class="oform--inputs oform--mini--inputs">
-                                    <option value="1">15:00</option>
-                                    <option value="1">14:00</option>
-                                    <option value="1">13:00</option>
-                                </select>
-                                <span class="oform--form--txt" class="oform--inputs">до</span>
-                                <select name="" id="" class="oform--inputs oform--mini--inputs">
-                                    <option value="1">18:00</option>
-                                    <option value="1">17:00</option>
-                                    <option value="1">18:30</option>
-                                </select>
+                    <div class="korzina--product">
+                        <div class="kor--product--left">
+                            <div class="kor--product--img">
+                                <img src="../img/korzina-img1.png" alt="">
+                            </div>
+                            <div class="kor--product--detail">
+                                <p class="korzina--txt">Свинина, мякоть</p>
+                                <h3 class="korzina--cost">890р./1кг.</h3>
+                                <div class="korzina--date--container">
+                                    <span class="korzina--date">ПТ</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="oform--payment--block">
-                            <p class="oform--text oform--top">Оплата</p>
-                            <div class="oform--clas">
-                                <div class="oform--form--txt select--title">Укажите желаемую дату доставки:*</div>
-                                <select name="" id="choose--date" class="oform--inputs">
-                                    <option value="1">20 ноября 2020(пятница)</option>
-                                    <option value="2">12 ноября 2020(пятница)</option>
-                                    <option value="3">10 ноября 2020(пятница)</option>
-                                </select>
+                        <div class="kor--product--right">
+                            <div class="korzina--calculator">
+                                <span class="korzina--btn kor--border--right">-</span>
+                                <span class="korzina--litr">3.5</span>
+                                <span class="korzina--btn kor--border--left">+</span>
+                                <span class="korzina--cena korzina--cena--extra">кг.</span>
+                                <span class="korzina--cena">3115р.</span>
+                                <span class="korzina--delete">
+                                    <img src="../img/korzina-delete.png" alt="">
+                                </span>
+                                <span class="korzina--add">
+                                    <img src="../img/korzina-add.png" alt="">
+                                </span>
                             </div>
                         </div>
                     </div>
-                    <div class="oform--text oform--top">Адрес доставки</div>
-                    <div class="input--field oform--extra--class">
-                        <div class="input--txt oform--form--txt oform--extra--class2">
-                            Адрес доставки:*
+                    <textarea name="comment" class="korzina--comment" cols="" rows="">Комментарий</textarea>
+
+                    <div class="korzina--product">
+                        <div class="kor--product--left">
+                            <div class="kor--product--img">
+                                <img src="../img/korzina-img3.png" alt="">
+                            </div>
+                            <div class="kor--product--detail">
+                                <p class="korzina--txt">Свекла ORGANIC, Агронова</p>
+                                <h3 class="korzina--cost">110р./1кг.</h3>
+                                <div class="korzina--date--container">
+                                    <span class="korzina--date">ВТ</span>
+                                    <span class="korzina--date">ПТ</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="input--focus oform--input--wid">
-                            <input type="text">
+                        <div class="kor--product--right">
+                            <div class="korzina--calculator">
+                                <span class="korzina--btn kor--border--right">-</span>
+                                <span class="korzina--litr">0.5</span>
+                                <span class="korzina--btn kor--border--left">+</span>
+                                <span class="korzina--cena korzina--cena--extra">кг.</span>
+                                <span class="korzina--cena">55р.</span>
+                                <span class="korzina--delete">
+                                    <img src="../img/korzina-delete.png" alt="">
+                                </span>
+                                <span class="korzina--add">
+                                    <img src="../img/korzina-add.png" alt="">
+                                </span>
+                            </div>
                         </div>
                     </div>
-                    <div class="input--field oform--extra--class">
-                        <div class="input--txt oform--form--txt oform--extra--class2">
-                            Город:*
+                    <textarea name="comment" class="korzina--comment" cols="" rows="">Комментарий</textarea>
+
+                    <div class="korzina--product">
+                        <div class="kor--product--left">
+                            <div class="kor--product--img">
+                                <img src="../img/korzina-img4.png" alt="">
+                            </div>
+                            <div class="kor--product--detail">
+                                <p class="korzina--txt">Йогурт с вишней, ферма Татьяны Кузьмич</p>
+                                <h3 class="korzina--cost">85р./1шт.</h3>
+                                <div class="korzina--date--container">
+                                    <span class="korzina--date">ВТ</span>
+                                    <span class="korzina--date">ПТ</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="input--focus oform--input--wid">
-                            <input type="text">
+                        <div class="kor--product--right">
+                            <div class="korzina--calculator">
+                                <span class="korzina--btn kor--border--right">-</span>
+                                <span class="korzina--litr">4</span>
+                                <span class="korzina--btn kor--border--left">+</span>
+                                <span class="korzina--cena korzina--cena--extra">шт.</span>
+                                <span class="korzina--cena">240р.</span>
+                                <span class="korzina--delete">
+                                    <img src="../img/korzina-delete.png" alt="">
+                                </span>
+                                <span class="korzina--add">
+                                    <img src="../img/korzina-add.png" alt="">
+                                </span>
+                            </div>
                         </div>
                     </div>
+                    <textarea name="comment" class="korzina--comment" cols="" rows="">Комментарий</textarea>
+
+                    <div class="korzina--product">
+                        <div class="kor--product--left">
+                            <div class="kor--product--img">
+                                <img src="../img/korzina-img5.png" alt="">
+                            </div>
+                            <div class="kor--product--detail">
+                                <p class="korzina--txt">Лапша яичная домашняя, ручная работа</p>
+                                <h3 class="korzina--cost">248р./1уп.</h3>
+                                <div class="korzina--date--container">
+                                    <span class="korzina--date">ВТ</span>
+                                    <span class="korzina--date">ПТ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kor--product--right">
+                            <div class="korzina--calculator">
+                                <span class="korzina--btn kor--border--right">-</span>
+                                <span class="korzina--litr">2</span>
+                                <span class="korzina--btn kor--border--left">+</span>
+                                <span class="korzina--cena korzina--cena--extra">шт.</span>
+                                <span class="korzina--cena">496р.</span>
+                                <span class="korzina--delete">
+                                    <img src="../img/korzina-delete.png" alt="">
+                                </span>
+                                <span class="korzina--add">
+                                    <img src="../img/korzina-add.png" alt="">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea name="comment" class="korzina--comment" cols="" rows="">Комментарий</textarea>
+
+                    <div class="korzina--buttons">
+                        <button class="add--product">Добавить товар</button>
+                        <button class="clear--product">Очистить корзину</button>
                     </div>
                 </div>
-              
-                <div class="oformlenie--right ">
-                    <div class="oform--title"></div>
-                    <div class="oform--text"></div>
-                    <div class="sostav--zakaza">
-                        <div class="sostav--zakaza--title">Состав заказа</div>
-                        <div class="sostav--zakaza--text">
-                            <span>Молоко коровье пастеризованное,<br>Сыроварня Вяртемяги</span>
-                            <span>3л</span>
-                            <span><strong>318р</strong></span>
+                <div class="korzina--right">
+                    <div class="oform--title">Мой заказ</div>
+                    <div class="moi--zakaz">
+                        <div class="moi--zakaz--container">
+                            <div class="moi--zakaz--left">
+                                <div class="moi--zakaz--txt">Дата заказа</div>
+                            </div>
+                            <div class="moi--zakaz--right">
+                                <select name="moi-zakaz" id="moi--zakaz--select">
+                                    <option value="1">20 ноября 2020(пятница)</option>
+                                    <option value="1">21 ноября 2020(суббота)</option>
+                                    <option value="1">22 ноября 2020(воскресенье)</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="sostav--zakaza--text">
-                            <span>Свинина, мякоть</span>
-                            <span>3.5кг</span>
-                            <span><strong>3115р</strong></span>
+                        <div class="moi--zakaz--container">
+                            <div class="moi--zakaz--left">
+                                <div class="moi--zakaz--txt">Количество товаров</div>
+                            </div>
+                            <div class="moi--zakaz--right">
+                                <div class="moi--zakaz--txt2">5</div>
+                            </div>
                         </div>
-                        <div class="sostav--zakaza--text">
-                            <span>Свекла ORGANIC, Агронова</span>
-                            <span>0.5л</span>
-                            <span><strong>55р</strong></span>
+                        <div class="moi--zakaz--container korzina--line">
+                            <div class="moi--zakaz--left">
+                                <div class="moi--zakaz--txt">Общий вес</div>
+                            </div>
+                            <div class="moi--zakaz--right">
+                                <div class="moi--zakaz--txt2">7,5кг.</div>
+                            </div>
                         </div>
-                        <div class="sostav--zakaza--text">
-                            <span>Йогурт с вишней, ферма Татьяны Кузьмич</span>
-                            <span>4шт</span>
-                            <span><strong>340р</strong></span>
+                        <div class="moi--zakaz--container">
+                            <div class="moi--zakaz--left">
+                                <div class="moi--zakaz--txt"><span>Стоимость заказа</span></div>
+                            </div>
+                            <div class="moi--zakaz--right">
+                                <div class="moi--zakaz--txt2">4324р.</div>
+                            </div>
                         </div>
-                        <div class="sostav--zakaza--text">
-                            <span>Лапша яичная домашняя, ручная работа</span>
-                            <span>2шт</span>
-                            <span><strong>496р</strong></span>
+                        <div class="moi--zakaz--container">
+                            <div class="moi--zakaz--left">
+                                <div class="moi--zakaz--txt">Ввести промокод</div>
+                            </div>
+                            <div class="moi--zakaz--right">
+                                <textarea name="comment" class="korzina--comment korzina--comment2" cols="" rows="">Комментарий</textarea>
+                            </div>
+                        </div>
+                        <div class="moi--zakaz--container">
+                            <div class="moi--zakaz--left">
+                                <div class="moi--zakaz--txt">Грабельки в дело<br>(У вас 425 грабелек)</div>
+                            </div>
+                            <div class="moi--zakaz--right">
+                                <textarea name="comment" class="korzina--comment korzina--comment2" cols="" rows="">Комментарий</textarea>
+                            </div>
+                        </div>
+                        <div class="moi--zakaz--container">
+                            <div class="moi--zakaz--left">
+                                <div class="moi--zakaz--txt"><span>Стоимость заказа с учётом скидок</span></div>
+                            </div>
+                            <div class="moi--zakaz--right">
+                                <div class="moi--zakaz--txt2"><span>4 324р.*</span></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="sostav--zakaza--sum">
-                        <div class="sostav--zakaza--left">
-                            Предварительная<br>стоимость заказа*
+                    <div class="oformit--zakaz">
+                        <div class="moi--zakaz--txt3">Доставка по СПб в подарок, загород со скидкой</div>
+                        <p class="moi--zakaz--txt4">*Сумма предварительная, она может измениться после взвешивания. Ведь у нас продукты некалиброванные, они настоящие</p>
+                        <div class="moi--zakaz--txt">За этот заказ мы подарим вам
+                            <span class="moi--zakaz--txt2">43</span>
+                            <span class="bold--txt">грабельки</span>
                         </div>
-                        <div class="sostav--zakaza--right">4 324р</div>
+                        <a href="../oformlenie_zakaza/"><input type="button" class="send--quation korzina--btn--oform" value="Оформить заказ"></a>
                     </div>
-                    <div class="oform--comment">*Сумма предварительная, она может измениться после взвешивания.<br>
-                        Ведь у нас продукты некалиброванные, они настоящие
+                    <div class="oformit--zakaz zakaz--rad">
+                        <div class="moi--zakaz--txt">
+                            <span>А если продукта не окажется - как нам поступить?:</span>
+                        </div>
+                        <div class="moi--zakaz--checkbox radio-item">
+                            <input name="check" type="radio" id="moi--zakaz--check1">
+                            <label for="moi--zakaz--check1" class="moi--zakaz--txt">Замените сами на что-то похожее, мне не звоните</label>
+                        </div>
+                        <div class="moi--zakaz--checkbox radio-item">
+                            <input name="check" type="radio" id="moi--zakaz--check2" checked>
+                            <label for="moi--zakaz--check2" class="moi--zakaz--txt">Свяжитесь со мной – решу по ситуации</label>
+                        </div>
+                        <div class="moi--zakaz--checkbox radio-item">
+                            <input name="check" type="radio" id="moi--zakaz--check3">
+                            <label for="moi--zakaz--check3" class="moi--zakaz--txt">Положите побольше других продуктов, которые есть в заказе</label>
+                        </div>
+                        <div class="moi--zakaz--checkbox radio-item">
+                            <input name="check" type="radio" id="moi--zakaz--check4">
+                            <label for="moi--zakaz--check4" class="moi--zakaz--txt">Ничего не делайте – ну нет и нет, не страшно</label>
+                        </div>
                     </div>
-                    <button class="accept--order">Подтвердить заказ</button>
+                    <div class="line--korzina"></div>
+                </div>
+        </main>
+
+        <section class="products--sliders">
+            <div class="products--sliders--title">Вы просмотривали:</div>
+            <div class="product--slider--container">
+                <div class="product--slider">
+                    <img class="back--fon" src="../img/back-book.png" alt="">
+                    <div class="bloock">
+                        <a href="#">
+                            <div class="product--slider--title">Свинина, мякоть</div>
+                            <div class="product--slider--img">
+                                <img src="../img/slider11.png" alt="">
+                            </div>
+                            <div class="product--slider--cost">890р.<span>/1кг.</span></div>
+                        </a>
+                        <div class="product--slider--icons">
+                            <div class="product--slider--date">
+                                <span class="not--active">ВТ</span>
+                                <span>ПТ</span>
+                            </div>
+                            <div class="product--slider--num">
+                                <select name="select" class="select">
+                                    <option value="value1" selected>0.20</option>
+                                    <option value="value2">0.30</option>
+                                    <option value="value3">0.40</option>
+                                </select>
+                            </div>
+                            <div class="icons">
+                                <span><img src="../img/slide--korzina.png" alt=""></span>
+                                <span><img src="../img/slider-book.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product--slider">
+                    <img class="back--fon" src="../img/back-book.png" alt="">
+                    <div class="bloock">
+                        <a href="#">
+                            <div class="product--slider--title">Говядина, мякоть на запекание</div>
+                            <div class="product--slider--img">
+                                <img src="../img/slider22.png" alt="">
+                            </div>
+                            <div class="product--slider--cost">930р.<span>/1кг.</span></div>
+                        </a>
+                        <div class="product--slider--icons">
+                            <div class="product--slider--date">
+                                <span>ВТ</span>
+                                <span>ПТ</span>
+                            </div>
+                            <div class="product--slider--num">
+                                <select name="select" class="select">
+                                    <option value="value1" selected>0.20</option>
+                                    <option value="value2">0.30</option>
+                                    <option value="value3">0.40</option>
+                                </select>
+                            </div>
+                            <div class="icons">
+                                <span><img src="../img/slide--korzina.png" alt=""></span>
+                                <span><img src="../img/slider-book.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product--slider">
+                    <img class="back--fon" src="../img/back-book.png" alt="">
+                    <div class="bloock">
+                        <a href="#">
+                            <div class="product--slider--title">Щука, Ладога</div>
+                            <div class="product--slider--img">
+                                <img src="../img/slider33.png" alt="">
+                            </div>
+                            <div class="product--slider--cost">620р.<span>/1кг.</span></div>
+                        </a>
+                        <div class="product--slider--icons">
+                            <div class="product--slider--date">
+                                <span>ВТ</span>
+                                <span>ПТ</span>
+                            </div>
+                            <div class="product--slider--num">
+                                <select name="select" class="select">
+                                    <option value="value1" selected>0.20</option>
+                                    <option value="value2">0.30</option>
+                                    <option value="value3">0.40</option>
+                                </select>
+                            </div>
+                            <div class="icons">
+                                <span><img src="../img/slide--korzina.png" alt=""></span>
+                                <span><img src="../img/slider-book.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product--slider">
+                    <img class="back--fon" src="../img/back-book.png" alt="">
+                    <div class="bloock">
+                        <a href="#">
+                            <div class="product--slider--title">Сырники домашние</div>
+                            <div class="product--slider--img">
+                                <img src="../img/slider2.png" alt="">
+                            </div>
+                            <div class="product--slider--cost">620р.<span>/1кг.</span></div>
+                        </a>
+                        <div class="product--slider--icons">
+                            <div class="product--slider--date">
+                                <span>ВТ</span>
+                                <span>ПТ</span>
+                            </div>
+                            <div class="product--slider--num">
+                                <select name="select" class="select">
+                                    <option value="value1" selected>0.20</option>
+                                    <option value="value2">0.30</option>
+                                    <option value="value3">0.40</option>
+                                </select>
+                            </div>
+                            <div class="icons">
+                                <span><img src="../img/slide--korzina.png" alt=""></span>
+                                <span><img src="../img/slider-book.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product--slider">
+                    <img class="back--fon" src="../img/back-book.png" alt="">
+                    <div class="bloock">
+                        <a href="#">
+                            <div class="product--slider--title">Сырники домашние</div>
+                            <div class="product--slider--img">
+                                <img src="../img/slider2.png" alt="">
+                            </div>
+                            <div class="product--slider--cost">620р.<span>/1кг.</span></div>
+                        </a>
+                        <div class="product--slider--icons">
+                            <div class="product--slider--date">
+                                <span>ВТ</span>
+                                <span>ПТ</span>
+                            </div>
+                            <div class="product--slider--num">
+                                <select name="select" class="select">
+                                    <option value="value1" selected>0.20</option>
+                                    <option value="value2">0.30</option>
+                                    <option value="value3">0.40</option>
+                                </select>
+                            </div>
+                            <div class="icons">
+                                <span><img src="../img/slide--korzina.png" alt=""></span>
+                                <span><img src="../img/slider-book.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product--slider">
+                    <img class="back--fon" src="../img/back-book.png" alt="">
+                    <div class="bloock">
+                        <a href="#">
+                            <div class="product--slider--title">Сырники домашние</div>
+                            <div class="product--slider--img">
+                                <img src="../img/slider2.png" alt="">
+                            </div>
+                            <div class="product--slider--cost">620р.<span>/1кг.</span></div>
+                        </a>
+                        <div class="product--slider--icons">
+                            <div class="product--slider--date">
+                                <span>ВТ</span>
+                                <span>ПТ</span>
+                            </div>
+                            <div class="product--slider--num">
+                                <select name="select" class="select">
+                                    <option value="value1" selected>0.20</option>
+                                    <option value="value2">0.30</option>
+                                    <option value="value3">0.40</option>
+                                </select>
+                            </div>
+                            <div class="icons">
+                                <span><img src="../img/slide--korzina.png" alt=""></span>
+                                <span><img src="../img/slider-book.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product--slider">
+                    <img class="back--fon" src="../img/back-book.png" alt="">
+                    <div class="bloock">
+                        <a href="#">
+                            <div class="product--slider--title">Сырники домашние</div>
+                            <div class="product--slider--img">
+                                <img src="../img/slider2.png" alt="">
+                            </div>
+                            <div class="product--slider--cost">620р.<span>/1кг.</span></div>
+                        </a>
+                        <div class="product--slider--icons">
+                            <div class="product--slider--date">
+                                <span>ВТ</span>
+                                <span>ПТ</span>
+                            </div>
+                            <div class="product--slider--num">
+                                <select name="select" class="select">
+                                    <option value="value1" selected>0.20</option>
+                                    <option value="value2">0.30</option>
+                                    <option value="value3">0.40</option>
+                                </select>
+                            </div>
+                            <div class="icons">
+                                <span><img src="../img/slide--korzina.png" alt=""></span>
+                                <span><img src="../img/slider-book.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
+        </section>
+
 
         <section id="invite--friend">
             <div class="invite--container">
