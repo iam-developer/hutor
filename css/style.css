@@ -1701,7 +1701,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
-    width: 260px;
+    width: 280px;
     margin: 20px 0;
 }
 .accordeon--arrow {
@@ -2429,4 +2429,49 @@ body {
       font-size: 16px;
       color: #6d3214;
       padding-top: 5px;
+  }
+
+  /* ============   страница "Новости, фермеры"   ================ */
+  .novosti--title {
+      font-family: 'MyriadPro-Bold';
+      font-size: 32px;
+      color: #6d3214;
+      padding: 10px 0;
+  }
+  .novosti--header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 7px 0;
+      width: 100%;
+      border-top: 1px solid #6d3214;
+      border-bottom: 1px solid #6d3214;
+  }
+  .novosti--header--date {
+    font-family: 'MyriadPro-Bold';
+    padding: 0 86px;
+    font-size: 22px;
+    color: #6d9d40;
+  }
+  .novosti--header--title {
+    font-family: 'MyriadPro-Bold';
+    font-size: 22px;
+    line-height: 21px;
+    color: #6d3214;
+  }
+  .novosti--detail {
+    font-family: 'MyriadPro-Regular';
+    font-size: 16px;
+    color: #6d3214;
+    padding: 10px 20px;
+    line-height: 17px;
+  }
+  .novosti--detail a {
+      color: #6d9d40;
+  }
+  .novosti--container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 14px 0;
   }

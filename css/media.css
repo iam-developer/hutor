@@ -549,6 +549,19 @@
     .my--balane {
         padding-left: 28px;
     }
+    .novosti--header,
+    .novosti--container {
+        flex-wrap: wrap;
+    }
+    .novosti--header--date {
+        padding: 0;
+    }
+    .novosti--detail {
+        padding: 10px 5px;
+    }
+    .oformlenie--zakaza {
+        padding: 20px 10px;
+    }
 }
 @media screen and (max-width: 540px) {
     .block--check {
