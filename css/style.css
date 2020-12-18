@@ -2475,3 +2475,31 @@ body {
       align-items: flex-start;
       padding: 14px 0;
   }
+
+  /* =========== страница "Статья"  =================  */
+  .statia--lines {
+      padding: 7px 0;
+      border-top: 1px solid #6d3214;
+      border-bottom: 1px solid #6d3214;
+      margin: 20px 0 10px;
+  }
+  .statia--content {
+      padding-top: 20px;
+  }
+  .statia--container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 12px 0;
+  }
+  .statia--text {
+      font-family: 'MyriadPro-Regular';
+      font-size: 16px;
+      color: #6d3214;
+  }
+  .statia--arrow--img {
+      margin-right: 7px;
+  }
+  .statia--extra {
+      padding: 0;
+  }
