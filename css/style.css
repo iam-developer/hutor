@@ -1698,6 +1698,8 @@ body {
 .accordeon--item,
 .sliderBtn {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     cursor: pointer;
     width: 260px;
     margin: 20px 0;
