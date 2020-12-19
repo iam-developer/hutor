@@ -2533,3 +2533,55 @@ body {
   .postavshik--slide:focus {
       outline: none;
   }
+
+  /* =============  страница "Контакты" ============= */
+  .contact--container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 10px 0;
+  }
+  .contact--txt {
+      font-family: 'MyriadPro-Bold';
+      font-size: 24px;
+      padding-left: 10px;
+      color: #6d9d40;
+  }
+  .contact--bold--txt {
+      font-family: 'MyriadPro-Bold';
+      font-size: 16px;
+      color: #6d3214;
+  }
+  .contact--icon {
+      width: 38px;
+  }
+  .map--container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+      padding: 20px;
+      max-width: 1920px;
+      margin: 0 auto;
+  }
+  .map--left--container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  .map--block {
+      margin: 20px 20px 0 0;
+  }
+  .map--block img {
+      width: 100%;
+  }
+  .map--left {
+      width: 45%;
+  }
+  .map--right {
+      width: 55%;
+      margin: 20px 0 27px;
+  }
+  .map--right iframe {
+      width: 100%;
+      height: 100%;
+  }

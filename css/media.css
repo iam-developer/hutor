@@ -390,11 +390,34 @@
     .mobile--block {
         display: flex;
     }
+    .contact--txt {
+        font-size: 20px;
+    }
+    .contact--icon {
+        width: 30px;
+    }
+    .contact--icon img {
+        width: 100%;
+    }
     #video--section {
         padding-top: 0;
     }
+    .map--left--container .map--block:last-child {
+        margin-right: 0;
+    }
+    .map--right {
+        height: 300px;
+    }
     .mob--shadow {
         display: block;
+    }
+    .map--container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .map--left,
+    .map--right {
+        width: 100%;
     }
     .video--block {
         height: 170px;
