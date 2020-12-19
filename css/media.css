@@ -399,6 +399,9 @@
     .contact--icon img {
         width: 100%;
     }
+    .map--img img {
+        width: 80%;
+    }
     #video--section {
         padding-top: 0;
     }
