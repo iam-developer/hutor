@@ -62,6 +62,39 @@ $('.center--slider').slick({
     ]
 });
 
+// Слайдер "Карточка поставщика":
+
+$('.postavshik--slider').slick({
+  
+  infinite: true,
+  dots: false,
+  arrow: false,
+  prevArrow:"<img class='left--arrow' src='/hutor/img/left-btn.png'>",
+  nextArrow:"<img class='right--arrow' src='/hutor/img/right-btn.png'>",
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  responsive: [
+      {
+        breakpoint: 1320,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 1094,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+          }
+        }
+    ]
+});
+
 // Второй слайдер (чаще всего заказывают):
 
 $('.product--slider--container').slick({

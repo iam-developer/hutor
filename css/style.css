@@ -2503,3 +2503,33 @@ body {
   .statia--extra {
       padding: 0;
   }
+
+  /* =============  страница "Карточка паставщика"  ================= */
+  .postavshik--right {
+      width: 65%;
+  }
+  .postavshik--left {
+      width: 35%;
+      padding-right: 20px;
+  }
+  .postavshik--video {
+      width: 90%;
+      margin: 0 23px;
+  }
+  .postavshik--btn span {
+      width: 50%;
+      padding: 5px;
+  }
+  .postavshik--slider--container {
+      padding: 30px;
+  }
+  .postavshik--slide {
+      margin: 0 20px;
+  }
+  .postavshik--slide img {
+      margin: 0 auto;
+      width: 100%;
+  }
+  .postavshik--slide:focus {
+      outline: none;
+  }

@@ -78,6 +78,13 @@
     .korzina--right {
         width: 100%;
     }
+    .post--ramka {
+        width: 27%;
+    }
+    .post--main--slider .slick-dots {
+        right: 80px;
+        bottom: -27px;
+    }
 }
 @media screen and (max-width: 1100px) {
     .footer {
@@ -472,6 +479,9 @@
     .oformlenie--zakaza {
         padding: 20px;
     }
+    .postavshik--left {
+        padding-right: 0;
+    }
 }
 @media screen and (max-width: 730px) {
     .oformlenie--container {
@@ -775,6 +785,9 @@
     .korzina--date {
         font-size: 11px;
     }
+    .postavshik--video {
+        margin: 0 20px;
+    }
 }
 @media screen and (max-width: 440px) {
     .korzina--buttons button {
@@ -907,6 +920,9 @@
     .invite--txt {
         font-size: 22px;
         line-height: 22px;
+    }
+    .postavshik--slide {
+        margin: 0 10px;
     }
     .video--block {
         height: 140px;
