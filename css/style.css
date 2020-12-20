@@ -2585,3 +2585,155 @@ body {
       width: 100%;
       height: 100%;
   }
+/* ============ страница "Подробнее о заказе"   ================== */
+#o--zakaze {
+    font-family: 'MyriadPro-Regular';
+    font-weight: inherit;
+}
+
+/* ================     страница "Сотрудники"   ============== */
+.sotrudnik--title {
+    padding: 16px 0 0;
+}
+.sotrudniki--container {
+    max-width: 1920px;
+    padding: 20px 0 0;
+    margin: 0 auto;
+}
+.sotrudniki--about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.sutrudnik--block {
+    width: 235px;
+    cursor: pointer;
+    margin: 13px;
+    position: relative;
+    text-align: center;
+}
+.sutrudnik--block img {
+    max-width: 95%;
+}
+.sotrudnik--name {
+    position: absolute;
+    bottom: 15px;
+    left: 6px;
+    background-image: url('../img/zakaz--ramka.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    line-height: 14px;
+    color: #6d3214;
+    padding: 10px 34px;
+}
+.sotrudnik--name span {
+    font-family: 'MyriadPro-Bold';
+}
+.sot--modal {
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    color: #6d3214;
+    padding: 14px;
+    background-color: rgb(255, 255, 255, 0.97);
+    display: none;
+    width: 200px;
+    z-index: 99;
+    position: absolute;
+    top: 120px;
+    cursor: default;
+    left: 150px;
+}
+.sot--modal::before {
+    content: '';
+    border-radius: 7px;
+    border: 20px solid transparent; 
+    border-right: 14px solid rgb(255, 255, 255, 0.9); 
+    border-bottom: 14px solid rgb(255, 255, 255, 0.9);
+    position: absolute;
+    left: -20px;
+    z-index: -1;
+}
+.sotrudnik--content {
+    position: relative;
+}
+.sot--modal5 {
+    left: -100px;
+}
+.sot--modal5::before {
+    content: '';
+    border-radius: 7px;
+    border: 20px solid transparent; 
+    border-bottom: 14px solid rgb(255, 255, 255, 0.9); 
+    border-left: 14px solid rgb(255, 255, 255, 0.9); 
+    position: absolute;
+    left: 185px;
+    z-index: -1;
+}
+.employee1:hover .sot--modal1 {
+    display: block;
+}
+.employee2:hover .sot--modal2 {
+    display: block;
+}
+.employee3:hover .sot--modal3 {
+    display: block;
+}
+.employee4:hover .sot--modal4 {
+    display: block;
+}
+.employee5:hover .sot--modal5 {
+    display: block;
+}
+.employee6:hover .sot--modal6 {
+    display: block;
+}
+.employee7:hover .sot--modal7 {
+    display: block;
+}
+.employee8:hover .sot--modal8 {
+    display: block;
+}
+.employee9:hover .sot--modal9 {
+    display: block;
+}
+.employee11:hover .sot--modal11 {
+    display: block;
+}
+.employee12:hover .sot--modal12 {
+    display: block;
+}
+.employee13:hover .sot--modal13 {
+    display: block;
+}
+.employee14:hover .sot--modal14 {
+    display: block;
+}
+.employee16:hover .sot--modal16 {
+    display: block;
+}
+.employee17:hover .sot--modal17 {
+    display: block;
+}
+.employee18:hover .sot--modal18 {
+    display: block;
+}
+.employee19:hover .sot--modal19 {
+    display: block;
+}
+.employee21:hover .sot--modal21 {
+    display: block;
+}
+.employee22:hover .sot--modal22 {
+    display: block;
+}
+.employee23:hover .sot--modal23 {
+    display: block;
+}
+.employee24:hover .sot--modal24 {
+    display: block;
+}

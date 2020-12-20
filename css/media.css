@@ -258,6 +258,16 @@
     #oformlenie--zakaza {
         padding: 220px 20px 20px;
     }
+    .sot--modal {
+        top: 196px;
+        left: 30px;
+    }
+    .sot--modal::before {
+        border: 20px solid transparent; 
+        border-bottom: 20px solid rgb(255, 255, 255, 0.99);
+        top: -37px;
+        left: 55px;
+    }
 }
 @media screen and (max-width: 862px) {
     .product--detail div {
@@ -549,6 +559,25 @@
     .center--block {
         height: 180px;
     }
+    .sotrudnik--content:nth-child(4) p {
+        left: 0;
+        padding: 4px;
+    }
+    .sutrudnik--block {
+        width: 184px;
+    }
+    .sotrudnik--name {
+        padding: 7px;
+        left: 5px;
+        line-height: 10px;
+        font-size: 12px;
+    }
+    .sotrudniki--about {
+        justify-content: center;
+    }
+    .sutrudnik--block {
+        margin: 2px;
+    }
     .center--block--txt {
         padding: 30px 20px 20px 70px;
     }
@@ -597,6 +626,13 @@
     }
     .oformlenie--zakaza {
         padding: 20px 10px;
+    }
+    .sot--modal {
+        width: 146px;
+        font-size: 12px;
+        padding: 12px;
+        top: 170px;
+        left: 10px;
     }
 }
 @media screen and (max-width: 540px) {
@@ -884,6 +920,9 @@
     .select option {
         font-size: 8px;
     }
+    .sutrudnik--block {
+        width: 160px;
+    }
     .icons span {
         width: 20px;
     }
@@ -1011,6 +1050,9 @@
     }
     .sostav--zakaza--text span:first-child {
         width: 156px;
+    }
+    .sutrudnik--block {
+        width: 134px;
     }
 }
 @media screen and (max-width: 360px) {
