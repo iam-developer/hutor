@@ -2647,6 +2647,7 @@ body {
     top: 120px;
     cursor: default;
     left: 150px;
+    border-radius: 7px;
 }
 .sot--modal::before {
     content: '';

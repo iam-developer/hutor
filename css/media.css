@@ -1,5 +1,20 @@
 
 /*/////////////// Медиа запросы для главной страницы */
+@media screen and (max-width: 1345px) {
+    sot--modal {
+        top: 196px;
+        left: 30px;
+    }
+    .sot--modal::before {
+        border: 20px solid transparent; 
+        border-bottom: 20px solid rgb(255, 255, 255, 0.99);
+        top: -37px;
+        left: 55px;
+    }
+    .sot--modal5 {
+        left: auto;
+    }
+}
 @media screen and (max-width: 1320px) {
     .book--text4 {
         padding: 14px 0 0 42px;
