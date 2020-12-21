@@ -860,13 +860,13 @@
         </header>
         
         <section class="own--room">
-            <div class="kartochka--right--links">
+            <div class="kartochka--right--links one--more--class">
                 <a href="../">Главная / </a>
                 <span>Личный кабинет /</span>
             </div>
             <div class="own--room--container">
 
-                <div class="own--room--item moiprofileBtn">
+                <div class="own--room--item moiprofileBtn one--more--class">
                     <div class="accordeon--item">
                         <div class="accordeon--arrow icon--left">&#9658;</div>
                         <div class="accordeon--arrow pad__left">Мой профиль</div>
@@ -909,7 +909,7 @@
                     </div>
                 </div>
 
-                <div class="own--room--item">
+                <div class="own--room--item one--more--class">
                     <div class="accordeon--item">
                         <div class="accordeon--arrow icon--left">&#9658;</div>
                         <div class="accordeon--arrow pad__left">Мои адреса и телефоны</div>
@@ -932,11 +932,15 @@
                             <div class="profile--block">
                                 <div class="profile--item">
                                     <span class="accordeon--txt">Телефон 1:</span>
-                                    <input type="tel">
+                                    <input type="tel" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
                                 </div>
                                 <div class="profile--item">
                                     <span class="accordeon--txt">Телефон 2:</span>
-                                    <input type="tel">
+                                    <input type="tel" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                                </div>
+                                <div class="profile--item">
+                                    <span class="accordeon--txt">Телефон 3:</span>
+                                    <input type="tel" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
                                 </div>
                                 <div class="profile--item">
                                     <span class="accordeon--txt add--btn">Добавить телефон</span>
@@ -946,7 +950,7 @@
                     </div>
                 </div>
 
-                <div class="own--room--item moizakazy__btn">
+                <div class="own--room--item moizakazy__btn one--more--class">
                     <div class="accordeon--item">
                         <div class="accordeon--arrow icon--left">&#9658;</div>
                         <div class="accordeon--arrow pad__left">Мои заказы</div>
@@ -1012,8 +1016,8 @@
                                 <div class="detail--zakaza">
                                     <div class="accordeon--txt zakaz--title">Состав заказа</div>
                                     <div class="zakaz--txt">
-                                        <span class="accordeon--txt add--btn">Подробнее</span><br>
-                                        <span class="accordeon--txt add--btn">Подробнее</span><br>
+                                        <span class="accordeon--txt add--btn"><a href="../podrobnee_o_zakaze/">Подробнее</a></span><br>
+                                        <span class="accordeon--txt add--btn"><a href="../podrobnee_o_zakaze/">Подробнее</a></span><br>
                                     </div>
                                 </div>
                             </div>
@@ -1022,7 +1026,7 @@
                 </div>
 
                 <div class="own--room--item slider--accordeon">
-                    <div class="sliderBtn ha">
+                    <div class="sliderBtn ha one--more--class">
                         <div class="accordeon--arrow icon--left">&#9658;</div>
                         <div class="accordeon--arrow pad__left">Интересные мне продукты</div>
                     </div>
@@ -1236,7 +1240,7 @@
                         </div>
                 </div>
 
-                <div class="own--room--item">
+                <div class="own--room--item one--more--class">
                     <div class="accordeon--item">
                         <div class="accordeon--arrow icon--left">&#9658;</div>
                         <div class="accordeon--arrow pad__left">Мой баланс</div>
@@ -1255,7 +1259,7 @@
                     </div>
                 </div>
                 
-                <div class="own--room--item">
+                <div class="own--room--item one--more--class">
                     <div class="accordeon--item">
                         <div class="accordeon--arrow icon--left">&#9658;</div>
                         <div class="accordeon--arrow pad__left">У меня вопрос</div>
@@ -1303,7 +1307,7 @@
                                             <option value="2" data-left="../img/rus-flag.png">+8</option>
                                             <option value="3" data-left="../img/rus-flag.png">+9</option>
                                         </select>
-                                        <input id="tel--width" type="tel">
+                                        <input id="tel--width" type="tel" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
                                     </div>
                                 </div>
                                 <div class="input--field textarea--center">
@@ -1320,7 +1324,7 @@
                     </div>
                 </div>
 
-                <div class="own--room--item">
+                <div class="own--room--item one--more--class">
                     <div class="accordeon--item">
                         <div class="accordeon--arrow icon--left">&#9658;</div>
                         <div class="accordeon--arrow pad__left">Мои напоминания</div>

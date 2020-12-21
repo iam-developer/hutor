@@ -1324,7 +1324,7 @@ body {
     height: 110px;
 }
 
-/* ===============      СТРАНИЦА "КАТАЛОГ ТОВАРЫ"       =============== */
+/* ===============      СТРАНИЦА "КАТАЛОГ ТОВАРА"       =============== */
 .catalog--moloko {
     padding-bottom: 20px;
 }
@@ -1341,9 +1341,6 @@ body {
     flex-wrap: wrap;
     width: 82%;
 }
-/* .check--block--left {
-    width: 18%;
-} */
 .check--block--text {
     display: flex;
     justify-content: flex-start;
@@ -1446,7 +1443,7 @@ body {
 .kartochka--tovara {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 260px 20px 20px;
+    padding: 280px 20px 20px;
 }
 .kartochka--container {
     display: flex;
@@ -1690,7 +1687,7 @@ body {
 .own--room {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 260px 20px 20px;
+    padding: 260px 0 20px;
 }
 .own--room--container {
     padding: 20px 0;
@@ -1701,7 +1698,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
-    width: 280px;
+    width: 305px;
     margin: 20px 0;
 }
 .accordeon--arrow {
@@ -1728,11 +1725,12 @@ body {
     transition: .3s;
     border-bottom: 1px solid #6d3214;
 }
-.add--btn:hover {
+.add--btn a:hover {
     color: #c5551d;
     border-bottom: 1px solid #c5551d;
 }
-.accordeon--txt {
+.accordeon--txt,
+.accordeon--txt a {
     font-family: 'MyriadPro-Regular';
     font-size: 12px;
     color: #444444;
@@ -1765,6 +1763,7 @@ body {
     padding: 4px;
     border: 1px solid #c1c5c8;
     border-radius: 3px;
+    width: 178px;
 }
 .profile--item input:focus {
     outline: none;
@@ -1904,6 +1903,9 @@ body {
     width: 240px;
     margin-left: 6px;
 }
+.recept--page {
+    padding-top: 280px;
+}
 .send--quation {
     font-family: 'MyriadPro-Bold';
     font-size: 25px;
@@ -1912,7 +1914,7 @@ body {
     background: linear-gradient(to bottom, #d6d0ba, #afb08e);
     outline: none;
     border: none;
-    border-radius: 18px;
+    border-radius: 14px;
     padding: 8px 40px;
     transition: .2s;
     cursor: pointer;
@@ -1932,6 +1934,10 @@ body {
 }
 .hidden--block {
     display: none;
+}
+.one--more--class {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* ====================    Страниа "ОФОРМЛЕНИЕ ЗАКАЗА     ===================== */
@@ -2063,6 +2069,7 @@ body {
     font-size: 14px;
     color: #6d3214;
     line-height: 13px;
+    width: 50px;
 }
 .sostav--zakaza--text {
     display: flex;
@@ -2112,7 +2119,10 @@ body {
     cursor: pointer;
     transition: .3s;
     border-radius: 7px;
-    margin: 40px 0 0 60px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .accept--order:hover {
     background: linear-gradient(to top, #d9d2bc, #b3b493);
@@ -2121,14 +2131,21 @@ body {
     outline: none;
 }
 .oform--input--wid input {
-    width: auto;
+    width: 100%;
 }
 .oform--payment--block select {
     background: transparent;
 }
-
+.oform--pad--let {
+    padding-left: 40px;
+}
 /* ===============      Страница "Моя корзина"      =================== */
 
+.korzina--page {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 260px 20px 20px;
+}
 .korzina--container {
     display: flex;
     justify-content: space-between;
@@ -2170,6 +2187,10 @@ body {
     line-height: 24px;
     color: #6d3214;
     padding: 5px 0;
+}
+.korzina--cost span {
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
 }
 .korzina--product {
     display: flex;
@@ -2239,7 +2260,7 @@ body {
 }
 .korzina--cena--extra {
     margin: 0 0 0 4px;
-    width: auto;
+    width: 40px;
 }
 .kor--product--right span:last-child {
     margin: 20px;
@@ -2277,6 +2298,15 @@ body {
     height: 33px;
     background: #fff;
 }
+.plus--button--width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 110px;
+}
+.plus--button--width span:last-child {
+    margin: 0;
+}
 .korzina--buttons {
     display: flex;
     justify-content: flex-end;
@@ -2291,8 +2321,8 @@ body {
     background: linear-gradient(to bottom, #d6d0ba, #afb08e);
     outline: none;
     border: none;
-    border-radius: 18px;
-    padding: 6px 30px;
+    border-radius: 12px;
+    padding: 8px 30px;
     transition: .2s;
     cursor: pointer;
     text-shadow: 2px 1px 2px #000;
@@ -2326,6 +2356,15 @@ body {
     font-size: 16px;
     color: #6d3214;
     line-height: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.moi--zakaz--txt span:nth-child(2) {
+    padding: 0 7px;
+}
+.moi--zakaz--txt span img {
+    padding-right: 4px;
 }
 .moi--zakaz--txt2 {
     font-family: 'MyriadPro-Bold';
@@ -2723,7 +2762,7 @@ body {
     position: absolute;
     top: 120px;
     cursor: default;
-    left: 150px;
+    left: 180px;
     border-radius: 7px;
 }
 .sot--modal::before {

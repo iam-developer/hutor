@@ -242,4 +242,49 @@ $('.show--sod3').click(function() {
   $('.soderjimoe3').addClass('soderjimoe--active');
 });
 
+// Страница "Корзина":
+
+let plusBtn = document.querySelector('.plus__btn');
+let minusBtn = document.querySelector('.minus__btn');
+let count = document.querySelector('.count');
+let deleteBtn = document.querySelector('.deleteBtn');
+let index = 2;
+
+plusBtn.onclick = function plusCount() {
+    index ++;
+    count.innerHTML = index;
+}
+
+minusBtn.onclick = function minusCount() {
+  if(index > 0) {
+    index --;
+  }
+  count.innerHTML = index;
+}
+deleteBtn.onclick = function() {
+  count.innerHTML = '0';
+}
+
+let plusBtn2 = document.querySelector('.plus__btn2');
+let minusBtn2 = document.querySelector('.minus__btn2');
+let count2 = document.querySelector('.count2');
+let deleteBtn2 = document.querySelector('.deleteBtn2');
+let index2 = 4;
+
+plusBtn2.onclick = function() {
+    index2 ++;
+    count2.innerHTML = index2;
+}
+minusBtn2.onclick = function() {
+  if(index2 > 0) {
+    index2 --;
+  }
+  count2.innerHTML = index2;
+}
+deleteBtn2.onclick = function() {
+  count2.innerHTML = '0';
+}
+
+
+
 

@@ -127,9 +127,6 @@
     .menu--item a {
         font-size: 16px;
     }
-    .tablica--container {
-        /* align-items: center; */
-    }
     .one,
     .two,
     .catalog,
@@ -301,7 +298,8 @@
         width: 230px;
     }
     .oformlenie--zakaza,
-    #oformlenie--zakaza {
+    #oformlenie--zakaza,
+    .korzina--page {
         padding: 220px 20px 20px;
     }
     .sot--modal {
@@ -414,9 +412,12 @@
     .oform--checkbox--txt {
         width: 333px;
     }
-    #oformlenie--zakaza, .oformlenie--zakaza {
+    #oformlenie--zakaza,
+    .oformlenie--zakaza,
+    .korzina--page {
         padding: 200px 20px 20px;
     }
+
 }
 @media screen and (max-width: 767px) {
     .oform--border {
@@ -427,6 +428,9 @@
     }
     .menu--catalog--mob {
         display: block;
+    }
+    .korzina--txt {
+        font-size: 13px;
     }
     .author {
         width: auto;
@@ -579,7 +583,7 @@
         padding-left: 0;
     }
     .own--room {
-        padding: 30px 20px 20px;
+        padding: 30px 0 20px;
     }
     .zakazy--container {
         margin: 0;
@@ -594,11 +598,16 @@
     #oformlenie--zakaza {
         padding: 20px;
     }
-    .oformlenie--zakaza {
+    .oformlenie--zakaza,
+    .korzina--page {
         padding: 20px;
     }
     .postavshik--left {
         padding-right: 0;
+    }
+    .one--more--class {
+        padding-right: 10px;
+        padding-left: 10px;
     }
 }
 @media screen and (max-width: 730px) {
@@ -688,7 +697,7 @@
         width: 100%;
     }
     .own--room {
-        padding: 30px 10px 20px;
+        padding: 30px 0 20px;
     }
     .profile--block {
         margin-right: 0;
@@ -706,7 +715,8 @@
     .novosti--detail {
         padding: 10px 5px;
     }
-    .oformlenie--zakaza {
+    .oformlenie--zakaza,
+    .korzina--page {
         padding: 20px 10px;
     }
     .sot--modal {
@@ -928,7 +938,8 @@
     .selectator_options .selectator_option .selectator_option_title {
         margin-left: 3px;
     }
-    .oformlenie--zakaza {
+    .oformlenie--zakaza,
+    .korzina--page {
         padding: 20px 10px;
     }
     .korzina--cost {
@@ -1241,5 +1252,11 @@
     }
     .oform--checkbox--txt label {
         padding-right: 10px;
+    }
+    .korzina--litr {
+        margin: 2px 10px 0;
+    }
+    .plus--button--width {
+        width: 100px;
     }
 }

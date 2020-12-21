@@ -858,7 +858,7 @@
             </div>
         </header>
         
-        <main class="oformlenie--zakaza">
+        <div class="korzina--page">
             <div class="kartochka--right--links oform--links">
                 <a href="../">Главная / </a>
                 <a href="../">Личный кабинет / </a>
@@ -868,24 +868,28 @@
                 <div class="korzina--left">
                     <div class="oform--title">Моя корзина</div>
                     <div class="korzina--product">
-                        <div class="kor--product--left">
-                            <div class="kor--product--img">
-                                <img src="../img/korzina-img1.png" alt="">
-                            </div>
-                            <div class="kor--product--detail">
-                                <p class="korzina--txt">Молоко коровье пастеризованное,<br>Сыроварня Вяртемяги</p>
-                                <h3 class="korzina--cost">106р./1л.</h3>
-                                <div class="korzina--date--container">
-                                    <span class="korzina--date">ВТ</span>
-                                    <span class="korzina--date">ПТ</span>
+                        <a href="../kartochka_tovara/">
+                            <div class="kor--product--left">
+                                <div class="kor--product--img">
+                                    <img src="../img/korzina-img1.png" alt="">
+                                </div>
+                                <div class="kor--product--detail">
+                                    <p class="korzina--txt">Молоко коровье пастеризованное,<br>Сыроварня Вяртемяги</p>
+                                    <h3 class="korzina--cost">106р.<span>/1л.</span></h3>
+                                    <div class="korzina--date--container">
+                                        <span class="korzina--date">ВТ</span>
+                                        <span class="korzina--date">ПТ</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                         <div class="kor--product--right">
                             <div class="korzina--calculator">
-                                <span class="korzina--btn kor--border--right">-</span>
-                                <span class="korzina--litr">3</span>
-                                <span class="korzina--btn kor--border--left">+</span>
+                                <span class="plus--button--width">
+                                    <span class="korzina--btn kor--border--right">-</span>
+                                    <span class="korzina--litr">3</span>
+                                    <span class="korzina--btn kor--border--left">+</span>
+                                </span>
                                 <span class="korzina--cena korzina--cena--extra">л.</span>
                                 <span class="korzina--cena">318р.</span>
                                 <span class="korzina--delete">
@@ -897,26 +901,30 @@
                             </div>
                         </div>
                     </div>
-                    <textarea name="comment" class="korzina--comment" cols="" rows="">Комментарий</textarea>
+                    <textarea name="comment" class="korzina--comment" cols="" rows="" placeholder="Комментарий"></textarea>
 
                     <div class="korzina--product">
-                        <div class="kor--product--left">
-                            <div class="kor--product--img">
-                                <img src="../img/korzina-img1.png" alt="">
-                            </div>
-                            <div class="kor--product--detail">
-                                <p class="korzina--txt">Свинина, мякоть</p>
-                                <h3 class="korzina--cost">890р./1кг.</h3>
-                                <div class="korzina--date--container">
-                                    <span class="korzina--date">ПТ</span>
+                        <a href="#">
+                            <div class="kor--product--left">
+                                <div class="kor--product--img">
+                                    <img src="../img/korzina-img2.png" alt="">
+                                </div>
+                                <div class="kor--product--detail">
+                                    <p class="korzina--txt">Свинина, мякоть</p>
+                                    <h3 class="korzina--cost">890р.<span>/1кг.</span></h3>
+                                    <div class="korzina--date--container">
+                                        <span class="korzina--date">ПТ</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                         <div class="kor--product--right">
                             <div class="korzina--calculator">
-                                <span class="korzina--btn kor--border--right">-</span>
-                                <span class="korzina--litr">3.5</span>
-                                <span class="korzina--btn kor--border--left">+</span>
+                                <span class="plus--button--width">
+                                    <span class="korzina--btn kor--border--right">-</span>
+                                    <span class="korzina--litr">3.5</span>
+                                    <span class="korzina--btn kor--border--left">+</span>
+                                </span>
                                 <span class="korzina--cena korzina--cena--extra">кг.</span>
                                 <span class="korzina--cena">3115р.</span>
                                 <span class="korzina--delete">
@@ -928,27 +936,31 @@
                             </div>
                         </div>
                     </div>
-                    <textarea name="comment" class="korzina--comment" cols="" rows="">Комментарий</textarea>
+                    <textarea name="comment" class="korzina--comment" cols="" rows="" placeholder="Комментарий"></textarea>
 
                     <div class="korzina--product">
-                        <div class="kor--product--left">
-                            <div class="kor--product--img">
-                                <img src="../img/korzina-img3.png" alt="">
-                            </div>
-                            <div class="kor--product--detail">
-                                <p class="korzina--txt">Свекла ORGANIC, Агронова</p>
-                                <h3 class="korzina--cost">110р./1кг.</h3>
-                                <div class="korzina--date--container">
-                                    <span class="korzina--date">ВТ</span>
-                                    <span class="korzina--date">ПТ</span>
+                        <a href="#">
+                            <div class="kor--product--left">
+                                <div class="kor--product--img">
+                                    <img src="../img/korzina-img3.png" alt="">
+                                </div>
+                                <div class="kor--product--detail">
+                                    <p class="korzina--txt">Свекла ORGANIC, Агронова</p>
+                                    <h3 class="korzina--cost">110р.<span>/1кг.</span></h3>
+                                    <div class="korzina--date--container">
+                                        <span class="korzina--date">ВТ</span>
+                                        <span class="korzina--date">ПТ</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                         <div class="kor--product--right">
                             <div class="korzina--calculator">
-                                <span class="korzina--btn kor--border--right">-</span>
-                                <span class="korzina--litr">0.5</span>
-                                <span class="korzina--btn kor--border--left">+</span>
+                                <span class="plus--button--width">
+                                    <span class="korzina--btn kor--border--right">-</span>
+                                    <span class="korzina--litr">0.5</span>
+                                    <span class="korzina--btn kor--border--left">+</span>
+                                </span>
                                 <span class="korzina--cena korzina--cena--extra">кг.</span>
                                 <span class="korzina--cena">55р.</span>
                                 <span class="korzina--delete">
@@ -960,31 +972,35 @@
                             </div>
                         </div>
                     </div>
-                    <textarea name="comment" class="korzina--comment" cols="" rows="">Комментарий</textarea>
+                    <textarea name="comment" class="korzina--comment" cols="" rows="" placeholder="Комментарий"></textarea>
 
                     <div class="korzina--product">
-                        <div class="kor--product--left">
-                            <div class="kor--product--img">
-                                <img src="../img/korzina-img4.png" alt="">
-                            </div>
-                            <div class="kor--product--detail">
-                                <p class="korzina--txt">Йогурт с вишней, ферма Татьяны Кузьмич</p>
-                                <h3 class="korzina--cost">85р./1шт.</h3>
-                                <div class="korzina--date--container">
-                                    <span class="korzina--date">ВТ</span>
-                                    <span class="korzina--date">ПТ</span>
+                        <a href="#">
+                            <div class="kor--product--left">
+                                <div class="kor--product--img">
+                                    <img src="../img/korzina-img4.png" alt="">
+                                </div>
+                                <div class="kor--product--detail">
+                                    <p class="korzina--txt">Йогурт с вишней, ферма Татьяны Кузьмич</p>
+                                    <h3 class="korzina--cost">85р.<span>/шт.</span></h3>
+                                    <div class="korzina--date--container">
+                                        <span class="korzina--date">ВТ</span>
+                                        <span class="korzina--date">ПТ</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                         <div class="kor--product--right">
                             <div class="korzina--calculator">
-                                <span class="korzina--btn kor--border--right">-</span>
-                                <span class="korzina--litr">4</span>
-                                <span class="korzina--btn kor--border--left">+</span>
+                                <span class="plus--button--width">
+                                    <span class="korzina--btn kor--border--right minus__btn2">-</span>
+                                    <span class="korzina--litr count2">4</span>
+                                    <span class="korzina--btn kor--border--left plus__btn2">+</span>
+                                </span>
                                 <span class="korzina--cena korzina--cena--extra">шт.</span>
                                 <span class="korzina--cena">240р.</span>
                                 <span class="korzina--delete">
-                                    <img src="../img/korzina-delete.png" alt="">
+                                    <img class="deleteBtn2" src="../img/korzina-delete.png" alt="">
                                 </span>
                                 <span class="korzina--add">
                                     <img src="../img/korzina-add.png" alt="">
@@ -992,31 +1008,35 @@
                             </div>
                         </div>
                     </div>
-                    <textarea name="comment" class="korzina--comment" cols="" rows="">Комментарий</textarea>
+                    <textarea name="comment" class="korzina--comment" cols="" rows="" placeholder="Комментарий"></textarea>
 
                     <div class="korzina--product">
-                        <div class="kor--product--left">
-                            <div class="kor--product--img">
-                                <img src="../img/korzina-img5.png" alt="">
-                            </div>
-                            <div class="kor--product--detail">
-                                <p class="korzina--txt">Лапша яичная домашняя, ручная работа</p>
-                                <h3 class="korzina--cost">248р./1уп.</h3>
-                                <div class="korzina--date--container">
-                                    <span class="korzina--date">ВТ</span>
-                                    <span class="korzina--date">ПТ</span>
+                        <a href="#">
+                            <div class="kor--product--left">
+                                <div class="kor--product--img">
+                                    <img src="../img/korzina-img5.png" alt="">
+                                </div>
+                                <div class="kor--product--detail">
+                                    <p class="korzina--txt">Лапша яичная домашняя, ручная работа</p>
+                                    <h3 class="korzina--cost">248р.<span>/уп.</span></h3>
+                                    <div class="korzina--date--container">
+                                        <span class="korzina--date">ВТ</span>
+                                        <span class="korzina--date">ПТ</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                         <div class="kor--product--right">
                             <div class="korzina--calculator">
-                                <span class="korzina--btn kor--border--right">-</span>
-                                <span class="korzina--litr">2</span>
-                                <span class="korzina--btn kor--border--left">+</span>
+                                <span class="plus--button--width">
+                                    <span class="korzina--btn kor--border--right minus__btn">-</span>
+                                    <span class="korzina--litr count">2</span>
+                                    <span class="korzina--btn kor--border--left plus__btn">+</span>
+                                </span>
                                 <span class="korzina--cena korzina--cena--extra">шт.</span>
                                 <span class="korzina--cena">496р.</span>
                                 <span class="korzina--delete">
-                                    <img src="../img/korzina-delete.png" alt="">
+                                    <img class="deleteBtn" src="../img/korzina-delete.png" alt="">
                                 </span>
                                 <span class="korzina--add">
                                     <img src="../img/korzina-add.png" alt="">
@@ -1024,7 +1044,7 @@
                             </div>
                         </div>
                     </div>
-                    <textarea name="comment" class="korzina--comment" cols="" rows="">Комментарий</textarea>
+                    <textarea name="comment" class="korzina--comment" cols="" rows="" placeholder="Комментарий"></textarea>
 
                     <div class="korzina--buttons">
                         <button class="add--product">Добавить товар</button>
@@ -1075,7 +1095,7 @@
                                 <div class="moi--zakaz--txt">Ввести промокод</div>
                             </div>
                             <div class="moi--zakaz--right">
-                                <textarea name="comment" class="korzina--comment korzina--comment2" cols="" rows="">Комментарий</textarea>
+                                <textarea name="comment" class="korzina--comment korzina--comment2" cols="" rows="" placeholder="Комментарий"></textarea>
                             </div>
                         </div>
                         <div class="moi--zakaz--container">
@@ -1083,7 +1103,7 @@
                                 <div class="moi--zakaz--txt">Грабельки в дело<br>(У вас 425 грабелек)</div>
                             </div>
                             <div class="moi--zakaz--right">
-                                <textarea name="comment" class="korzina--comment korzina--comment2" cols="" rows="">Комментарий</textarea>
+                                <textarea name="comment" class="korzina--comment korzina--comment2" cols="" rows="" placeholder="Комментарий"></textarea>
                             </div>
                         </div>
                         <div class="moi--zakaz--container">
@@ -1098,7 +1118,8 @@
                     <div class="oformit--zakaz">
                         <div class="moi--zakaz--txt3">Доставка по СПб в подарок, загород со скидкой</div>
                         <p class="moi--zakaz--txt4">*Сумма предварительная, она может измениться после взвешивания. Ведь у нас продукты некалиброванные, они настоящие</p>
-                        <div class="moi--zakaz--txt">За этот заказ мы подарим вам
+                        <div class="moi--zakaz--txt">
+                            <span><img src="../img/hutor-icon.png" alt=""></span>За этот заказ мы подарим вам
                             <span class="moi--zakaz--txt2">43</span>
                             <span class="bold--txt">грабельки</span>
                         </div>
@@ -1127,7 +1148,8 @@
                     </div>
                     <div class="line--korzina"></div>
                 </div>
-        </main>
+            </div>
+        </div>
 
         <section class="products--sliders">
             <div class="products--sliders--title">Вы просмотривали:</div>

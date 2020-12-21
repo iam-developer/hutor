@@ -858,7 +858,7 @@
             </div>
         </header>
         
-        <main id="oformlenie--zakaza">
+        <div id="oformlenie--zakaza">
             <div class="kartochka--right--links oform--links">
                 <a href="../">Главная / </a>
                 <a href="../">Личный кабинет / </a>
@@ -884,7 +884,7 @@
                                     E-Mail:*
                                 </div>
                                 <div class="input--focus">
-                                    <input type="email">
+                                    <input type="email" pattern=".+@globex.com" >
                                 </div>
                             </div>
                             <div class="input--field">
@@ -892,7 +892,7 @@
                                     Телефон:*
                                 </div>
                                 <div class="input--focus">
-                                    <input type="tel">
+                                    <input type="tel" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
                                 </div>
                             </div>
                             <div class="input--field textarea--center">
@@ -948,7 +948,7 @@
                             </div>
                         </div>
                         <div class="oform--payment--block">
-                            <p class="oform--text oform--top">Оплата</p>
+                            <p class="oform--text oform--top oform--pad--let">Оплата</p>
                             <div class="oform--clas">
                                 <div class="oform--form--txt select--title">Укажите желаемую дату доставки:*</div>
                                 <select name="" id="choose--date" class="oform--inputs">
@@ -1073,7 +1073,7 @@
                 </div>
             </div>
         </footer>
-    </div>
+        </div>
     <!-- Подключение скрипты -->
     <script src="../js/jquery.js"></script>
     <script src="../js/slick.min.js"></script>
