@@ -14,6 +14,9 @@
     .sot--modal5 {
         left: auto;
     }
+    .first-tab, .second-tab {
+        width: 316px;
+    }
 }
 @media screen and (max-width: 1320px) {
     .book--text4 {
@@ -82,6 +85,12 @@
         justify-content: flex-end;
         font-size: 34px;
     }
+    .fourth-tab-extra {
+        width: 86px;
+    }
+    .second-tab-extra {
+        width: 270px;
+    }
 }
 @media screen and (max-width: 1176px) {
     .korzina--container {
@@ -118,6 +127,9 @@
     .menu--item a {
         font-size: 16px;
     }
+    .tablica--container {
+        /* align-items: center; */
+    }
     .one,
     .two,
     .catalog,
@@ -150,6 +162,25 @@
     }
     .sostav--zakaza--text {
         padding-right: 0;
+    }
+    .tablica--container {
+        flex-wrap: wrap;
+    }
+    .no--tab {
+        display: none;
+    }
+    .first-tab, .second-tab {
+        width: 320px;
+    }
+    .fourth-tab-extra {
+        width: 100px;
+    }
+    .tablica--container {
+        border-bottom: none;
+    }
+    .tablica--block2,
+    .first-tab {
+        border-bottom: 1px solid #bcbec0;
     }
 }
 @media screen and (max-width: 1040px) {
@@ -282,6 +313,42 @@
         border-bottom: 20px solid rgb(255, 255, 255, 0.99);
         top: -37px;
         left: 55px;
+    }
+}
+@media screen and (max-width: 880px) {
+    .tablica--title {
+        font-size: 28px;
+    }
+    .tab--border--left {
+        border-right: 1px solid #bcbec0;
+    }
+    .first-tab {
+        border-bottom: none;
+    }
+    .tab--block--extra {
+        width: 600px;
+    }
+    .tablica--name {
+        border-left: 1px solid #bcbec0;
+    }
+    .tablica--title--extra,
+    .tablica--title2 {
+        border-left: 1px solid #bcbec0;
+    }
+    .second-tab {
+        width: 100%;
+    }
+    .fourth-tab {
+        border: none;
+    }
+    .fourth-tab-extra {
+        width: 155px;
+    }
+    .tablica--field--child2:first-child {
+        width: 60%;
+    }
+    .tablica--field--child2:last-child {
+        width: 40%;
     }
 }
 @media screen and (max-width: 862px) {
@@ -773,6 +840,19 @@
         margin: 0 10px;
     }
 }
+@media screen and (max-width: 457px) {
+    .tablica--field--child,
+    .tablica--title2 {
+        font-size: 12px;
+    }
+    .fourth-tab-extra {
+        width: 120px;
+    }
+    .tablica--title {
+        font-size: 22px;
+        height: 33px;
+    }
+}
 @media screen and (max-width: 450px) {
     .product--slider--title {
         line-height: 10px;
@@ -995,6 +1075,13 @@
         font-size: 8px;
         line-height: 8px;
     }
+    .tablica--field--child,
+    .tablica--title2 {
+        font-size: 10px;
+    }
+    .fourth-tab-extra {
+        width: 85px;
+    }
 }
 @media screen and (max-width: 390px) {
     .invite--txt {
@@ -1114,6 +1201,9 @@
     .korzina--buttons button {
         font-size: 12px;
         padding: 8px 20px;
+    }
+    .tablica--field--child {
+        padding: 0 4px;
     }
 }
 @media screen and (max-width: 340px) {

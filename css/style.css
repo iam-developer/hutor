@@ -2590,6 +2590,83 @@ body {
     font-family: 'MyriadPro-Regular';
     font-weight: inherit;
 }
+.tablica--container {
+    padding: 20px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 1px solid #bcbec0;
+}
+.tablica--field {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #bcbec0;
+    border-top: none;
+    padding: 4px;
+}
+.tablica .tablica--field {
+    padding: 5px 0;
+}
+.tablica--field--child {
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    color: #636466;
+    width: 50%;
+    line-height: 21px;
+    padding: 0 10px;
+}
+.tablica--field--child-extra {
+    width: auto;
+}
+.tablica--title2 {
+    background-color: #d7e0c3;
+    padding: 7px 10px;
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    color: #636466;
+}
+.tablica--title {
+    background: linear-gradient(to top , #cfdab6, #fafbf7);
+    padding: 4px 10px;
+    border-left: 1px solid #fff;
+    height: 40px;
+}
+.tab--border--left {
+    border-left: 1px solid #bcbec0;
+}
+.tablica--name {
+    padding: 5px 0;
+}
+.tablica--block2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.first-tab,
+.second-tab {
+    width: 380px;
+}
+.third-tab {
+    width: 100px;
+    height: 334px;
+    border-left: 1px solid #bcbec0;
+}
+.fourth-tab {
+    width: 120px;
+    border-left: 1px solid #bcbec0;
+}
+.third-tab,
+.fourth-tab {
+    text-align: center;
+}
+.tablica--block:last-child {
+    border-right: 1px solid #bcbec0;
+}
+.tablica--field:last-child {
+    border-bottom: none;
+}
 
 /* ================     страница "Сотрудники"   ============== */
 .sotrudnik--title {
@@ -2738,3 +2815,4 @@ body {
 .employee24:hover .sot--modal24 {
     display: block;
 }
+
