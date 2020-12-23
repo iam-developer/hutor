@@ -858,14 +858,41 @@
         
         <section class="forms">
             <div class="forms--header">
-                <div class="forms--link"><a href="../">Главная / </a></div>
+                <div class="forms--link"><a href="../">Главная /</a></div>
                 <div class="forms--link">&nbsp;Регистрация /</div>
             </div>
             <form action="" class="registr--form">
                 <div class="forms--header">
-                    <div class="forms--link"><a href="../">Войти | </a></div>
-                    <div class="forms--link">&nbsp;Регистрация /</div>
+                    <div class="forms--link"><a href="#">Войти |</a></div>
+                    <div class="forms--link">&nbsp;<span>Зарегистрироваться</span></div>
                 </div>
+                <div class="form--input">
+                    <input type="text" placeholder="Фамилия">
+                </div>
+                <div class="form--input">
+                    <input type="text" placeholder="Имя">
+                </div>
+                <div class="form--input">
+                    <input type="email" placeholder="E-mail">
+                </div>
+                <div class="form--input">
+                    <input type="tel" placeholder="Телефон">
+                </div>
+                <div class="form--input data--birth--form">
+                    <label for="bday">Дата рождения</label>
+                    <input type="date" id="bday" name="bday">
+                </div>
+                <div class="form--input--password--block">
+                    <input type="password" class="form--input--password" placeholder="Пароль">
+                </div>
+                <div class="form--input--password--block">
+                    <input type="password" class="form--input--password" placeholder="Подтвердить пароль">
+                </div>
+                <div class="registr--checkbox">
+                    <input type="checkbox" id="reg--check">
+                    <label for="reg--check">Получать рассылку</label>
+                </div>
+                <input type="submit" class="send--quation registr--btn" value="Создать аккаунт">
             </form>
         </section>
 
@@ -919,6 +946,7 @@
             </div>
         </footer>
     </div>
+
     <!-- Подключение скрипты -->
     <script src="../js/jquery.js"></script>
     <script src="../js/main.js"></script>

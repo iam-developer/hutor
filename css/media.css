@@ -417,11 +417,13 @@
     .korzina--page {
         padding: 200px 20px 20px;
     }
-
 }
 @media screen and (max-width: 767px) {
     .oform--border {
         border-right: none;
+    }
+    .forms {
+        padding: 40px 10px 20px;
     }
     .product--slider--extra {
         display: block;
@@ -767,6 +769,9 @@
     }
 }
 @media screen and (max-width: 520px) {
+    .registr--form {
+        width: 100%;
+    }
     .product--slider {
         margin: 0 10px;
     }
