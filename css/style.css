@@ -3015,3 +3015,47 @@ body {
     width: 100%;
     margin: 20px 0 40px;
 }
+.call--back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+.call--back--img img {
+    max-width: 100%;
+}
+.bold--title {
+    font-family: 'MyriadPro-Bold';
+    font-size: 18px;
+    color: #6d3214;
+    margin: 12px auto;
+    text-align: center;
+}
+.form--full--con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+.form--feed--btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+}
+.form--feed--btns input {
+    width: 50%;
+}
+.form--feed--btns input:first-child {
+    margin-right: 10px;
+}
+.sbros {
+    color: #9a9a93;
+    text-shadow: none;
+    background-blend-mode: #dfdecf;
+}
+.sbros:hover {
+    background: linear-gradient(to bottom, #d6d0ba, #afb08e);;
+}

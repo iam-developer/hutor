@@ -873,6 +873,10 @@
         font-size: 22px;
         height: 33px;
     }
+    .form--feed--btns input {
+        font-size: 18px;
+        padding: 8px 5px;
+    }
 }
 @media screen and (max-width: 450px) {
     .product--slider--title {
@@ -1181,6 +1185,9 @@
     .sutrudnik--block {
         width: 134px;
     }
+    .forms--link a, .forms--link {
+        font-size: 15px;
+    }
 }
 @media screen and (max-width: 360px) {
     .catalog--product--block {
@@ -1226,6 +1233,9 @@
     .korzina--buttons button {
         font-size: 12px;
         padding: 8px 20px;
+    }
+    .form--feed--btns input {
+        padding: 5px;
     }
     .tablica--field--child {
         padding: 0 4px;
