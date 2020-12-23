@@ -353,19 +353,16 @@ body {
 
 #toTop {
     font-family: 'MyriadPro-Bold';
-    /* width: 44px;
-    height: 44px; */
     z-index: 9999;
     text-align: center;
     position: fixed;
-    bottom: 15px;
-    right: 15px;
+    bottom: 50px;
+    right: 20px;
     cursor: pointer;
     display: none;
-    /* transform: rotate(-90deg); */
-    border: 1px solid #835640;
+    border: 1px solid #bb9a89;
     border-radius: 50%;
-
+    box-shadow: -1px 1px 4px #6d3214;
 }
 #toTop div {
     width: 30px;
@@ -2914,3 +2911,23 @@ body {
     display: block;
 }
 
+
+/* Стили для формы: */
+.forms {
+    padding: 280px 20px 20px;
+}
+.forms--header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.forms--link a,
+.forms--link {
+    font-family: 'MyriadPro-Regular';
+    font-size: 18px;
+    color: #6d3214;
+    transition: .3s;
+}
+.forms--link a:hover {
+    color: #c5551d;
+}

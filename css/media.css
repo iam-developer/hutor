@@ -426,6 +426,9 @@
     .product--slider--extra {
         display: block;
     }
+    #toTop div {
+        top: 8px;
+    }
     .oformlenie--container {
         padding-bottom: 16px;
     }
