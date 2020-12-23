@@ -2963,8 +2963,9 @@ body {
     width: 100px;
 }
 #bday {
-    width: 16%;
+    width: 17%;
     margin-left: 10px;
+    background: transparent;
 }
 ::-webkit-calendar-picker-indicator {
     display: none;

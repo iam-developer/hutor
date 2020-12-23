@@ -971,6 +971,9 @@
     .postavshik--video {
         margin: 0 20px;
     }
+    #bday {
+        width: 30%;
+    }
 }
 @media screen and (max-width: 440px) {
     .korzina--buttons button {
