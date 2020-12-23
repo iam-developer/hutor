@@ -866,21 +866,21 @@
                     <div class="forms--link"><a href="#">Войти |</a></div>
                     <div class="forms--link">&nbsp;<span>Зарегистрироваться</span></div>
                 </div>
-                <div class="form--input">
-                    <input type="text" placeholder="Фамилия">
+                <div class="form--input--cont">
+                    <input class="form--input" type="text" placeholder="Фамилия">
                 </div>
-                <div class="form--input">
-                    <input type="text" placeholder="Имя">
+                <div class="form--input--cont">
+                    <input class="form--input" type="text" placeholder="Имя">
                 </div>
-                <div class="form--input">
-                    <input type="email" placeholder="E-mail">
+                <div class="form--input--cont">
+                    <input class="form--input" type="email" placeholder="E-mail">
                 </div>
-                <div class="form--input">
-                    <input type="tel" placeholder="Телефон">
+                <div class="form--input--cont">
+                    <input class="form--input" type="tel" placeholder="Телефон">
                 </div>
                 <div class="form--input data--birth--form">
-                    <label for="bday">Дата рождения</label>
-                    <input type="date" id="bday" name="bday">
+                    <label class="form--input" for="bday">Дата рождения</label>
+                    <input class="form--input" type="date" id="bday" name="bday">
                 </div>
                 <div class="form--input--password--block">
                     <input type="password" class="form--input--password" placeholder="Пароль">
@@ -947,6 +947,14 @@
         </footer>
     </div>
 
+    <script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
+    <!-- polyfiller file to detect and load polyfills -->
+    <script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
+    <script>
+      webshims.setOptions('waitReady', false);
+      webshims.setOptions('forms-ext', {types: 'date'});
+      webshims.polyfill('forms forms-ext');
+    </script>
     <!-- Подключение скрипты -->
     <script src="../js/jquery.js"></script>
     <script src="../js/main.js"></script>

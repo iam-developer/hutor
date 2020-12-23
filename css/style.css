@@ -379,6 +379,9 @@ body {
     #toTop div {
         top: 5px;
     }
+    #bday {
+        width: 40%;
+    }
  }
 /* ========= Главная страница ========= */
 #header {
@@ -1116,6 +1119,9 @@ body {
 }
 .product--slider--extra {
     display: none;
+}
+.recept--header {
+    padding-bottom: 30px;
 }
 
 /* ================== About setion ================== */
@@ -2224,7 +2230,7 @@ body {
 }
 .kor--product--left {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 .kor--product--img {
@@ -2627,6 +2633,9 @@ body {
   .postavshik--slide:focus {
       outline: none;
   }
+  .korzina--product a {
+      width: 373px;
+  }
 
   /* =============  страница "Контакты" ============= */
   .contact--container {
@@ -2944,20 +2953,27 @@ body {
 .forms--link span {
     font-family: 'MyriadPro-Bold';
 }
-.form--input {
+.form--input--cont {
     width: 100%;
     margin: 7px 0;
 }
-.form--input input,
-.form--input label,
-.form--input input::placeholder {
+.form--input {
+    width: 100%;
     font-family: 'MyriadPro-Regular';
     font-size: 14px;
     color: #bcbec0;
     padding: 4px 4px 0 0; 
     border: none;
     border-bottom: 1px solid #bcbec0;
+}
+.form--input::placeholder {
     width: 100%;
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    color: #bcbec0;
+    padding: 4px 4px 0 0; 
+    border: none;
+    border-bottom: 1px solid #bcbec0;
 }
 .form--input label {
     width: 100px;
@@ -2965,11 +2981,17 @@ body {
 #bday {
     width: 17%;
     margin-left: 10px;
+    margin-top: 0;
     background: transparent;
 }
 ::-webkit-calendar-picker-indicator {
     display: none;
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    #bday {
+        width: 39%;
+    }
+ }
 .form--input input:focus {
     outline: none;
 }
@@ -2980,6 +3002,8 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+    border-bottom: none;
+    margin-bottom: 40px;
 }
 .form--input--password {
     font-family: 'MyriadPro-Regular';
@@ -3000,7 +3024,8 @@ body {
     width: 100%;
     margin: 7px 0;
 }
-.form--input--password:focus {
+.form--input--password:focus,
+.form--input:focus {
     outline: none;
 }
 .registr--checkbox label {
