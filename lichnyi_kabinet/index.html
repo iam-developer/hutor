@@ -925,8 +925,12 @@
                                     <span class="accordeon--txt">Адрес доставки 2:</span>
                                     <input type="text">
                                 </div>
+                                <div class="profile--item extra--address">
+                                    <span class="accordeon--txt">Адрес доставки 3:</span>
+                                    <input type="text">
+                                </div>
                                 <div class="profile--item">
-                                    <span class="accordeon--txt add--btn">Добавить адрес</span>
+                                    <span class="accordeon--txt add--btn add--address">Добавить адрес</span>
                                 </div>
                             </div>
                             <div class="profile--block">
@@ -942,8 +946,12 @@
                                     <span class="accordeon--txt">Телефон 3:</span>
                                     <input type="tel" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
                                 </div>
+                                <div class="profile--item extra--phone">
+                                    <span class="accordeon--txt">Телефон 4:</span>
+                                    <input type="tel" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                                </div>
                                 <div class="profile--item">
-                                    <span class="accordeon--txt add--btn">Добавить телефон</span>
+                                    <span class="accordeon--txt add--btn add--phone">Добавить телефон</span>
                                 </div>
                             </div>
                         </div>
@@ -1371,11 +1379,11 @@
                                         </select>
                                     </div>
                                 </div>
-                                <input type="button" class="send--quation" value="Сохранить"></input>
                             </form>
                         </div>
                     </div>
                 </div>
+                <input type="button" class="send--quation" id="save--btn" value="Сохранить"></input>
             </div>
         </section>
         

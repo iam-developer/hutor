@@ -423,6 +423,9 @@
     .oform--border {
         border-right: none;
     }
+    .product--slider--extra {
+        display: block;
+    }
     .oformlenie--container {
         padding-bottom: 16px;
     }
@@ -899,7 +902,7 @@
         bottom: -27px;
     }
     .input--focus input, .input--focus {
-        width: 204px;
+        width: 198px;
     }
     #tel--width {
         width: 148px;
@@ -987,7 +990,7 @@
         height: 52px;
     }
     #oform--block {
-        padding: 20px 0;
+        padding: 20px 0 0 10px;
     }
     .oform--payment {
         flex-direction: column;
@@ -1058,6 +1061,9 @@
     }
 }
 @media screen and (max-width: 400px) {
+    .kartochka--buttons span {
+        font-size: 12px;
+    }
     .product--slider--title {
         font-size: 10px;
     }

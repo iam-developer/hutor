@@ -905,75 +905,81 @@
                             </div>
                         </form>
                     </div>
-                    <div class="oform--checkbox--txt">
-                        <label for="oform--checkbox1">Подписаться на рассылку</label>
-                        <input type="checkbox" name="" id="oform--checkbox1" >
-                    </div>
-                    <div class="oform--checkbox--txt">
-                        <label for="oform--checkbox2">Проверить, что сумма заказа больше 4000 рублей:</label>
-                        <input type="checkbox" name="" id="oform--checkbox2" >
-                    </div>
-                    <div class="oform--checkbox--txt">
-                        <label for="oform--checkbox3">Выслать СМС с окончательной суммой заказа в день доставки:</label>
-                        <input type="checkbox" name="" id="oform--checkbox3" >
-                    </div>
-                    <div class="oform--checkbox--txt">
-                        <label for="oform--checkbox4">Подтвердить заказ по СМС, не звонить</label>
-                        <input type="checkbox" name="" id="oform--checkbox4" >
+                    <div class="left--space">
+                        <div class="oform--checkbox--txt">
+                            <label for="oform--checkbox1">Подписаться на рассылку</label>
+                            <input type="checkbox" name="" id="oform--checkbox1" >
+                        </div>
+                        <div class="oform--checkbox--txt">
+                            <label for="oform--checkbox2">Проверить, что сумма заказа больше 4000 рублей:</label>
+                            <input type="checkbox" name="" id="oform--checkbox2" >
+                        </div>
+                        <div class="oform--checkbox--txt">
+                            <label for="oform--checkbox3">Выслать СМС с окончательной суммой заказа в день доставки:</label>
+                            <input type="checkbox" name="" id="oform--checkbox3" >
+                        </div>
+                        <div class="oform--checkbox--txt">
+                            <label for="oform--checkbox4">Подтвердить заказ по СМС, не звонить</label>
+                            <input type="checkbox" name="" id="oform--checkbox4" >
+                        </div>
                     </div>
 
                     <div class="oform--payment">
                         <div class="oform--payment--block">
                             <p class="oform--text oform--top">Дата доставки</p>
-                            <div class="oform--form--txt select--title">Укажите желаемую дату доставки:*</div>
-                            <select name="" id="choose--date" class="oform--inputs">
-                                <option value="1">20 ноября 2020(пятница)</option>
-                                <option value="2">12 ноября 2020(пятница)</option>
-                                <option value="3">10 ноября 2020(пятница)</option>
-                            </select>
-                            <div class="oform--form--txt select--title">Укажите желаемое время доставки:*</div>
-                            <div class="mini--selects">
-                                <span class="oform--form--txt">с</span>
-                                <select name="" id="time" class="oform--inputs oform--mini--inputs">
-                                    <option value="1">15:00</option>
-                                    <option value="1">14:00</option>
-                                    <option value="1">13:00</option>
-                                </select>
-                                <span class="oform--form--txt" class="oform--inputs">до</span>
-                                <select name="" id="" class="oform--inputs oform--mini--inputs">
-                                    <option value="1">18:00</option>
-                                    <option value="1">17:00</option>
-                                    <option value="1">18:30</option>
-                                </select>
-                            </div>
+                                <div class="left--space">
+                                    <div class="oform--form--txt select--title">Укажите желаемую дату доставки:*</div>
+                                    <select name="" id="choose--date" class="oform--inputs">
+                                        <option value="1">20 ноября 2020(пятница)</option>
+                                        <option value="2">12 ноября 2020(пятница)</option>
+                                        <option value="3">10 ноября 2020(пятница)</option>
+                                    </select>
+                                    <div class="oform--form--txt select--title">Укажите желаемое время доставки:*</div>
+                                    <div class="mini--selects">
+                                        <span class="oform--form--txt">с</span>
+                                        <select name="" id="time" class="oform--inputs oform--mini--inputs">
+                                            <option value="1">15:00</option>
+                                            <option value="1">14:00</option>
+                                            <option value="1">13:00</option>
+                                        </select>
+                                        <span class="oform--form--txt" class="oform--inputs">до</span>
+                                        <select name="" id="" class="oform--inputs oform--mini--inputs">
+                                            <option value="1">18:00</option>
+                                            <option value="1">17:00</option>
+                                            <option value="1">18:30</option>
+                                        </select>
+                                    </div>
+                                </div>
                         </div>
                         <div class="oform--payment--block">
-                            <p class="oform--text oform--top oform--pad--let">Оплата</p>
+                            <p class="oform--text oform--top">Оплата</p>
                             <div class="oform--clas">
-                                <div class="oform--form--txt select--title">Укажите желаемую дату доставки:*</div>
+                                <div class="oform--form--txt select--title">Укажите желаемую форму оплаты*:</div>
                                 <select name="" id="choose--date" class="oform--inputs">
-                                    <option value="1">20 ноября 2020(пятница)</option>
-                                    <option value="2">12 ноября 2020(пятница)</option>
-                                    <option value="3">10 ноября 2020(пятница)</option>
+                                    <option value="1">Оплата наличными куреру при получении</option>
+                                    <option value="2">Оплата картой куреру при получении</option>
+                                    <option value="3">Оплата наличными куреру при получении</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                     <div class="oform--text oform--top">Адрес доставки</div>
-                    <div class="input--field oform--extra--class">
-                        <div class="input--txt oform--form--txt oform--extra--class2">
-                            Адрес доставки:*
+                    <div class="left--space">
+                        <div class="input--field oform--extra--class">
+                            <div class="input--txt oform--form--txt oform--extra--class2">
+                                Адрес доставки:*
+                            </div>
+                            <div class="input--focus oform--input--wid">
+                                <input type="text">
+                            </div>
                         </div>
-                        <div class="input--focus oform--input--wid">
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="input--field oform--extra--class">
-                        <div class="input--txt oform--form--txt oform--extra--class2">
-                            Город:*
-                        </div>
-                        <div class="input--focus oform--input--wid">
-                            <input type="text">
+                        <div class="input--field oform--extra--class">
+                            <div class="input--txt oform--form--txt oform--extra--class2">
+                                Город:*
+                            </div>
+                            <div class="input--focus oform--input--wid">
+                                <input type="text">
+                            </div>
                         </div>
                     </div>
                     </div>

@@ -202,6 +202,15 @@ $('.accordion--slider').slick({
     ]
 });
 
+// Личный кабинет: Добавить адрес:
+
+$('.add--address').click(function() {
+  $('.extra--address').addClass('third--address');
+});
+// Личный кабинет: Добавить телефон:
+$('.add--phone').click(function() {
+  $('.extra--phone').addClass('third--phone');
+});
 
 // Страница "Личный кабинет". Функция для аккордион:
 
@@ -247,7 +256,6 @@ $('.show--sod3').click(function() {
 let plusBtn = document.querySelector('.plus__btn');
 let minusBtn = document.querySelector('.minus__btn');
 let count = document.querySelector('.count');
-let deleteBtn = document.querySelector('.deleteBtn');
 let index = 2;
 
 plusBtn.onclick = function plusCount() {
@@ -261,14 +269,11 @@ minusBtn.onclick = function minusCount() {
   }
   count.innerHTML = index;
 }
-deleteBtn.onclick = function() {
-  count.innerHTML = '0';
-}
+
 
 let plusBtn2 = document.querySelector('.plus__btn2');
 let minusBtn2 = document.querySelector('.minus__btn2');
 let count2 = document.querySelector('.count2');
-let deleteBtn2 = document.querySelector('.deleteBtn2');
 let index2 = 4;
 
 plusBtn2.onclick = function() {
@@ -281,10 +286,9 @@ minusBtn2.onclick = function() {
   }
   count2.innerHTML = index2;
 }
-deleteBtn2.onclick = function() {
-  count2.innerHTML = '0';
-}
 
+// Очистка корзину:
 
-
-
+$('.korzina--delete').click(function() {
+  $(this).parents().eq(3).css('display', 'none');
+});

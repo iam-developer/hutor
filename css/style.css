@@ -540,7 +540,8 @@ body {
     padding-bottom: 10px;
 }
 .pod--menu {
-    background-color: rgb(109, 50, 20, 0.8);
+    background-color: rgba(109, 50, 20, 0.8);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4cffffff', endColorstr='#4cffffff'); /* IE */
     position: absolute;
     padding: 24px;
     display: none;
@@ -1081,6 +1082,12 @@ body {
 .fermer--right {
     right: -30px;
 }
+.extra--slider--block {
+    padding: 10px 0;
+}
+.product--slider--extra {
+    display: none;
+}
 
 /* ================== About setion ================== */
 #quations {
@@ -1522,7 +1529,7 @@ body {
     font-size: 30px;
     line-height: 30px;
     color: #6d3214;
-    margin: 5px 0 0;
+    margin: 20px 0 10px;
 }
 .kartochka--text {
     font-family: 'MyriadPro-Regular';
@@ -1534,7 +1541,7 @@ body {
 .kartochka--cost {
     font-family: 'MyriadPro-Bold';
     font-size: 60px;
-    padding: 5px 0 5px;
+    padding: 20px 0 0;
     color: #6d3214;
 }
 .kartochka--cost span {
@@ -1545,6 +1552,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 20px;
 }
 .kartochka--order--title {
     font-family: 'MyriadPro-Regular';
@@ -1585,7 +1593,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .kartochka--buttons span {
     font-family: 'MyriadPro-Regular';
@@ -1939,6 +1947,21 @@ body {
     padding-left: 20px;
     padding-right: 20px;
 }
+.extra--address {
+    display: none;
+}
+.extra--address.third--address {
+    display: flex;
+}
+.extra--phone {
+    display: none;
+}
+.extra--phone.third--phone {
+    display: flex;
+}
+#save--btn {
+    margin: 20px;
+}
 
 /* ====================    Страниа "ОФОРМЛЕНИЕ ЗАКАЗА     ===================== */
 
@@ -2138,6 +2161,9 @@ body {
 }
 .oform--pad--let {
     padding-left: 40px;
+}
+.left--space {
+    padding-left: 10px;
 }
 /* ===============      Страница "Моя корзина"      =================== */
 
@@ -2755,7 +2781,8 @@ body {
     font-size: 14px;
     color: #6d3214;
     padding: 14px;
-    background-color: rgb(255, 255, 255, 0.97);
+    background-color: #fff;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4cffffff', endColorstr='#4cffffff'); /* IE */
     display: none;
     width: 200px;
     z-index: 99;
@@ -2769,8 +2796,8 @@ body {
     content: '';
     border-radius: 7px;
     border: 20px solid transparent; 
-    border-right: 14px solid rgb(255, 255, 255, 0.9); 
-    border-bottom: 14px solid rgb(255, 255, 255, 0.9);
+    border-right: 14px solid #fff; 
+    border-bottom: 14px solid #fff;
     position: absolute;
     left: -20px;
     z-index: -1;
@@ -2785,8 +2812,8 @@ body {
     content: '';
     border-radius: 7px;
     border: 20px solid transparent; 
-    border-bottom: 14px solid rgb(255, 255, 255, 0.9); 
-    border-left: 14px solid rgb(255, 255, 255, 0.9); 
+    border-bottom: 14px solid #fff; 
+    border-left: 14px solid #fff; 
     position: absolute;
     left: 185px;
     z-index: -1;
