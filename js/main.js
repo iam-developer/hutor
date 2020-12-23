@@ -11,6 +11,22 @@ close_menu.onclick = function() {
   menu.classList.toggle("show--menu");
 }
 
+// Кнопка на вверх:
+$(document).ready(function() {
+  $(window).scroll(function() {
+      if($(this).scrollTop() != 0)
+          $("#toTop").fadeIn();
+      else
+          $("#toTop").fadeOut();
+  });
+
+  $("#toTop").click(function() {
+      $('body, html').animate({
+          scrollTop:0
+      }, 800);
+  });
+});
+
 // Клик на каталог меню:
 
 $('.mob--catalog').on('click', function() {
@@ -292,3 +308,5 @@ minusBtn2.onclick = function() {
 $('.korzina--delete').click(function() {
   $(this).parents().eq(3).css('display', 'none');
 });
+
+

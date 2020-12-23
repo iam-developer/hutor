@@ -351,6 +351,38 @@ body {
     
 /* ========= end ========== */
 
+#toTop {
+    font-family: 'MyriadPro-Bold';
+    /* width: 44px;
+    height: 44px; */
+    z-index: 9999;
+    text-align: center;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+    /* transform: rotate(-90deg); */
+    border: 1px solid #835640;
+    border-radius: 50%;
+
+}
+#toTop div {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6d3214;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    #toTop div {
+        top: 5px;
+    }
+ }
 /* ========= Главная страница ========= */
 #header {
     position: fixed;
