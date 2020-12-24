@@ -401,9 +401,9 @@ body {
     width: 100%;
 }
 .menu--wrapper {
-    max-width: 1200px;
+    max-width: 1920px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 95px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -547,9 +547,9 @@ body {
 }
 .products {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
-    padding-bottom: 5px;
+    padding: 0 10px 5px;
 }
 .product--detail {
     text-align: center;
@@ -1117,9 +1117,6 @@ body {
 .extra--slider--block {
     padding: 10px 0;
 }
-.product--slider--extra {
-    display: none;
-}
 .recept--header {
     padding-bottom: 30px;
 }
@@ -1163,6 +1160,9 @@ body {
 }
 .catalog--block ul {
     padding: 0 0 5px 38px;
+}
+.padddd {
+    padding-top: 40px;
 }
 .catalog--block .no--padding {
     padding-left: 0;
@@ -1334,6 +1334,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin-top: 45px;
 }
 .catalog--product--title {
     font-family: 'MyriadPro-Bold';
@@ -1350,7 +1351,6 @@ body {
     position: relative;
     width: 250px;
     height: 160px;
-    margin-top: 45px;
 }
 .catalog--product--block img,
 .catalog--product--content img {
@@ -1378,7 +1378,7 @@ body {
 }
 .check--block--right {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 82%;
@@ -1440,11 +1440,12 @@ body {
     outline: none;
 }
 .check--block--item {
-    width: 260px;
+    width: 250px;
     background-image: url(../img/back-book.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0 7px;
     padding: 33px 18px 33px 26px;
 }
 .product--slider--num {
@@ -1546,9 +1547,6 @@ body {
     margin-top: 10px;
     text-decoration: underline;
 }
-.kartochka--right--block {
-    padding: 0 0 0 20px
-}
 .kartochka--right--links a,
 .kartochka--right--links span {
     font-family: 'MyriadPro-Regular';
@@ -1564,7 +1562,7 @@ body {
     font-size: 30px;
     line-height: 30px;
     color: #6d3214;
-    margin: 20px 0 10px;
+    margin: 0 0 10px;
 }
 .kartochka--text {
     font-family: 'MyriadPro-Regular';
@@ -1997,6 +1995,12 @@ body {
 #save--btn {
     margin: 20px;
 }
+.kart--paddd {
+    padding-left: 18px;
+}
+.kartochka--right--block {
+    padding-top: 14px;
+}
 
 /* ====================    Страниа "ОФОРМЛЕНИЕ ЗАКАЗА     ===================== */
 
@@ -2275,7 +2279,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 24px;
-    height: 24px;
+    height: 23px;
 }
 .korzina--line {
     padding-bottom: 10px;
@@ -2419,7 +2423,7 @@ body {
     line-height: 16px;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 }
 .moi--zakaz--txt span:nth-child(2) {
     padding: 0 7px;
@@ -2624,6 +2628,8 @@ body {
       padding: 5px;
   }
   .postavshik--slider--container {
+      max-width: 1920px;
+      margin: 0 auto;
       padding: 30px;
   }
   .postavshik--slide {
@@ -2699,9 +2705,9 @@ body {
 .tablica--container {
     padding: 20px 0 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
-    border-bottom: 1px solid #bcbec0;
+    margin: 0 auto;
 }
 .tablica--field {
     display: flex;
@@ -2713,7 +2719,7 @@ body {
     padding: 4px;
 }
 .tablica .tablica--field {
-    padding: 5px 0;
+    padding: 5.4px 0;
 }
 .tablica--field--child {
     font-family: 'MyriadPro-Regular';
@@ -2745,10 +2751,17 @@ body {
 .tablica--name {
     padding: 5px 0;
 }
+.tablica--block--bottom {
+    border-bottom: 1px solid #bcbec0;
+}
+.zakaz--knopka {
+    width: 360px;
+    margin: 40px auto;
+}
 .tablica--block2 {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 .first-tab,
 .second-tab {
@@ -2926,6 +2939,8 @@ body {
 
 /* Стили для формы: */
 .forms {
+    max-width: 1920px;
+    margin: 0 auto;
     padding: 280px 20px 20px;
 }
 .registr--form {
@@ -3076,6 +3091,9 @@ body {
     align-items: center;
     margin: 10px 0;
     width: 100%;
+}
+.extra--slider--block:focus {
+    outline: none;
 }
 .form--feed--btns a {
     width: 50%;
