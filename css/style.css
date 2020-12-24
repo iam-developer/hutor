@@ -3088,12 +3088,6 @@ body {
 .sbros:hover {
     background: linear-gradient(to bottom, #d6d0ba, #afb08e);;
 }
-.sign--in span {
-    color: #e65e5e;
-}
-.sign--in a {
-    color: #e65e5e;
-}
 .sign--in--input {
     margin: 10px 0;
 }
