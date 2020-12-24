@@ -3036,6 +3036,9 @@ body {
 }
 .registr--checkbox {
     margin: 7px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 .registr--btn {
     width: 100%;
@@ -3084,4 +3087,72 @@ body {
 }
 .sbros:hover {
     background: linear-gradient(to bottom, #d6d0ba, #afb08e);;
+}
+.sign--in span {
+    color: #e65e5e;
+}
+.sign--in a {
+    color: #e65e5e;
+}
+.sign--in--input {
+    margin: 10px 0;
+}
+.sign--in--block {
+    margin-bottom: 20px;
+}
+.sign--in--checkbox label {
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    color: #bcbec0;
+}
+.change--password {
+    margin: 0 auto;
+}
+.change--password a {
+    font-family: 'MyriadPro-Bold';
+    font-size: 18px;
+    color: #919396;
+    text-align: center;
+    transition: .3s;
+}
+.change--password a:hover {
+    color: #444
+}
+.sign--in--btn {
+    margin-bottom: 20px;
+}
+.sign-in--social--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.sign-in--social--item svg path {
+    fill: #fff;
+}
+.sign-in--social--item svg {
+    border-radius: 50%;
+    padding: 4px;
+    margin: 0 3px;
+}
+.vk svg {
+    background-color: #5b80ca;
+}
+.facebook svg {
+    background-color: #4267B2;
+}
+.sign--in--social {
+    font-family: 'MyriadPro-Bold';
+    font-size: 18px;
+    color: #444;
+    margin: 70px auto 20px;
+}
+.voss--password--txt {
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    color:  #9a9a93;
+    padding-bottom: 20px;
+}
+.smena--btn {
+    margin-bottom: 7px;
 }
