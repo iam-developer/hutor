@@ -1197,6 +1197,9 @@
     .sostav--zakaza--text {
         margin: 26px 0;
     }
+    .sostav--zakaza--text {
+        margin: 12px 0;
+    }
 }
 @media screen and (max-width: 410px) {
     .kartochka--tovara {
