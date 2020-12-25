@@ -2062,6 +2062,12 @@ body {
     color: #636466;
     line-height: 14px;
 }
+.oform--form--txt label {
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    color: #636466;
+    line-height: 14px;
+}
 .oform--checkbox--txt label {
     cursor: pointer;
     transition: .3s;
@@ -2082,8 +2088,11 @@ body {
     align-items: flex-start;
     width: 100%;
 }
-.oform--payment--block {
-    width: 50%;
+.oform--payment--block:first-child {
+    width: 45%;
+}
+.oform--payment--block:last-child {
+    width: 55%;
 }
 #choose--date:focus {
     outline: none;
@@ -2105,6 +2114,24 @@ body {
 .select--title {
     padding: 4px 0;
 }
+.oform_rad {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 334px;
+    position: relative;
+}
+.oform_rad input[type=radio]:checked + span:after {
+    border-radius: 11px;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    content: " ";
+    display: block;
+    background: #808285;
+}
 .oform--top {
     margin: 14px 0;
 }
@@ -2118,6 +2145,13 @@ body {
     padding: 14px;
     background: linear-gradient(to top , #cfdab6, #fafbf7);
     border-bottom: 5px solid #6d3214;
+}
+#span_id2 {
+    width: 80px;
+    margin-left: 26px;
+}
+.sostav--zakaza2 {
+    padding: 0 14px;
 }
 .sostav--zakaza--title {
     font-family: 'MyriadPro-Bold';
@@ -2192,8 +2226,15 @@ body {
 .accept--order:focus {
     outline: none;
 }
+.accept--order2 {
+    padding: 10px 70px;
+    margin: 40px 0 0 40px ;
+}
 .oform--input--wid input {
     width: 100%;
+}
+.oform--input--wid2 input {
+    width: 80%;
 }
 .oform--payment--block select {
     background: transparent;
@@ -2500,6 +2541,29 @@ body {
   }
   .radio-item input[type='radio'] {
     display: none;
+  }
+  .radio--item__extra {
+      margin: 26px 0;
+      width: auto;
+  }
+  .dost--radio {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+  #koool {
+      width: 100%;
+  }
+  .dost--radio--con {
+      padding: 4px 10px 4px 0;
+      width: 100%;
+  }
+  .dost--radio--con:first-child {
+      width: 70%;
+  }
+  .dost--radio--con:last-child {
+      width: 30%;
   }
   .radio-item span {
     content: " ";

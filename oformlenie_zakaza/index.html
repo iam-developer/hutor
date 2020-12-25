@@ -876,7 +876,7 @@
                                     Ф.И.О:*
                                 </div>
                                 <div class="input--focus">
-                                    <input type="text">
+                                    <input type="text" placeholder="Дудина Мария">
                                 </div>
                             </div>
                             <div class="input--field">
@@ -884,7 +884,7 @@
                                     E-Mail:*
                                 </div>
                                 <div class="input--focus">
-                                    <input type="email" pattern=".+@globex.com" >
+                                    <input type="email" pattern=".+@globex.com" placeholder="mariadudina@mail.ru">
                                 </div>
                             </div>
                             <div class="input--field">
@@ -892,12 +892,12 @@
                                     Телефон:*
                                 </div>
                                 <div class="input--focus">
-                                    <input type="tel" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                                    <input type="tel" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" placeholder="+7 921 639-6572">
                                 </div>
                             </div>
                             <div class="input--field textarea--center">
                                 <div class="input--txt oform--form--txt">
-                                    Комментарий к доставке:
+                                    Что передать курьеру?
                                 </div>
                                 <div class="input--focus">
                                     <textarea name="" id="comments" cols="20" rows="7"></textarea>
@@ -907,20 +907,28 @@
                     </div>
                     <div class="left--space">
                         <div class="oform--checkbox--txt">
-                            <label for="oform--checkbox1">Подписаться на рассылку</label>
+                            <label for="oform--checkbox1">Бесконтактная доставка</label>
                             <input type="checkbox" name="" id="oform--checkbox1" >
                         </div>
                         <div class="oform--checkbox--txt">
-                            <label for="oform--checkbox2">Проверить, что сумма заказа больше 4000 рублей:</label>
+                            <label for="oform--checkbox2">Хочу узнавать про новинки и скидки</label>
                             <input type="checkbox" name="" id="oform--checkbox2" >
                         </div>
                         <div class="oform--checkbox--txt">
-                            <label for="oform--checkbox3">Выслать СМС с окончательной суммой заказа в день доставки:</label>
+                            <label for="oform--checkbox3">Сумма заказа должна быть больше 4000</label>
                             <input type="checkbox" name="" id="oform--checkbox3" >
                         </div>
                         <div class="oform--checkbox--txt">
-                            <label for="oform--checkbox4">Подтвердить заказ по СМС, не звонить</label>
+                            <label for="oform--checkbox4">Нужна СМС с окончательной суммой заказа</label>
                             <input type="checkbox" name="" id="oform--checkbox4" >
+                        </div>
+                        <div class="oform--checkbox--txt">
+                            <label for="oform--checkbox5">Не звоните для подтверждения заказа</label>
+                            <input type="checkbox" name="" id="oform--checkbox5" >
+                        </div>
+                        <div class="oform--checkbox--txt">
+                            <label for="oform--checkbox6">Мне удобнее не СМС, а WhatsApp</label>
+                            <input type="checkbox" name="" id="oform--checkbox6" >
                         </div>
                     </div>
 
@@ -954,36 +962,48 @@
                         <div class="oform--payment--block">
                             <p class="oform--text oform--top">Оплата</p>
                             <div class="oform--clas">
-                                <div class="oform--form--txt select--title">Укажите желаемую форму оплаты*:</div>
-                                <select name="" id="choose--date" class="oform--inputs">
-                                    <option value="1">Оплата наличными куреру при получении</option>
-                                    <option value="2">Оплата картой куреру при получении</option>
-                                    <option value="3">Оплата наличными куреру при получении</option>
-                                </select>
+                                <div class="oform--checkbox--txt radio-item radio--item__extra">
+                                    <input name="check" type="radio" id="oform_check1" checked>
+                                    <span></span>
+                                    <label for="oform_check1" class="moi--zakaz--txt">оплачу при получении (наличными или по QR коду)</label>
+                                </div>
+                                <div class="oform--checkbox--txt radio-item ">
+                                    <input name="check" type="radio" id="oform_check2">
+                                    <span></span>
+                                    <label for="oform_check2" class="moi--zakaz--txt">оплачу сейчас (по онлайн QR коду)</label>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="oform--text oform--top">Адрес доставки</div>
+                    <div class="oform--text oform--top">Доставка</div>
                     <div class="left--space">
                         <div class="input--field oform--extra--class">
-                            <div class="input--txt oform--form--txt oform--extra--class2">
-                                Адрес доставки:*
-                            </div>
-                            <div class="input--focus oform--input--wid">
-                                <input type="text">
+                            <div id="koool">
+                                <div class="dost--radio">
+                                    <div class="oform--checkbox--txt radio-item dost--radio--con">
+                                        <input name="check" type="radio" id="dost_check1" checked>
+                                        <span></span>
+                                        <label for="dost_check1" class="moi--zakaz--txt">Доставка курьером</label>
+                                    </div>
+                                    <div class="oform--checkbox--txt radio-item dost--radio--con">
+                                        <input name="check" type="radio" id="dost_check2">
+                                        <span></span>
+                                        <label for="dost_check2" class="moi--zakaz--txt">Самовызов</label>
+                                    </div>
+                                </div>
+                                <div class="dost--radio">
+                                    <div class="input--txt oform--form--txt oform--extra--class2">
+                                        Адрес доставки:*
+                                    </div>
+                                    <div class="input--focus oform--input--wid oform--input--wid2">
+                                        <input type="text">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="input--field oform--extra--class">
-                            <div class="input--txt oform--form--txt oform--extra--class2">
-                                Город:*
-                            </div>
-                            <div class="input--focus oform--input--wid">
-                                <input type="text">
-                            </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
+            </div>
               
                 <div class="oformlenie--right ">
                     <div class="oform--title"></div>
@@ -1016,6 +1036,13 @@
                             <span><strong>496р</strong></span>
                         </div>
                     </div>
+                    <div class="sostav--zakaza sostav--zakaza2">
+                        <div class="sostav--zakaza--text">
+                            <span>Доставка</span>
+                            <span id="span_id2">СИНЯЯ ЗОНА</span>
+                            <span><strong>0 руб.</strong></span>
+                        </div>
+                    </div>
                     <div class="sostav--zakaza--sum">
                         <div class="sostav--zakaza--left">
                             Предварительная<br>стоимость заказа*
@@ -1025,7 +1052,7 @@
                     <div class="oform--comment">*Сумма предварительная, она может измениться после взвешивания.<br>
                         Ведь у нас продукты некалиброванные, они настоящие
                     </div>
-                    <button class="accept--order">Подтвердить заказ</button>
+                    <button class="accept--order accept--order2">Подтвердить заказ</button>
                 </div>
             </div>
         </div>

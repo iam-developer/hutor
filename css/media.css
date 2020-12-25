@@ -290,6 +290,15 @@
     }
 }
 @media screen and (max-width: 970px) {
+    .oform--payment {
+        flex-direction: column;
+    }
+    .oform--payment--block:first-child {
+        width: 100%;
+    }
+    .oform--payment--block:last-child {
+        width: 100%;
+    }
     .logo img {
         width: 70%;
     }
@@ -343,10 +352,7 @@
         width: 360px;
     }
     .input--focus {
-        width: 270px;
-    }
-    #form--quations .input--field .input--focus {
-        width: 310px;
+        width: 200px;
     }
     .oformlenie--zakaza,
     #oformlenie--zakaza,
@@ -715,8 +721,8 @@
     .oformlenie--right {
         width: 100%;
     }
-    .oform--checkbox--txt {
-        width: 450px;
+    .input--focus {
+        width: 320px;
     }
 }
 @media screen and (max-width: 720px) {
@@ -970,6 +976,9 @@
     .korzina--buttons button:last-child {
         margin: 0 10px;
     }
+    .accept--order2 {
+        margin-left: 0;
+    }
 }
 @media screen and (max-width: 457px) {
     .catalog--product--container {
@@ -1134,9 +1143,6 @@
     }
     #oform--block {
         padding: 20px 0 0 10px;
-    }
-    .oform--payment {
-        flex-direction: column;
     }
     .oform--payment--block {
         width: 100%;
