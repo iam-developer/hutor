@@ -724,6 +724,9 @@
     .input--focus {
         width: 320px;
     }
+    #choose--date {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 720px) {
     .catalog--product--block {
@@ -977,7 +980,7 @@
         margin: 0 10px;
     }
     .accept--order2 {
-        margin-left: 0;
+        margin: 40px auto;
     }
 }
 @media screen and (max-width: 457px) {
