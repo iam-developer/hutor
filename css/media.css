@@ -494,6 +494,9 @@
     .forms {
         padding: 40px 10px 20px;
     }
+    .yyyu {
+        padding-left: 7px;
+    }
     .product--slider--extra {
         display: block;
     }
@@ -617,7 +620,7 @@
         max-width: 100%;
     }
     .catalog--products {
-        padding: 30px 20px 70px;
+        padding: 30px 10px 40px;
     }
     .catalog--product--moloko {
         flex-direction: column;
@@ -693,19 +696,7 @@
         padding-left: 10px;
     }
 }
-@media screen and (max-width: 740px) {
-    .catalog--product--block {
-        width: 180px;
-        height: 150px;
-    }
-    .catalog--product--content {
-        width: 138px;
-    }
-    .catalog--product--title {
-        font-size: 13px;
-        line-height: 11px;
-    }
-}
+
 @media screen and (max-width: 730px) {
     .oformlenie--container {
         flex-direction: column;
@@ -716,6 +707,20 @@
     }
     .oform--checkbox--txt {
         width: 450px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .catalog--product--block {
+        width: 112px;
+        height: 134px;
+    }
+    .catalog--product--content {
+        width: 85px;
+        left: 49%;
+    }
+    .catalog--product--title {
+        font-size: 10px;
+        line-height: 8px;
     }
 }
 @media screen and (max-width: 590px) {
@@ -729,6 +734,18 @@
     }
     .check--block--right {
         justify-content: space-around;
+    }
+    .catalog--product--block {
+        width: 102px;
+        height: 132px;
+    }
+    .catalog--product--content {
+        width: 74px;
+        left: 50%;
+    }
+    .catalog--product--title {
+        font-size: 10px;
+        line-height: 8px;
     }
 }
 @media screen and (max-width: 576px) {
@@ -826,6 +843,7 @@
     }
     .catalog--product--container {
         margin-top: 20px;
+        padding: 0 20px;
     }
     .catalog--product--block {
         width: 170px;
@@ -944,6 +962,9 @@
     }
 }
 @media screen and (max-width: 457px) {
+    .catalog--product--container {
+        padding: 0;
+    }
     .tablica--field--child,
     .tablica--title2 {
         font-size: 12px;

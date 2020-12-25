@@ -1423,7 +1423,7 @@ body {
     margin: 10px 0 0 16px;
 }
 .check--border--block {
-    padding: 14px;
+    padding: 14px 10px 14px 20px;
     border: 1px solid #6d3214;
     width: 180px;
 }
@@ -2696,6 +2696,9 @@ body {
   .map--right iframe {
       width: 100%;
       height: 100%;
+  }
+  .yyyu {
+      padding-left: 20px;
   }
 /* ============ страница "Подробнее о заказе"   ================== */
 #o--zakaze {
