@@ -1,5 +1,15 @@
 
 /*/////////////// Медиа запросы для главной страницы */
+@media screen and (max-width: 1350px) {
+    .korzina--txt {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .korzina--cost {
+        font-size: 20px;
+        line-height: 16px;
+    }
+}
 @media screen and (max-width: 1345px) {
     sot--modal {
         top: 196px;
