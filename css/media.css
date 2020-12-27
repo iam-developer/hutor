@@ -1226,7 +1226,7 @@
         font-size: 7px;
     }
     .check--block--right {
-        justify-content: space-between;
+        justify-content: center;
     }
     #oformlenie--zakaza {
         padding: 20px 10px;
