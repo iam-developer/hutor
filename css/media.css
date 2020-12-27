@@ -74,6 +74,7 @@
         justify-content: center;
     }
     .main--cat {
+        flex-wrap: nowrap;
         justify-content: space-around;
     }
     .footer--extra {
@@ -412,6 +413,10 @@
         top: -37px;
         left: 55px;
     }
+    .main--cat {
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
 }
 @media screen and (max-width: 920px) {
     .book--text1 {
@@ -592,6 +597,9 @@
     .korzina--txt {
         font-size: 13px;
         line-height: 13px;
+    }
+    .main--cat {
+        padding: 0;
     }
 }
 @media screen and (max-width: 767px) {
