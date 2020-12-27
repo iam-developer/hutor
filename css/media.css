@@ -1,5 +1,15 @@
 
 /*/////////////// Медиа запросы для главной страницы */
+@media scree and (max-width: 1520px) {
+    .menu {
+        width: 170px;
+    }
+}
+@media screen and (max-width: 1430px) {
+    .menu {
+        width: 160px;
+    }
+}
 @media screen and (max-width: 1350px) {
     .korzina--txt {
         font-size: 12px;
@@ -60,8 +70,11 @@
 }
 @media screen and (max-width: 1260px) {
     .quations--container {
-        justify-content: center;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main--cat {
+        justify-content: space-around;
     }
     .footer--extra {
         padding: 0 10px;
@@ -116,6 +129,10 @@
     .second-tab-extra {
         width: 270px;
     }
+    .book--block {
+        margin: 0;
+        padding: 0 3px;
+    }
 }
 @media screen and (max-width: 1176px) {
     .korzina--container {
@@ -162,7 +179,7 @@
         line-height: 40px;
     }
     .menu--item a {
-        font-size: 16px;
+        font-size: 14px;
     }
     .one,
     .two,
@@ -177,16 +194,7 @@
         top: -60px;
     }
     .book--block {
-        background-size: cover;
-        background-position: center;
         margin-bottom: 20px;
-    }
-    #books--section {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .book--text2 {
-        padding: 14px 40px 0 14px;
     }
     .kartochka--tovara {
         padding: 240px 20px 20px;
@@ -211,6 +219,36 @@
     }
     .tablica--container {
         border-bottom: none;
+    }
+    .book--block--title{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .book--block--txt {
+        font-size: 13px;
+        line-height: 14px;
+    }
+    .book--block {
+        margin: 0 4px;
+        padding: 0;
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+    }
+    .book--text1 {
+        padding: 7px 24px 0px 28px;
+    }
+    .book--text2 {
+        padding: 7px 35px 0px 14px;
+    }
+    .book--text3 {
+        padding: 7px 24px 0px 36px;
+    }
+    .book--text4 {
+        padding: 7px 24px 0px 36px;
+    }
+    .book--text5 {
+        padding: 7px 24px 0px 36px;
     }
 }
 @media screen and (max-width: 1040px) {
@@ -256,6 +294,11 @@
     }
 }
 @media screen and (max-width: 980px) {
+    .book--block--title {
+        font-size: 13px;
+        line-height: 12px;
+        padding-bottom: 5px;
+    }
     .menu--item a {
         font-size: 14px;
     }
@@ -370,6 +413,54 @@
         left: 55px;
     }
 }
+@media screen and (max-width: 920px) {
+    .book--text1 {
+        padding: 7px 15px 0px 20px;
+    }
+    .book--text2 {
+        padding: 7px 20px 0px 14px;
+    }
+    .book--text3 {
+        padding: 7px 15px 0px 20px;
+    }
+    .book--text4 {
+        padding: 7px 20px 0px 20px;
+    }
+    .book--text5 {
+        padding: 7px 15px 0px 20px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .book--block--txt {
+        font-size: 10px;
+        line-height: 11px;
+    }
+    .book--block--title {
+        font-size: 12px;
+        line-height: 12px;
+        padding-bottom: 5px;
+    }
+    .book--block {
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+    }
+    .book--text5 {
+        padding: 7px 20px 0 28px;
+    }
+    .book--text4 {
+        padding: 7px 20px 0 28px;
+    }
+    .book--text3 {
+        padding: 7px 20px 0 28px;
+    }
+    .book--text2 {
+        padding: 7px 20px 0 20px;
+    }
+    .book--text1 {
+        padding: 7px 20px 0;
+    }
+}
 @media screen and (max-width: 880px) {
     .tablica--title {
         font-size: 28px;
@@ -449,6 +540,9 @@
     .catalog--product--title {
         font-size: 11px;
         line-height: 9px;
+    }
+    .menu--item a {
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 830px) {
@@ -558,14 +652,8 @@
     #mobile {
         display: block;
     }
-    .product--slider--img img {
-        margin: 12px;
-    }
     .back--fon {
         margin: 0 auto;
-    }
-    .bloock {
-        left: 58px;
     }
     #header {
         display: none;
@@ -711,6 +799,19 @@
         padding-right: 10px;
         padding-left: 10px;
     }
+    .product--slider--img img {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .product--slider--title {
+        margin-left: 0;
+    }
+    .product--slider--cost {
+        margin-left: 0;
+    }
+    .product--slider--icons {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 730px) {
@@ -743,9 +844,6 @@
     }
 }
 @media screen and (max-width: 590px) {
-    .bloock {
-        left: 24px;
-    }
     .check--block--item {
         width: 240px;
         height: 300px;
@@ -809,9 +907,6 @@
     }
     #mobile--header {
         padding: 7px 20px;
-    }
-    .product--slider--img img {
-        margin: 4px;
     }
     .products--sliders--title {
         font-size: 27px;
@@ -894,15 +989,9 @@
     .product--slider {
         margin: 0 10px;
     }
-    .product--slider--img img {
-        margin: 4px 0 0;
-    }
     .product--slider--title {
         margin: 0;
-        font-size: 11px;
-    }
-    .bloock {
-        top: 22px;
+        font-size: 9px;
     }
     .product--slider--cost {
         margin-left: 0;
@@ -1117,9 +1206,6 @@
         font-size: 14px;
         padding: 5px 20px;
     }
-    .bloock {
-        left: 19px;
-    }
     .product--slider--icons {
         margin-left: 0;
     }
@@ -1186,9 +1272,6 @@
     }
     .icons span {
         width: 20px;
-    }
-    .extra {
-        top: 20px;
     }
     .extra .product--slider--title {
         line-height: 10px;
@@ -1349,6 +1432,10 @@
     .zakazy--container {
         margin-left: 0;
     }
+    #span_id2 {
+        margin-left: 0;
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 358px) {
     .product--slider {
@@ -1389,13 +1476,6 @@
         font-size: 20px;
         line-height: 20px;
     }
-    .bloock {
-        left: 16px;
-    }
-    .product--slider--img img {
-        margin: 0;
-        max-width: 79%;
-    }
     .center--block--txt {
         padding: 46px 20px 20px 48px;
         font-size: 24px;
@@ -1425,5 +1505,11 @@
     }
     .plus--button--width {
         width: 100px;
+    }
+    .product--slider--img img {
+        max-width: 95%;
+    }
+    .bloock {
+        left: 53%;
     }
 }

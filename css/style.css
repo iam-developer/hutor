@@ -481,7 +481,7 @@ body {
 }
 .catalog--menu {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
 }
 .one {
@@ -513,7 +513,7 @@ body {
     text-align: center;
 }
 .menu {
-    width: 160px;
+    width: 240px;
     height: 58px;
     position: relative;
     margin-right: 2px;
@@ -805,9 +805,12 @@ body {
 .product--slider:focus {
     outline: none;
 }
+.product--slider img {
+    margin: 0 auto;
+}
 .product--slider--img img {
-    max-width: 82%;
-    margin: 12px 0 0 8px;
+    max-width: 95%;
+    margin: 2px 0 0 7px;
 }
 #no--marg {
     margin-top: 3px;
@@ -852,8 +855,9 @@ body {
 }
 .bloock {
     position: absolute;
-    top: 34px;
-    left: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .product--slider--icons {
     display: flex;
@@ -2099,7 +2103,7 @@ body {
 }
 .oform--inputs option,
 .oform--inputs {
-    padding: 10px 8px;
+    padding: 5px 8px 3px;
     font-family: 'MyriadPro-Regular';
     font-size: 14px;
     color: #636466;
@@ -2147,8 +2151,8 @@ body {
     border-bottom: 5px solid #6d3214;
 }
 #span_id2 {
-    width: 80px;
-    margin-left: 26px;
+    width: 90px;
+    margin-left: 28px;
 }
 .sostav--zakaza2 {
     padding: 0 14px;
