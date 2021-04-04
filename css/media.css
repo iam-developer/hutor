@@ -116,9 +116,6 @@
     .product--detail {
         margin: 0 2px;
     }
-    #main--slider {
-        padding-top: 260px;
-    }
     .moi--zakaz--txt2 span {
         display: flex;
         justify-content: flex-end;
@@ -525,9 +522,6 @@
     .product--detail p {
         font-size: 8px;
         line-height: 8px;
-    }
-    #main--slider {
-        padding-top: 220px;
     }
     .menu--fixed div {
         width: 60px;
