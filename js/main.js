@@ -50,7 +50,7 @@ $(".korzina--delete").click(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 1800,
     responsive: [
       {
