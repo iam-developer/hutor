@@ -56,8 +56,8 @@ $(".korzina--delete").click(function () {
       {
         breakpoint: 767,
         settings: {
-          prevArrow: "<img class='left__arrow' src='./hutor/img/left__arrow.png'>",
-          nextArrow: "<img class='right__arrow' src='./hutor/img/right__arrow.png'>",
+          prevArrow: "<img class='left__arrow' src='img/left__arrow.png'>",
+          nextArrow: "<img class='right__arrow' src='img/right__arrow.png'>",
           dots: false,
         },
       },
@@ -70,8 +70,8 @@ $(".korzina--delete").click(function () {
     infinite: true,
     dots: false,
     arrow: false,
-    prevArrow: "<img class='left--arrow' src='./hutor/img/left-btn.png'>",
-    nextArrow: "<img class='right--arrow' src='./hutor/img/right-btn.png'>",
+    prevArrow: "<img class='left--arrow' src='img/left-btn.png'>",
+    nextArrow: "<img class='right--arrow' src='img/right-btn.png'>",
     slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
@@ -102,8 +102,8 @@ $(".korzina--delete").click(function () {
     infinite: true,
     dots: false,
     arrow: false,
-    prevArrow: "<img class='left--arrow' src='./hutor/img/left-btn.png'>",
-    nextArrow: "<img class='right--arrow' src='./hutor/img/right-btn.png'>",
+    prevArrow: "<img class='left--arrow' src='img/left-btn.png'>",
+    nextArrow: "<img class='right--arrow' src='img/right-btn.png'>",
     slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
@@ -134,9 +134,9 @@ $(".korzina--delete").click(function () {
     dots: false,
     arrow: false,
     prevArrow:
-      "<img class='left--arrow fermer--left' src='./hutor/img/left-btn.png'>",
+      "<img class='left--arrow fermer--left' src='img/left-btn.png'>",
     nextArrow:
-      "<img class='right--arrow fermer--right' src='./hutor/img/right-btn.png'>",
+      "<img class='right--arrow fermer--right' src='img/right-btn.png'>",
     slidesToShow: 7,
     slidesToScroll: 1,
     responsive: [
@@ -179,9 +179,9 @@ $(".korzina--delete").click(function () {
     infinite: true,
     dots: false,
     arrow: false,
-    prevArrow: "<img class='left--arrow' src='./hutor/img/left-btn.png'>",
+    prevArrow: "<img class='left--arrow' src='img/left-btn.png'>",
     nextArrow:
-      "<img class='right--arrow accordionArrow' src='./hutor/img/right-btn.png'>",
+      "<img class='right--arrow accordionArrow' src='img/right-btn.png'>",
     slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
